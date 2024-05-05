@@ -42,20 +42,20 @@ body{
 .container .sliders .logoContainer {
     position: absolute;
     align-self: center;
-    left: 20%;
-    top: 30%;
+    left: 22%;
+    top: 27%;
     justify-self: center;
     display: flex;
-    width: 75%;
-    height: 30%;
-    background: rgba(0, 0, 0, 0.7);
+    width: 70%;
+    height: 27%;
+    /*background: rgba(0, 0, 0, 0.7);*/
 }
 .container .sliders .logoContainer .logo{
-    width: 35%;
+    width: 25%;
     height: 100%;
 }
 .container .sliders .logoContainer .logo img{
-    width: 100%;
+    width: 150%;
     height: 100%;
 }
 .container .sliders .logoContainer .text{
@@ -65,7 +65,7 @@ body{
     text-align: left;
     align-self: center;
     font-size: 30px;
-    padding-left: -100%;
+    padding-left: 5%;
 }
  
 /* Control de la animación */
