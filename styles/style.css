@@ -1,0 +1,69 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    margin: 0px;
+    padding: 0px;
+}
+/* Editamos el slider*/
+.container .sliders{
+    width: 100%;
+    height: 730px;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    display:flex;
+
+}
+.container .sliders img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+ 
+/* El logazoooo */
+.container .sliders .logoContainer {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 20px 15px;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    width: 40%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: left;
+}
+ 
+/* Control de la animación */
+.container .sliders .fade {
+    -webkit-animation-name: fade-image;
+    -webkit-animation-duration: 2.0s;
+    animation-name: fade-image;
+    animation-duration: 2.0s;
+}
+
+/* Webkit para Safari y navegadores de celular */
+@-webkit-keyframes fade-image {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+ 
+@keyframes fade-image {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+ 
+/* Responsive chamo */
+@media only screen and (max-width: 300px) {
+
+}
