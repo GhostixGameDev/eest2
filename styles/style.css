@@ -87,11 +87,12 @@ body{
 /*SIDEBAR*/
 .container .sidebar{
     height: 100%; 
-    width: 5%; 
+    width: 7%; 
     position: fixed; 
     z-index: 1; 
     top: 0; 
     left: 0;
+    right: 0;
     background-color: #111; 
     overflow-x: hidden; 
     padding-top: 20px;
@@ -102,17 +103,58 @@ body{
 }
 .container .sidebar .sidebarLogo{
     width: 80%;
-    height: 10%;
+    height: 12%;
+    transition: ease-in-out 0.5s;
+    align-self: center;
 }
-.container .sidebar a img{
+.container .sidebar .sidebarLogo a img{
     width: 100%;
     height: 100%;
+    
+}
+.container .sidebar .sidebarLogo:hover{
+    width: 90%;
+    height: 13%;
     transition: ease-in-out 0.5s;
 }
-.container .sidebar a img:hover{
-    width: 110%;
-    height: 110%;
+.container .sidebar .sidebarMenu{
+    margin-top: 10%;
+    width: 80%;
+    height: 12%;
+    align-self: center;
+    align-items: center;
     transition: ease-in-out 0.5s;
+    font-size: 16px;
+}
+.container .sidebar .sidebarMenu:hover{
+    margin-top: 10%;
+    width: 90%;
+    height: 13%;
+    align-self: center;
+    align-items: center;
+    transition: ease-in-out 0.5s;
+
+    
+}
+.container .sidebar .sidebarMenu button{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border:rgba(255, 255, 255, 0)
+}
+.container .sidebar .sidebarMenu img{
+    width: 100%;
+    height: 80%;
+}
+.container .sidebar .sidebarMenu p{
+    margin-top: -20%;
+    transition: ease-in-out 0.5s;
+    font-family: "PlayFair";
+    font-weight: 700;
+    color: #f2f2f2;
+    text-align: center;
+    align-self: center;
+    
 }
 /* Webkit para Safari y navegadores de celular */
 @-webkit-keyframes fade-image {

@@ -30,3 +30,8 @@ function showSlides() {
 	// Delay para el cambio de imagenes (En ms).
 	setTimeout(showSlides, 6000);
 }
+
+//Funcion que extiende el menu.
+function extendMenu(){
+	
+}
