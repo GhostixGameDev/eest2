@@ -1,6 +1,6 @@
 let slideIndex = 0;
 window.onload = showSlides; //Llamamos al slider una vez la pagina esta cargada.
-
+//document.getElementById("sidebarActivator").addEventListener("click", extendMenu())
 
 function showSlides() {
 	let i;
@@ -33,5 +33,6 @@ function showSlides() {
 
 //Funcion que extiende el menu.
 function extendMenu(){
-	
+	const sidebar = document.querySelector(".sidebar");
+	sidebar.classList.toggle("active");
 }
