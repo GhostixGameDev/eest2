@@ -107,6 +107,8 @@ body{
     width: 45%;
     justify-items: left;
     align-items: left;
+    align-content: left;
+    justify-content: left;
 }
 .container .sidebar .sidebarLogo{
     width: 80%;
@@ -121,9 +123,9 @@ body{
 }
 .container .sidebar.active .sidebarLogo{
     width: 15%;
-    transition: ease-in-out 0.5s;
     align-self: left;
-
+    transition: ease-in-out 0.5s;
+    
 }
 .container .sidebar .sidebarLogo:hover{
     width: 90%;
