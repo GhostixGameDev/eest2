@@ -8,6 +8,9 @@
 * {
     box-sizing: border-box;
   }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0px;
     padding: 0px;
@@ -97,24 +100,25 @@ body{
     overflow-x: hidden; 
     padding-top: 20px;
     display: flex;
-    justify-items: center;
+    /*justify-items: left;*/
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     transition: all 0.5s ease-in-out;
 }
 .container .sidebar.active{
     transition: all 0.5s ease-in-out;
-    width: 45%;
-    justify-items: left;
-    align-items: left;
-    align-content: left;
-    justify-content: left;
+    width: 25%;
+    align-items: flex-start;
+    padding-left: 20px;
 }
 .container .sidebar .sidebarLogo{
     width: 80%;
     height: 12%;
-    transition: ease-in-out 0.5s;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
 }
 .container .sidebar .sidebarLogo a img{
     width: 100%;
@@ -122,41 +126,61 @@ body{
     
 }
 .container .sidebar.active .sidebarLogo{
-    width: 15%;
-    align-self: left;
-    transition: ease-in-out 0.5s;
+    width: 25%;
+    margin-left: -3%;
+    justify-content: flex-start;
+    transition: all ease-in-out 0.5s;
     
 }
 .container .sidebar .sidebarLogo:hover{
     width: 90%;
     height: 13%;
+    margin-left: 5%; 
+    transition: ease-in-out 0.5s;
+}
+.container .sidebar.active .sidebarLogo:hover{
+    width: 27%;
+    height: 13%;
+    margin-left: -4%;
     transition: ease-in-out 0.5s;
 }
 .container .sidebar .sidebarMenu{
-    margin-top: 10%;
+    margin-top: 2%;
     width: 80%;
     height: 12%;
-    align-self: center;
+    align-self: flex-start;
+    margin-left: 7.5%;
     align-items: center;
     transition: all 0.5s ease-in-out;
     font-size: 16px;
 }
 
 .container .sidebar .sidebarMenu:hover{
-    margin-top: 10%;
+    margin-top: 2%;
     width: 90%;
     height: 13%;
-    align-self: center;
+    align-self: flex-start;
+    margin-left: 3%;
     align-items: center;
     transition: ease-in-out 0.5s;
 
     
 }
+
 .container .sidebar.active .sidebarMenu{
-    width: 15%;
-    align-self: left;
-    align-items: left;
+    width: 25%;
+    margin-left: -4%;
+    justify-content: flex-start;
 }
+.container .sidebar.active .sidebarMenu:hover{
+    width: 27%;
+    height: 13%;
+    align-self: flex-start;
+    margin-left: -5%;
+    align-items: center;
+    transition: ease-in-out 0.5s;
+}
+
 
 .container .sidebar .sidebarMenu button{
     width: 100%;
@@ -178,6 +202,119 @@ body{
     text-align: center;
     align-self: center;
     
+}
+
+/* ESTADO DEFAULT DE LAS OPCIONES DEL MENU (No se ven).*/
+.container .sidebar .options{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.5s;
+    width: 100%;
+    align-items: flex-start;
+    font-family: "PlayFair";
+    font-weight: 500;
+    color: white;
+}
+.container .sidebar .options .modalidadesDesplegable{
+    width: 106%;
+    height: 7%;
+    margin-left: -6%;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container .sidebar .options .modalidadesDesplegable .modalidadesButton button{
+    border: solid 1px;
+    border-color: #161616;
+    background-color: #141414;
+    color: white;
+    text-align: left;
+    text-indent: 10%;
+    font-family: "PlayFair";
+    font-weight: 500;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+.container .sidebar .options .modalidadesDesplegable .modalidadesButton button img{
+    width: 5%;
+    height: 40%;
+    transition: all 0.5s ease-in-out;
+    transform: rotateX(180deg);
+    margin-left: 5%;
+}
+.container .sidebar .options a{
+    width: 106%;
+    height: 7%;
+    opacity: 0;
+    border: solid 1px;
+    margin-left: -6%;
+    border-color: #161616;
+    background-color: #141414;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Propiedades una vez que el menu esta abierto */
+.container .sidebar.active .options .modalidadesDesplegable{
+    opacity: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container .sidebar.active .options{
+    opacity: 100;
+    transition: all ease-in-out 0.5s;
+    width: 100%;
+    height: 76%;
+}
+
+.container .sidebar.active .options .modalidadesDesplegable .modalidadesButton{
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 0.5s;
+}
+.container .sidebar.active .options .modalidadesDesplegable .modalidadesButton button:hover{
+    transition: all ease-in-out 0.5s;
+    border: solid 1px;
+    border-color: rgba(114, 17, 17, 0.9);
+    background-color: rgba(109, 15, 15, 0.9);
+    width: 100%;
+    cursor: pointer;
+}
+.container .sidebar.active .options a{
+    opacity: 1;
+    text-indent: 11%;
+}
+.container .sidebar .options a:hover{
+    border: solid 1px;
+    border-color: rgba(114, 17, 17, 0.9);
+    background-color: rgba(109, 15, 15, 0.9);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+/*Modalidades extendidas */
+.container .sidebar.active .options .modalidadesDesplegable.active{
+    transition: all ease-in-out 0.5s;
+    height: 50%;
+}
+.container .sidebar.active .options .modalidadesDesplegable.active .modalidadesButton{
+    height: 7%;
+}
+.container .sidebar.active .options .modalidadesDesplegable.active .modalidadesButton button img{
+    transition: all 0.5s ease-in-out;
+    transform: rotateX(0deg);
+}
+.container .sidebar.active .options .modalidadesDesplegable.active .modalidades{
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    height: 10%;
+}
+.container .sidebar.active .options .modalidadesDesplegable.active .modalidades a{
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    height: 10%;
 }
 /* Webkit para Safari y navegadores de celular */
 @-webkit-keyframes fade-image {
