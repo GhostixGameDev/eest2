@@ -341,26 +341,28 @@ CONTENIDO
 =================================================*/
 .container .textModalidades{
     width: 97%;
-    height: 30vh;
+    height: 40vh;
     margin-left: 2%;
+    margin-top: 0;
     flex-direction: column;
     align-items: center;
     justify-items: center;
     text-align: center;
-    font-size: 8vh;
+    background-color: rgba(199, 199, 199, 0.897);
 }
 .container .textModalidades .primero{
     font-family: "Roboto";
     font-weight: 500;
-    color: rgba(5, 5, 5, 0.404);
-    background-color: white;
+    font-size: 7vh;
+    color: rgba(5, 5, 5, 0.9);
+    
 }
 .container .textModalidades .segundo{
     font-family: "Roboto";
     font-weight: 800;
     margin-top: -8vh;
+    font-size: 9vh;
     color: rgba(114, 17, 17, 0.9);
-    background-color: white;
 }
 .container .modalidadesContainer{
     width: 97%;
