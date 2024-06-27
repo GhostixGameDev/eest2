@@ -9,6 +9,8 @@
     box-sizing: border-box;
   }
 html{
+    width: 100vw;
+    height: 100vh;
     scroll-behavior: smooth;
 }
 body{
@@ -28,7 +30,6 @@ body{
 .container .sliders{
     width: 100%;
     height: 730px;
-    position: absolute;
     padding: 0px;
     display:flex;
     /*Color de la transición*/
@@ -136,12 +137,14 @@ body{
     width: 90%;
     height: 13%;
     margin-left: 5%; 
+    cursor: pointer;
     transition: ease-in-out 0.5s;
 }
 .container .sidebar.active .sidebarLogo:hover{
     width: 27%;
     height: 13%;
     margin-left: -4%;
+    cursor: pointer;
     transition: ease-in-out 0.5s;
 }
 .container .sidebar .sidebarMenu{
@@ -159,6 +162,7 @@ body{
     margin-top: 2%;
     width: 90%;
     height: 13%;
+    cursor: pointer;
     align-self: flex-start;
     margin-left: 3%;
     align-items: center;
@@ -176,6 +180,7 @@ body{
     width: 27%;
     height: 13%;
     align-self: flex-start;
+    cursor: pointer;
     margin-left: -5%;
     align-items: center;
     transition: ease-in-out 0.5s;
@@ -185,6 +190,7 @@ body{
 .container .sidebar .sidebarMenu button{
     width: 100%;
     height: 100%;
+    cursor: pointer;
     background: none;
     border:rgba(255, 255, 255, 0)
 }
@@ -240,11 +246,13 @@ body{
     transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, border 0.5s ease-in-out;
 }
 .container .sidebar .options .modalidadesDesplegable .modalidadesButton button img{
-    width: 5%;
-    height: 40%;
+    width: 10%;
+    height: 100%;
     transition: all 0.5s ease-in-out;
     transform: rotateX(180deg);
-    margin-left: 5%;
+    position: relative;
+    top: 54%;
+    margin-left: 0%;
 }
 .container .sidebar .options a{
     width: 106%;
@@ -294,6 +302,16 @@ body{
     cursor: pointer;
     transition: all ease-in-out 0.5s;
 }
+.container .sidebar.active .options .modalidadesDesplegable.active .modalidades{
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    
+}
+.container .sidebar.active .options .modalidadesDesplegable.active .modalidades a{
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    border: none;
+}
 /*Modalidades extendidas */
 .container .sidebar.active .options .modalidadesDesplegable.active{
     transition: all ease-in-out 0.5s;
@@ -309,13 +327,38 @@ body{
 .container .sidebar.active .options .modalidadesDesplegable.active .modalidades{
     transition: all 0.5s ease-in-out;
     opacity: 1;
+    width: 100%;
     height: 10%;
 }
 .container .sidebar.active .options .modalidadesDesplegable.active .modalidades a{
     transition: all 0.5s ease-in-out;
     opacity: 1;
+    width:100%;
     height: 10%;
 }
+/*============================================
+CONTENIDO
+=================================================*/
+.container .modalidadesContainer{
+    width: 93%;
+    height: 50vh;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    padding-left: 0;
+    background-color: aqua;
+}
+.container .modalidadesContainer .programacion{
+    border: solid 5px;
+    border-color: black;
+    width: 100%;
+    height: 50%;
+    padding-left: 0;
+    display: flex;
+    background-color: aqua;
+}
+
+
 /* Webkit para Safari y navegadores de celular */
 @-webkit-keyframes fade-image {
     from {
