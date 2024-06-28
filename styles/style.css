@@ -2,6 +2,8 @@
 @font-face {
     font-family: "PlayFair";
     src: url('../assets/fonts/PlayfairDisplay.ttf') format(truetype);
+    font-family: "Roboto";
+    src: url("../assets/fonts/Roboto/Roboto-Regular.ttf") format(truetype);
   }
 
 
@@ -26,7 +28,9 @@ body{
     padding: 0px;
     width: 100%;
 }
-/* Editamos el slider*/
+/*============================================
+SLIDER
+=================================================*/
 .container .sliders{
     width: 100%;
     height: 730px;
@@ -58,10 +62,10 @@ body{
     /*background: rgba(0, 0, 0, 0.7);*/
 }
 .container .sliders .logoContainer .logo{
-    width: 12%;
-    height: 19%;
+    width: 14%;
+    height: 21%;
     position: relative;
-    bottom: 5%;
+    bottom: 7%;
     right: 5%
 }
 .container .sliders .logoContainer .logo img{
@@ -74,12 +78,45 @@ body{
     color: #f2f2f2;
     text-align: left;
     align-self: center;
-    font-size: 30px;
+    font-size: 6vh;
     position: relative;
     right: 4%;
-    bottom: 5%
+    bottom: 7%
 }
- 
+.container .sliders .arrow{
+    width: 15%;
+    height: 15%;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    left: 42vw;
+    top: 80vh;
+    animation: alternate-reverse arrow-up-down infinite 1.2s;
+    animation-delay: 3s;
+    -webkit-animation: alternate-reverse arrow-up-down infinite 1.2s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+.container .sliders .arrow a{
+    width: 100%;
+    height: 100%;
+}
+.container .sliders .arrow a img{
+    width: 100%;
+    height: 100%;
+}
+.container .sliders .arrow:hover{
+    transition: all 0.5s ease-in-out;
+    width: 17%;
+    height: 17%;
+    left: 41vw;
+    top: 78vh;
+}
+
 /* Control de la animación */
 .container .sliders .fade {
     -webkit-animation-name: fade-image;
@@ -88,7 +125,9 @@ body{
     animation-duration: 2.0s;
 }
 
-/*SIDEBAR*/
+/*============================================
+SIDEBAR
+=================================================*/
 .container .sidebar{
     height: 100%; 
     width: 7%; 
@@ -210,7 +249,9 @@ body{
     
 }
 
-/* ESTADO DEFAULT DE LAS OPCIONES DEL MENU (No se ven).*/
+/*============================================
+Menu cerrado
+=================================================*/
 .container .sidebar .options{
     opacity: 0;
     display: flex;
@@ -265,7 +306,9 @@ body{
     transition: background-color 0.5s ease-in-out;
 }
 
-/* Propiedades una vez que el menu esta abierto */
+/*============================================
+Menu abierto
+=================================================*/
 .container .sidebar.active .options .modalidadesDesplegable{
     opacity: 1;
     overflow-x: hidden;
@@ -312,7 +355,9 @@ body{
     opacity: 0;
     border: none;
 }
-/*Modalidades extendidas */
+/*============================================
+Modalidades extendidas
+=================================================*/
 .container .sidebar.active .options .modalidadesDesplegable.active{
     transition: all ease-in-out 0.5s;
     height: 50%;
@@ -341,29 +386,16 @@ CONTENIDO
 =================================================*/
 .container .textModalidades{
     width: 97%;
-    height: 40vh;
+    height: 45vh;
     margin-left: 2%;
     margin-top: 0;
     flex-direction: column;
+    align-content: center;
     align-items: center;
-    justify-items: center;
     text-align: center;
     background-color: rgba(199, 199, 199, 0.897);
 }
-.container .textModalidades .primero{
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 7vh;
-    color: rgba(5, 5, 5, 0.9);
-    
-}
-.container .textModalidades .segundo{
-    font-family: "Roboto";
-    font-weight: 800;
-    margin-top: -8vh;
-    font-size: 9vh;
-    color: rgba(114, 17, 17, 0.9);
-}
+
 .container .modalidadesContainer{
     width: 97%;
     height: 105vh;
@@ -433,6 +465,9 @@ RESPONSIVE
 @media (min-width:400px) {
     
 }
+/*===================================================
+ANIMACIONES
+=====================================================*/
 
 
 /* Webkit para Safari y navegadores de celular */
@@ -451,5 +486,29 @@ RESPONSIVE
     }
     to {
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes arrow-up-down {
+    0% {
+        top: 80vh;
+    }
+    50% {
+        top: 78vh;
+    }
+    100% {
+        top: 80vh;
+    }
+}
+ 
+@keyframes arrow-up-down {
+    0% {
+        top: 80vh;
+    }
+    50% {
+        top: 78vh;
+    }
+    100% {
+        top: 80vh;
     }
 }

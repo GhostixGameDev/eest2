@@ -1,7 +1,11 @@
 let slideIndex = 0;
-window.onload = showSlides; //Llamamos al slider una vez la pagina esta cargada.
+window.onload = setup;
 
-
+function setup(){
+	//Aca corremos todo lo que deba correrse en la carga.
+	showSlides(); //Llamamos al carrousel.
+	/* delayAnimation("arrow", 3000); */ //Establecemos delay a las flechitas NOT WORKING.
+}
 function showSlides() {
 	let i;
 
@@ -30,6 +34,20 @@ function showSlides() {
 	// Delay para el cambio de imagenes (En ms).
 	setTimeout(showSlides, 6000);
 }
+//Funcion que da delay a las animaciones.
+/* function delayAnimation(classToSearch, delay){
+	var elements = document.getElementsByClassName(classToSearch);
+	var length = elements.length;
+	for (var i = 0; i < length; i++) {
+		elements[i].classList.add("animated");
+		(function(elements){
+			setTimeout(function(){
+				elements.classList.remove("animated");
+				setTimeout(function(){elements.classList.add("animated");}, delay);}, delay); //Duración de la animación
+		})(elements[i]);
+	}
+	
+} */
 
 //Funcion que extiende el menu.
 function extendMenu(){
