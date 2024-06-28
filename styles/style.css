@@ -27,22 +27,24 @@ body{
     margin: 0px;
     padding: 0px;
     width: 100%;
+    overflow-x: hidden;
 }
 /*============================================
 SLIDER
 =================================================*/
 .container .sliders{
-    width: 100%;
-    height: 730px;
+    width: 100vw;
+    height: 98vh;
     padding: 0px;
     display:flex;
     /*Color de la transición*/
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(10, 10, 10); 
+    
 
 }
 .container .sliders .sliderImage {
-    width: 110%;
-    height: 100%;
+    width: 110vw;
+    height: 100vh;
     filter: blur(4px) brightness(30%);
 
 }
@@ -56,20 +58,19 @@ SLIDER
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 100%;
-    height: 100%;
-    
+    width: 100vw;
+    height: 100vh;
     /*background: rgba(0, 0, 0, 0.7);*/
 }
 .container .sliders .logoContainer .logo{
-    width: 14%;
-    height: 21%;
+    width: 14vw;
+    height: 21vh;
     position: relative;
-    bottom: 7%;
-    right: 5%
+    bottom: 7vh;
+    right: 1vw
 }
 .container .sliders .logoContainer .logo img{
-    width: 100%;
+    width: 100;
     height: 100%;
 }
 .container .sliders .logoContainer .text{
@@ -80,8 +81,8 @@ SLIDER
     align-self: center;
     font-size: 6vh;
     position: relative;
-    right: 4%;
-    bottom: 7%
+    right: 4vw;
+    bottom: 7vh
 }
 .container .sliders .arrow{
     width: 15%;
@@ -194,7 +195,7 @@ SIDEBAR
     margin-left: 7.5%;
     align-items: center;
     transition: all 0.5s ease-in-out;
-    font-size: 16px;
+    font-size: 2.5vh;
 }
 
 .container .sidebar .sidebarMenu:hover{
@@ -259,9 +260,9 @@ Menu cerrado
     transition: all ease-in-out 0.5s;
     width: 100%;
     align-items: flex-start;
-    font-family: "PlayFair";
+    font-family: "Roboto";
     font-weight: 500;
-    color: white;
+    color: rgba(255, 255, 255, 0.795);
 }
 .container .sidebar .options .modalidadesDesplegable{
     width: 106%;
@@ -276,29 +277,33 @@ Menu cerrado
     border: solid 1px;
     border-color: #161616;
     background-color: #141414;
-    color: white;
+    color: rgba(255, 255, 255, 0.795);
     text-align: left;
     text-indent: 10%;
-    font-family: "PlayFair";
+    font-family: "Roboto";
     font-weight: 500;
-    font-size: 16px;
+    font-size: 2.4vh;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
     transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, border 0.5s ease-in-out;
 }
 .container .sidebar .options .modalidadesDesplegable .modalidadesButton button img{
-    width: 10%;
-    height: 100%;
+    width: 0.7vw;
+    height: 1.5vh;
     transition: all 0.5s ease-in-out;
     transform: rotateX(180deg);
     position: relative;
-    top: 54%;
+    top: 7%;
     margin-left: 0%;
 }
 .container .sidebar .options a{
     width: 106%;
     height: 7%;
+    align-content: center;
     opacity: 0;
+    font-size: 2.4vh;
     border: solid 1px;
     margin-left: -6%;
     border-color: #161616;
@@ -313,7 +318,10 @@ Menu abierto
     opacity: 1;
     overflow-x: hidden;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
 }
+
 .container .sidebar.active .options{
     opacity: 100;
     transition: all ease-in-out 0.5s;
@@ -345,41 +353,62 @@ Menu abierto
     cursor: pointer;
     transition: all ease-in-out 0.5s;
 }
-.container .sidebar.active .options .modalidadesDesplegable.active .modalidades{
-    transition: all 0.5s ease-in-out;
+.container .sidebar.active .options .modalidadesDesplegable .modalidades{
     opacity: 0;
-    
+    width: 0;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.5s, height 0.5s;
 }
-.container .sidebar.active .options .modalidadesDesplegable.active .modalidades a{
-    transition: all 0.5s ease-in-out;
+.container .sidebar.active .options .modalidadesDesplegable .modalidades a{
     opacity: 0;
+    width: 0;
+    height: 0;
     border: none;
+    color: #141414;
+    transition: opacity 0.5s, height 0.5s;
 }
 /*============================================
 Modalidades extendidas
 =================================================*/
 .container .sidebar.active .options .modalidadesDesplegable.active{
     transition: all ease-in-out 0.5s;
-    height: 50%;
+    height: 20%;
 }
 .container .sidebar.active .options .modalidadesDesplegable.active .modalidadesButton{
-    height: 7%;
+    height: 35%;
 }
 .container .sidebar.active .options .modalidadesDesplegable.active .modalidadesButton button img{
     transition: all 0.5s ease-in-out;
     transform: rotateX(0deg);
+    top: 0%;
 }
 .container .sidebar.active .options .modalidadesDesplegable.active .modalidades{
-    transition: all 0.5s ease-in-out;
     opacity: 1;
     width: 100%;
-    height: 10%;
+    height: auto;
 }
 .container .sidebar.active .options .modalidadesDesplegable.active .modalidades a{
-    transition: all 0.5s ease-in-out;
     opacity: 1;
-    width:100%;
-    height: 10%;
+    width: 106%;
+    height: auto;
+    display: block;
+    padding: 1.785% 0;
+    text-indent: 25%;
+    border: solid 1px;
+    color: white;
+    margin-left: -6%;
+    border-color: #161616;
+    background-color: #141414;
+    transition: height 0.5s ease-in-out;
+}
+.container .sidebar.active .options .modalidadesDesplegable.active .modalidades a:hover{
+    border: solid 1px;
+    border-color: rgba(114, 17, 17, 0.9);
+    background-color: rgba(109, 15, 15, 0.9);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
 }
 /*============================================
 CONTENIDO
