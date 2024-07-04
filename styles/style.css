@@ -426,6 +426,12 @@ CONTENIDO
     text-align: center;
     background-color: rgba(199, 199, 199, 0.897);
 }
+.texto{
+    font-size: 7vh;
+}
+.textoMasGrande{
+    font-size: 9vh
+}
 
 .container .modalidadesContainer{
     width: 97%;
@@ -440,7 +446,7 @@ CONTENIDO
     width: 100%;
     height: 50%;
     display: flex;
-    background-color: aqua;
+    background-color: rgb(255, 129, 129);
 }
 
 .container .modalidadesContainer .programacion .imagen{
@@ -457,7 +463,7 @@ CONTENIDO
     width: 50%;
     height: 100%;
     display: flex;
-    background-color: #ff747b;
+    background-color: rgb(249, 132, 123);
 }
 
 .container .modalidadesContainer .programacion .bloque .botonInfo{
@@ -465,8 +471,8 @@ CONTENIDO
     width: 20%;
     height: 10%;
     position: relative;
-    top: 65%;
-    left: 10%;
+    top: 50%;
+    left: 2%;
     border-radius: 12px;
     display: flex;
     background-color: rgb(255, 253, 253);
@@ -487,6 +493,64 @@ CONTENIDO
     padding-left: 0;
     display: flex;
     background-color: hwb(219 44% 0%);
+}
+
+.container .modalidadesContainer .informatica .bloque{
+    border: solid 5px;
+    border-color: black;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-color: rgb(100, 114, 176); 
+}
+/*Así una imagen sola, igual para las tuercas vas a tener que hacerle una clase a cada una, hace la de la compu*/
+/*La de las tuercas la hago yo cuaalquier cosa,, porq tenes q tener un div que contenga ambas y despues posicionar ese div
+y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
+.container .modalidadesContainer .programacion .bloque img{
+    position: relative;
+    left: 50%;
+}
+.container .textGaleria{
+    width: 97%;
+    height: 35vh;
+    margin-left: 2%;
+    margin-top: 0;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+/*===================================================
+/*GALERIA MINI*/
+/*===================================================*/
+.container .galeriaContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.container .galeriaContainer .galeria{
+    width: 60vw;
+    height: 50vh;
+    padding: 0px;
+    display: flex;
+    overflow: hidden;
+    
+    /*Color de la transición*/
+    background-color: rgb(10, 10, 10); 
+}
+.container .galeriaContainer .galeria .sliderImage {
+    width: 60vw;
+    height: 50vh;
+    filter: blur(4px) brightness(30%);
+}
+
+/* Control de la animación */
+.container .galeriaContainer .galeria .fade {
+    -webkit-animation-name: fade-image;
+    -webkit-animation-duration: 2.0s;
+    animation-name: fade-image;
+    animation-duration: 2.0s;
 }
 
 /*===================================================
@@ -511,9 +575,22 @@ RESPONSIVE
     }
 }
 @media (max-width: 970px){
+    body{
+        padding-left: 0;
+    }
     .container .sidebar{
-        width: 0;
-        visibility: 0;
+        display: none;
+    }
+    .container .sliders .logoContainer {
+        right: 0vw;
+        left: 1vh; 
+    }
+    .container .sliders .logoContainer .logo{
+        width: 14vw;
+        height: 21vh;
+        position: relative;
+        bottom: 7vh;
+        right: 1vw;
     }
     .container .sliders .arrow{ 
         left: 45vw;
@@ -525,6 +602,17 @@ RESPONSIVE
         width: 11vw;
         height: 18vh;
     }
+    .textModalidades{
+        width: 100%;
+        height: 33vh;
+        margin: 0;
+    }
+    .texto{
+        font-size: 5vh;
+    }
+    .textoMasGrande{
+        font-size: 7vh
+    }
 }
 @media (max-width:568px) {
     .container .sliders{
@@ -532,15 +620,17 @@ RESPONSIVE
         height: 98vh;
         padding: 0px;
         margin: 0px;
-
         margin-left: 0px;
-        
-    
     }
     .container .sliders .sliderImage {
         width: 110vw;
         height: 100vh;
-    
+    }
+    .texto{
+        font-size: 3vh;
+    }
+    .textoMasGrande{
+        font-size: 5vh
     }
 }
 /*===================================================

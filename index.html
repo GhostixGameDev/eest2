@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EEST2</title>
+    <title>EEST 2</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/scripts.js"></script>
+    <link rel="shortcut icon" href="assets/logos/logo.png">
 </head>
 <body>
-    in development
+    <div class="container">
+        <!----SLIDER-!--->
+        <div class="sliders">
+            <div id="slideimg1" class="fade">
+                <img src="assets/slider/1.jpg" class="sliderImage"/>
+            </div>
+
+            <div id="slideimg2" class="fade">
+                <img src="assets/slider/2.jpeg" class="sliderImage"/>
+            </div>
+
+            <div id="slideimg3" class="fade">
+                <img src="assets/slider/3.jpeg" class="sliderImage"/>
+            </div>
+
+            <div id="slideimg4" class="fade">
+                <img src="assets/slider/4.jpg" class="sliderImage"/>
+            </div>
+            <div class="logoContainer">
+                <div class="logo">
+                    <img src="assets/logos/white.png" alt="Logo">
+                </div>
+                <div class="text">
+                    Escuela educación</br>
+                    Secundaria Técnica N°2</br>
+                </div>
+            </div>
+            <div class="arrow">
+                <a href="#modalidadesZone"><img src="./assets/images/DoubleArrow.png"></a>
+                
+            </div>
+        </div>
+        <!----BARRA DE NAVEGACIÓN!---->
+        <div class="sidebar">
+            <div class="sidebarLogo">
+                <a href="">
+                    <img src="assets/logos/logo.png" alt="Logo institucional.">
+                </a>
+            </div>
+            <div class="sidebarMenu">
+                <button onclick="extendMenu()">
+                    <img src="assets/images/BotonMenu.png">
+                    <p>MENU</p>
+                </button>
+            </div>
+            <div class="options">
+                <div class="modalidadesDesplegable">
+                    <div class="modalidadesButton">
+                        <button onclick="extendModalidades()">Tecnicaturas <img src="./assets/images/arrow.png"></button>
+                    </div>
+                    <div class="modalidades">
+                        <a>Programación</a>
+                        <a>Informatica</a>
+                    </div>
+                </div>
+                <a class="ubicacion">Ubicación</a>
+                <a class="galeria">Galería</a>
+                <a class="historia">Historia institucional</a>
+            </div>
+        </div>
+        <!----CONTENIDO!---->
+        <!----MODALIDADES!---->
+        <div class="textModalidades">
+            <span id="modalidadesZone" style="font-family: Roboto; font-weight: 500;color: rgba(5, 5, 5, 0.9);" class="texto">
+                CICLO SUPERIOR</br></span>
+            <span style="font-family: Roboto; font-weight: 800; color: rgba(114, 17, 17, 0.9)" class="textoMasGrande">
+                TECNICATURAS</span>
+        </div>
+        <div class="modalidadesContainer">
+            <div class="programacion">
+                <div class="imagen"></div>
+                <div class="bloque">
+                    <img src="assets/images/Computer.png">
+                    <div class="botonInfo">
+                        <button>Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="informatica">
+                <div class="bloque">
+                    <img src="assets/images/Tuerca.png">
+                    <img src="assets/images/Tuerca.png">
+                    <div class="botonInfo">
+                        <button>Más información</button>
+                    </div>
+                </div>
+                <div class="imagen"></div>
+            </div>
+        </div>
+        <!--Galeria-->
+        <div class="textGaleria">
+            <span id="galeriaZone" style="font-family: Roboto; font-weight: 500;color: rgba(5, 5, 5, 0.9);" class="texto">
+                GALERIA</br></span>
+        </div>
+        <!----SLIDER-!--->
+        <div class="galeriaContainer">
+            <div class="galeria">
+                <div id="slideimg1" class="fade">
+                    <img src="https://picsum.photos/id/684/600/400" alt="" class="sliderImage">
+                </div>
+    
+                <div id="slideimg2" class="fade">
+                    <img src="https://picsum.photos/id/1025/600/400" alt="" class="sliderImage">
+                </div>
+    
+                <div id="slideimg3" class="fade">
+                    <img src="https://picsum.photos/id/1020/600/400" alt="" class="sliderImage">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
