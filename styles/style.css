@@ -14,7 +14,7 @@ html{
     width: 100vw;
     height: 100vh;
     scroll-behavior: smooth;
-}
+} 
 body{
     margin: 0px;
     padding: 0px;
@@ -60,14 +60,16 @@ SLIDER
     display: flex;
     width: 100vw;
     height: 100vh;
+    right: 0.5vh;
+    left: 1vh;
     /*background: rgba(0, 0, 0, 0.7);*/
 }
 .container .sliders .logoContainer .logo{
     width: 14vw;
     height: 21vh;
-    position: relative;
+    /* position: relative;
     bottom: 7vh;
-    right: 1vw
+    right: 1vw */
 }
 .container .sliders .logoContainer .logo img{
     width: 100;
@@ -80,9 +82,9 @@ SLIDER
     text-align: left;
     align-self: center;
     font-size: 6vh;
-    position: relative;
+    /* position: relative;
     right: 4vw;
-    bottom: 7vh
+    bottom: 7vh */
 }
 .container .sliders .arrow{
     width: 15%;
@@ -455,12 +457,12 @@ CONTENIDO
     width: 50%;
     height: 100%;
     display: flex;
-    background-color: rgb(252, 93, 81);
+    background-color: #ff747b;
 }
 
 .container .modalidadesContainer .programacion .bloque .botonInfo{
     border: none;
-    width: 25%;
+    width: 20%;
     height: 10%;
     position: relative;
     top: 65%;
@@ -490,9 +492,56 @@ CONTENIDO
 /*===================================================
 RESPONSIVE
 =====================================================*/
+@media (max-width: 1200px){
+    .container .sliders .logoContainer {
+        position: absolute;
+        align-self: center;
+        justify-self: center;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        /* right: 0.5vh;
+        left: 1vh; */
+        /*background: rgba(0, 0, 0, 0.7);*/
+    }
+}
+@media (max-width: 970px){
+    .container .sidebar{
+        width: 0;
+        visibility: 0;
+    }
+    .container .sliders .arrow{ 
+        left: 45vw;
+    }
+    .container .sliders .logoContainer .text{
+        font-size: 4vh;
+    }
+    .container .sliders .logoContainer .logo{
+        width: 11vw;
+        height: 18vh;
+    }
+}
+@media (max-width:568px) {
+    .container .sliders{
+        width: 110vw;
+        height: 98vh;
+        padding: 0px;
+        margin: 0px;
 
-@media (min-width:400px) {
+        margin-left: 0px;
+        
     
+    }
+    .container .sliders .sliderImage {
+        width: 110vw;
+        height: 100vh;
+    
+    }
 }
 /*===================================================
 ANIMACIONES
@@ -508,7 +557,6 @@ ANIMACIONES
         opacity: 1;
     }
 }
- 
 @keyframes fade-image {
     from {
         opacity: 0.4;
