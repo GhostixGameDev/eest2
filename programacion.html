@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +9,21 @@
     <script src="scripts/scripts.js"></script>
     <link rel="shortcut icon" href="assets/logos/logo.png">
 </head>
+
 <body>
     <div class="container">
         <!----SLIDER-!--->
         <div class="sliders">
-            <div id="slideimg1" class="fade">
-                <img src="eest2/assets/images/programacion fondo.jpg" alt="">
-            </div>
 
             <div class="logoContainer">
-                
+                <img src="EEST2/assets/images/programacion" alt=""> <!--Acomdar que la img no se ve-->
                 <div class="text">
                     Tecnicatura en</br>
                     <h1>Programación</h1>
                 </div>
             </div>
             <div class="arrow">
-                <a href="#modalidadesZone"><img src="./assets/images/DoubleArrow.png"></a>
-                
+                <a href="#programacionINICIOOO"><img src="./assets/images/DoubleArrow.png"></a>
             </div>
         </div>
         <!----BARRA DE NAVEGACIÓN!---->
@@ -44,7 +42,8 @@
             <div class="options">
                 <div class="modalidadesDesplegable">
                     <div class="modalidadesButton">
-                        <button onclick="extendModalidades()">Tecnicaturas <img src="./assets/images/arrow.png"></button>
+                        <button onclick="extendModalidades()">Tecnicaturas <img
+                                src="./assets/images/arrow.png"></button>
                     </div>
                     <div class="modalidades">
                         <a>Programación</a>
@@ -56,32 +55,57 @@
                 <a class="historia">Historia institucional</a>
             </div>
         </div>
-        <!----CONTENIDO!---->
-        <!----MODALIDADES!---->
-        <div class="textModalidades">
-            <span id="modalidadesZone" style="font-family: Roboto; font-weight: 500;font-size: 7vh;color: rgba(5, 5, 5, 0.9);">
-                 Tecnicatura en Programación</br></span>
-            <span style="font-family: Roboto; font-weight: 800; font-size: 9vh; color: rgba(114, 17, 17, 0.9)">
-                TECNICATURAS</span>
-        </div>
-        <div class="modalidadesContainer">
-            <div class="programacion">
-                <div class="imagen"></div>
-                <div class="bloque">
-                    <div class="botonInfo">
-                        <button>Más información</button>
-                    </div>
-                </div>
+        <!----INFORMACION DE LA MODALIDAD---->
+        <div id="programacionINICIOOO" class="ProgramacionEspacioTEXTOOO">
+            <p class="ProgramacionTITULOSSS">Tecnicatura en Programación</p>
+            <div class="ProgramacionTEXTOOO">
+                <p>La Tecnicatura en Programación les permitirá entender el lenguaje de la programación que
+                    utilizan los softwares (programas informáticos que hacen posible la ejecución de tareas específicas
+                    dentro de un computador) y hacerlos prácticos y útiles para el desarrollo cotidiano de
+                    las tareas de las organizaciones.
+                </p>
+                <p>Actualmente estamos viviendo en la era de la tegnologia y todo lo que tega que ver con computacion
+                    tiene
+                    muy buenas salidas laborales.</p>
+                <p>Aqui, en pogramación aprenderan lo esencial desde cero, enseñanzas qué les permitiran la elaboración
+                    de aplicaciones, páginas web, videojuegos
+                    y programas de computadora que proporcionan soluciones específicas, entre otras acciones.
+                </p>
             </div>
-            <div class="informatica">
-                <div class="imagen"></div>
-                <div class="bloque">
-                    <div class="botonInfo">
-                        <button></button>
-                    </div>
+
+            <p class="ProgramacionTITULOSSS">Horarios </p>
+
+            <div class="ProgramacionTEXTOOO">
+                <p>La Tecnicatura en Programación actualmente se encuentra en horario de la tarde, con una jornada de
+                    7hs diarias, en un promedio de 11am (horario de entrada más temprano posible) a 19.55pm (horario de
+                    salida más tarde posible).
+                </p>
+
+                <p>Aclaracion; estos horarios no cuentan la experiencia de 7°mo el cual es algo distinto y adicional;</p>
+                <div class="arrow">
+                    <a href="#programacionINICIOOO">
+                        <p>para más informacion de esto en especifico presione aqui.</p>
+                    </a>
                 </div>
+
+                <p class="ProgramacionTITULOSSS">Años y Materias </p>
+                <div class="ProgramacionTEXTOOO">
+                    <p>A partir de 4°to año, inclusive, los alumnos deberan de elegir una modalidad para continuar sus estudios,
+                        aqui podran ver las materias que podran tener con sus respectivos años en esta modalidad.
+                    </p>
+                </div>
+                
+                <div class="lineas"></div>
+                <button  class="botonesProgramacion" onclick="extendModalidades()"> 4°to Año</button>
+                <div class="lineas"></div>
+                <button class="botonesProgramacion" onclick="extendModalidades()"> 5°to Año</button>
+                <div class="lineas"></div>
+                <button class="botonesProgramacion" onclick="extendModalidades()"> 6°to Año</button>
+                <div class="lineas"></div>
+                <button class="botonesProgramacion" onclick="extendModalidades()"> 7°mo Año</button>
+                <div class="lineas"></div>
             </div>
         </div>
-    </div>
 </body>
+
 </html>

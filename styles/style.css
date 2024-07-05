@@ -680,3 +680,32 @@ ANIMACIONES
         top: 80vh;
     }
 }
+/*///////////AreaProgramacion//////////////////////*/
+.ProgramacionEspacioTEXTOOO{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.ProgramacionTITULOSSS{
+    font-size: 40px;
+    font-weight: bold;
+}
+.ProgramacionTEXTOOO{
+    font-size: 20px;
+}
+.botonesProgramacion{
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fff;
+    width: 100%;
+    text-align: start;
+}
+.lineas{
+    background-color: #000;
+    height: 1px;
+    margin: 3px;
+}
