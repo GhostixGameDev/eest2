@@ -265,6 +265,7 @@ Menu cerrado
     font-family: "Roboto";
     font-weight: 500;
     color: rgba(255, 255, 255, 0.795);
+    text-decoration: none;
 }
 .container .sidebar .options .modalidadesDesplegable{
     width: 106%;
@@ -311,6 +312,8 @@ Menu cerrado
     border-color: #161616;
     background-color: #141414;
     transition: background-color 0.5s ease-in-out;
+    color: rgba(255, 255, 255, 0.795);
+    text-decoration: none;
 }
 
 /*============================================
@@ -554,6 +557,7 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     animation-duration: 2.0s;
 }
 
+
 /*===================================================
 RESPONSIVE
 =====================================================*/
@@ -679,33 +683,4 @@ ANIMACIONES
     100% {
         top: 80vh;
     }
-}
-/*///////////AreaProgramacion//////////////////////*/
-.ProgramacionEspacioTEXTOOO{
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.ProgramacionTITULOSSS{
-    font-size: 40px;
-    font-weight: bold;
-}
-.ProgramacionTEXTOOO{
-    font-size: 20px;
-}
-.botonesProgramacion{
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 15px 32px;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #fff;
-    width: 100%;
-    text-align: start;
-}
-.lineas{
-    background-color: #000;
-    height: 1px;
-    margin: 3px;
 }
