@@ -58,11 +58,13 @@
         <!----INFORMACION DE LA MODALIDAD---->
         <div class="tecnicatura" id="tecnicatura">
             <section class="summary">
+                <p>__________________________________________________________________________________________</p>
                 <p class="title">Tecnicatura en Informática</p>
                 <div class="text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus eum eveniet sit! Veniam, laudantium odit unde similique necessitatibus aperiam, ad soluta adipisci possimus quae nostrum deleniti, pariatur ipsa minima. Necessitatibus!
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, officiis perferendis totam quae unde ad! Amet reprehenderit pariatur nostrum asperiores? Quod vitae eveniet iusto doloribus adipisci laboriosam porro aliquid quisquam.                
                 </div>
+                <p>__________________________________________________________________________________________</p>
             </section>
             <section class="horarios">
                 <p class="title">Horarios</p>
@@ -77,35 +79,61 @@
                 </div>
             </section>
             <section class="materias">
+                <p>__________________________________________________________________________________________</p>
                 <p class="title">Años y Materias </p>
                 <div class="text">
                     A partir de 4° año, inclusive, los alumnos deberan de elegir una tecnicatura para continuar sus estudios, 
                     a continuación podran ver las materias que podran tener con sus respectivos años en esta tecnicatura.
                 </div>
+                <p>__________________________________________________________________________________________</p>
                 <div class="selectoresDeInformacion">
-                    <div class="informacionAnio" id="expansor4toAnio">
-                        <button class="expansible" onclick="extendDiv('#expansor4toAnio')"> 4° Año</button>
-                        <div class="content">
-                            <!--Aca todo lo que deberia mostrarse al clickear-->
-                        </div>
-                    </div>
-                    <div class="informacionAnio" id="expansor5toAnio">
-                        <button class="expansible" onclick="extendDiv('#expansor5toAnio')"> 5° Año</button>
-                        <div class="content">
-                            <!--Aca todo lo que deberia mostrarse al clickear-->
-                        </div>
-                    </div>
-                    <div class="informacionAnio" id="expansor6toAnio">
-                        <button class="expansible" onclick="extendDiv('#expansor6toAnio')"> 6° Año</button>
-                        <div class="content">
-                            <!--Aca todo lo que deberia mostrarse al clickear-->
-                        </div>
-                    </div>
-                    <div class="informacionAnio" id="expansor7moAnio">
-                        <button class="expansible" onclick="extendDiv('#expansor7moAnio')"> 7° Año</button>
-                        <div class="content">
-                            <!--Aca todo lo que deberia mostrarse al clickear-->
-                        </div>
+                   
+                        <section class="materias">
+                            
+                            <div class="selectoresDeInformacion">
+                                <div class="anio">
+                                    <button class="buttonAnioTecnicatura" onclick="changeContent('prev')">Atras</button>
+                                    <div class="acomodaEnColubna">
+                                        <div class="tituloAniosCSS" id="infoBox1">
+                                            4°to Año
+                                        </div>
+                                        <div class="infoAniosCSS" id="infoBox2">
+                                            4°to Año INFO 4°to Año INFO 4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO
+                                        </div>
+                                    </div>
+                                    <button class="buttonAnioTecnicatura" onclick="changeContent('next')">Adelante</button>
+            
+                                    <script>
+                                        var contents1 = [
+                                            '4°to Año',
+                                            '5°to Año',
+                                            '6°to Año',
+                                            '7°mo Año'
+                                        ];
+                                        var contents2 = [
+                                            '4°to Año INFO 4°to Año INFO 4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO',
+                                            '5°to Año INFO 5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO',
+                                            '6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO',
+                                            '7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO'
+                                        ];
+                                        var currentIndex = 0;
+            
+                                        function changeContent(direction) {
+                                            if (direction === 'prev') {
+                                                currentIndex = (currentIndex - 1 + contents1.length) % contents1.length;
+                                            } else if (direction === 'next') {
+                                                currentIndex = (currentIndex + 1) % contents1.length;
+                                            }
+                                            document.getElementById('infoBox1').innerHTML = contents1[currentIndex];
+                                            document.getElementById('infoBox2').innerHTML = contents2[currentIndex];
+                                            document.getElementById('infoBox1').style.fontSize = "30px"; 
+                                            document.getElementById('infoBox2').style.fontSize = "17px"; 
+                                        }
+                                    </script>
+            
+                                </div>
+                            </div>
+                        </section>
                     </div>
                     <div class="parragraph-with-space ">
                     </div>
