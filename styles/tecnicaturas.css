@@ -91,3 +91,29 @@
     width: 100%;
     text-align: start;
 }
+
+.parragraph-with-space {
+    margin-bottom: 120px; /* Espacio en blanco debajo del párrafo */
+    padding-left: 10px; /* Relleno a la izquierda del párrafo */
+  }
+
+.contenedor-imagenes {
+    display: flex; /* Utilizamos flexbox para alinear las imágenes */
+    margin-left: 8px;
+    width: 210%;
+ }
+
+  .contenedor-imagenes img {
+    width: 40%; /* Tamaño de las imágenes */
+    height: auto; /* Altura ajustada automáticamente */
+  }
+
+  .contenedor-imagenes2 {
+    text-align: center; /* Centra las imágenes horizontalmente */
+  }
+  .contenedor-imagenes2 img {
+    display: block; /* Asegura que cada imagen esté en una línea nueva */
+    
+    max-width: 210%; /* Ajusta el ancho máximo de la imagen al tamaño del contenedor */
+    height: 50%; /* Altura ajustada automáticamente */
+  }
