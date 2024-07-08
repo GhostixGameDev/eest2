@@ -8,7 +8,7 @@
     justify-content: center;
 }
 .container .background .image{
-    filter: brightness(40%);
+    filter: brightness(30%);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -92,6 +92,45 @@
     text-align: start;
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+.anio{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tituloAniosCSS {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.infoAniosCSS {
+    padding: 20px;
+    text-align: center;
+    font-size: 17px; 
+}
+.button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #aaaaaa;
+}
+
+.acomodaEnColubna{
+    display: flex;
+    flex-direction: column;
+}
+.subtituloTecnicatura{
+    height: 60%;
+}
+=======
+>>>>>>> Stashed changes
 .parragraph-with-space {
     margin-bottom: 120px; /* Espacio en blanco debajo del párrafo */
     padding-left: 10px; /* Relleno a la izquierda del párrafo */
@@ -116,4 +155,9 @@
     
     max-width: 210%; /* Ajusta el ancho máximo de la imagen al tamaño del contenedor */
     height: 50%; /* Altura ajustada automáticamente */
+<<<<<<< Updated upstream
   }
+=======
+  }
+>>>>>>> 8345b9dc2a066bb83e7afe5320d3d9b72177de5b
+>>>>>>> Stashed changes
