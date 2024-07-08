@@ -1,7 +1,7 @@
-let slideIndex = 0;
+
 
 //Funcion que maneja carrouseles.
-function showSlides(slidesID, delay) {
+function showSlides(slidesID, delay, slideIndex) {
 	let i;
 	let length = slidesID.length;
 	var slides = new Array(length);
@@ -24,10 +24,29 @@ function showSlides(slidesID, delay) {
 	slides[slideIndex - 1].style.display = "block";
 
 	// Delay para el cambio de imagenes (En ms).
-	setTimeout(function(){
-		showSlides(slidesID, delay)
-	}, delay);
+	if(delay != 0){
+		setTimeout(function(){
+			showSlides(slidesID, delay, slideIndex)
+		}, delay);
+	}else{
+		var rightArrow = document.getElementById("#sliderMoveRight").onclick(function() {
+			slideIndex++;
+			if (slideIndex > length) {
+				slideIndex = 1;
+			}
+		});
+		var leftArrow = document.getElementById("#sliderMoveLeft").onclick(function(){
+			slideIndex--;
+			if (slideIndex < 1) {
+				slideIndex = length;
+			}
+		});
+
+	}
+	
 }
+
+
 
 //Funcion que extiende el menu de la sidebar y demas.
 function extendDiv(objective){
