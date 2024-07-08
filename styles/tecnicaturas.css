@@ -8,13 +8,12 @@
     justify-content: center;
 }
 .container .background .image{
+    filter: brightness(40%);
     width: 100%;
     height: 100%;
     position: absolute;
-    background: url("../assets/images/programacion/background.jpg") no-repeat;
     z-index: -1;
-    background-attachment: scroll;
-    background-size: 110%;
+    
 }
 .container .background .text{
     font-family: "PlayFair";
@@ -29,11 +28,11 @@
     right: 3vw;
 }
 .container .background .text .bigger{
-    font-size: 8vh;
+    font-size: 9vh;
 }
 .container .background .text .bigger .animated{
-    font-family: "Roboto";
-    color:rgba(199, 199, 199, 0.562)
+    font-family: "PlayFair";
+    color:rgb(255, 255, 255)
 }
 .container .background .arrow{
     width: 15%;
