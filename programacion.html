@@ -59,7 +59,11 @@
         <!----INFORMACION DE LA MODALIDAD---->
         <div class="tecnicatura" id="tecnicatura">
             <section class="summary">
+
+                <div class="linea"></div>
                 <p class="title">Tecnicatura en Programación</p>
+                <div class="linea"></div>
+
                 <div class="text">
                     La tecnicatura en Programación les permitirá aprender la logica y funcionamiento interno
                     de los programas informaticos. Dandoles una base solida para seguir su carrera en el desarrollo de
@@ -80,7 +84,11 @@
                 </div>
             </section>
             <section class="horarios">
+                
+                <div class="linea"></div>
                 <p class="title">Horarios</p>
+                <div class="linea"></div>
+
                 <div class="text">
                     La tecnicatura en Programación actualmente se encuentra en horario de la tarde, con una jornada de
                     8hs diarias, en un rango de 11am (Horario de entrada más temprano posible) a 19.55pm (Horario de
@@ -95,13 +103,20 @@
                 </div>
             </section>
             <section class="materias">
+
+                <div class="linea"></div>
                 <p class="title">Años y Materias </p>
+                <div class="linea"></div>
+                
                 <div class="text">
                     A partir de 4° año, inclusive, los alumnos deberan de elegir una tecnicatura para continuar sus
                     estudios,
                     a continuación podran ver las materias que podran tener con sus respectivos años en esta
                     tecnicatura.
                 </div>
+                
+                <div class="linea"></div>
+
                 <div class="selectoresDeInformacion">
                     <div class="anio">
                         <button class="buttonAnioTecnicatura" onclick="changeContent('prev')">Atras</button>
@@ -114,42 +129,43 @@
                             </div>
                         </div>
                         <button class="buttonAnioTecnicatura" onclick="changeContent('next')">Adelante</button>
-
-                        <script>
-                            var contents1 = [
-                                '4°to Año',
-                                '5°to Año',
-                                '6°to Año',
-                                '7°mo Año'
-                            ];
-                            var contents2 = [
-                                '4°to Año INFO 4°to Año INFO 4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO',
-                                '5°to Año INFO 5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO',
-                                '6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO',
-                                '7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO'
-                            ];
-                            var currentIndex = 0;
-
-                            function changeContent(direction) {
-                                if (direction === 'prev') {
-                                    currentIndex = (currentIndex - 1 + contents1.length) % contents1.length;
-                                } else if (direction === 'next') {
-                                    currentIndex = (currentIndex + 1) % contents1.length;
-                                }
-                                document.getElementById('infoBox1').innerHTML = contents1[currentIndex];
-                                document.getElementById('infoBox2').innerHTML = contents2[currentIndex];
-                                document.getElementById('infoBox1').style.fontSize = "30px"; 
-                                document.getElementById('infoBox2').style.fontSize = "17px"; 
-                            }
-                        </script>
-
+                        <!---El codigo de script de esto esta abajo-->
                     </div>
                 </div>
+                
+                <div class="linea"></div>
+                
             </section>
         </div> 
     </div>
     <!--Scripts a ejecutar al cargar la pagina.-->
+    <!--Esto es el scrip de la info de los años de las asignaturas-->
     <script>
+        var contents1 = [
+            '4°to Año',
+            '5°to Año',
+            '6°to Año',
+            '7°mo Año'
+        ];
+        var contents2 = [
+            '4°to Año INFO 4°to Año INFO 4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO',
+            '5°to Año INFO 5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO',
+            '6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO',
+            '7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO'
+        ];
+        var currentIndex = 0;
+
+        function changeContent(direction) {
+            if (direction === 'prev') {
+                currentIndex = (currentIndex - 1 + contents1.length) % contents1.length;
+            } else if (direction === 'next') {
+                currentIndex = (currentIndex + 1) % contents1.length;
+            }
+            document.getElementById('infoBox1').innerHTML = contents1[currentIndex];
+            document.getElementById('infoBox2').innerHTML = contents2[currentIndex];
+            document.getElementById('infoBox1').style.fontSize = "30px"; 
+            document.getElementById('infoBox2').style.fontSize = "17px"; 
+        }
     </script>
 </body>
 
