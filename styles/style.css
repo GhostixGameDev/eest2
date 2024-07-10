@@ -436,6 +436,16 @@ CONTENIDO
     font-size: 9vh
 }
 
+.modalidadesContainer{
+    background-color: rgb(99, 173, 173);
+    height: 4px;
+    margin-left: 26px;
+}
+
+
+
+
+/*
 .container .modalidadesContainer{
     width: 97%;
     height: 105vh;
@@ -444,25 +454,11 @@ CONTENIDO
     margin-left: 2%;
 }
 
-.container .textGaleria{
-    width: 97%;
-    height: 35vh;
-    margin-left: 2%;
-    margin-top: 0;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.897);
-}
-
-
-/*APARTADO PROGRAMACION
-
-/*Así una imagen sola, igual para las tuercas vas a tener que hacerle una clase a cada una, hace la de la compu*/
+Así una imagen sola, igual para las tuercas vas a tener que hacerle una clase a cada una, hace la de la compu*/
 /*La de las tuercas la hago yo cuaalquier cosa,, porq tenes q tener un div que contenga ambas y despues posicionar ese div
 y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
 
+/* SCC QUE ESTABA:
 .container .modalidadesContainer .programacion{
     border: solid 5px;
     border-color: black;
@@ -511,11 +507,6 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     position: relative;
     left: 50%;
 }
-
-
-
-/*APARTADO INFORMATICA*/
-
 .container .modalidadesContainer .informatica{
     border: solid 5px;
     border-color: black;
@@ -541,6 +532,18 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
 .tuerca2{
     height: 180px;
     width: 180px;
+}
+
+.container .textGaleria{
+    width: 97%;
+    height: 35vh;
+    margin-left: 2%;
+    margin-top: 0;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.897);
 }
 
 /*===================================================
