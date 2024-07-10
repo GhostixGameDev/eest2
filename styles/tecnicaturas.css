@@ -26,6 +26,7 @@
     font-size: 6vh;
     position: relative;
     right: 3vw;
+    
 }
 .container .background .text .bigger{
     font-size: 9vh;
@@ -130,7 +131,16 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+.lineaA{
+    background-color: rgb(185, 185, 185);
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 .parragraph-with-space {
     margin-bottom: 120px; /* Espacio en blanco debajo del párrafo */
