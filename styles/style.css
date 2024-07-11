@@ -38,6 +38,8 @@ SLIDER
     margin-left: 2%;
     padding: 0px;
     display:flex;
+    align-self: center;
+    justify-self: center;
     align-items: center;
     justify-content: center;
     /*Color de la transición*/
@@ -412,7 +414,6 @@ CONTENIDO
     align-items: center;
     text-align: center;
     background-color: rgba(199, 199, 199, 0.897);
-    background-color: rgba(199, 199, 199, 0.897);
 }
 .texto{
     font-size: 7vh;
@@ -477,12 +478,10 @@ CONTENIDO
     border: solid 5px;
     border-color: black;
     width: 100%;
+    padding-left: 0;
     height: 50%;
-    padding-left: 0;
-    padding-left: 0;
+    background-color: hwb(219 44% 0%);
     display: flex;
-    background-color: hwb(219 44% 0%);
-    background-color: hwb(219 44% 0%);
 }
 
 .container .modalidadesContainer .informatica .bloque{
