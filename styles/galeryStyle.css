@@ -1,4 +1,32 @@
+.boby{
+    justify-content: center;
+}
 .titulosGalery{
     color: white;
     font-size: 100px;
+}
+.conteinerFondoGalery{
+    display: flex;
+    align-items: center;/*arriba*/
+    justify-content: center;/*costado*/
+    width: 70%;
+    height: 700px;
+    background-color: aqua;
+}
+.conteinerPrincipalGalery{
+    display: flex;
+    align-items: center;/*arriba*/
+    justify-content: center;/*costado*/
+    width: 70%;
+    height: 700px;
+    background-color: rgb(0, 139, 139);
+}
+.recuadro1Galery{
+    width: 20%;
+    height: 40%;
+    background-color: rgb(130, 130, 199);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
