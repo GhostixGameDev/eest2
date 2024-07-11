@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEST 2</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/galeryStyle.css">
+    <script src="scripts/scripts.js"></script>
+    <link rel="shortcut icon" href="assets/logos/logo.png">
+</head>
+<body>
+    <div class="container">
+        <!----SLIDER-!--->
+        <div class="sliders">
+            <div class="fade">
+                <img src="./assets/slider/1.jpg" class="sliderImage"/>
+            </div>
+            <div class="logoContainer">
+                <p class="titulosGalery">Galería</>
+            </div>
+        </div>
+        <div class="arrow">
+            <a href="#modalidadesZone"><img src="./assets/images/icons/DoubleArrow.png"></a>
+            
+        </div>
+        <!----BARRA DE NAVEGACIÓN!---->
+        
+        <div class="sidebar">
+            <div class="sidebarLogo">
+                <a href="index.html">
+                    <img src="./assets/logos/logo.png" alt="Logo institucional.">
+                </a>
+            </div>
+            <div class="sidebarMenu">
+                <button onclick="extendDiv('.sidebar')">
+                    <img src="./assets/images/icons/BotonMenu.png">
+                    <p>MENU</p>
+                </button>
+            </div>
+            <div class="options">
+                <div class="modalidadesDesplegable">
+                    <div class="modalidadesButton">
+                        <button onclick="extendDiv('.modalidadesDesplegable')">Tecnicaturas <img src="./assets/images/icons/arrow.png"></button>
+                    </div>
+                    <div class="modalidades">
+                        <a href="programacion.html">Programación</a>
+                        <a href="informatica.html">Informática</a>
+                    </div>
+                </div>
+                <a href="#ubicacionZone">Ubicación</a>
+                <a href="#galeriaZone">Galería</a>
+                <a href="#historiaZone">Historia institucional</a>
+            </div>
+        </div>
+        <!----CONTENIDO!---->
+        
+    <!--Scripts a ejecutar al cargar la pagina.-->
+    <script>
+        showSlides(["slideimg1", "slideimg2", "slideimg3", "slideimg4"], 6000, 0);
+    </script>
+</body>
+</html>
