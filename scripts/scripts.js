@@ -29,16 +29,17 @@ function showSlides(slidesID, delay, slideIndex) {
 			showSlides(slidesID, delay, slideIndex)
 		}, delay);
 	}else{
+		//Si el delay es de 0 se maneja manualmente mediante flechas.
 		var rightArrow = document.getElementById("#sliderMoveRight").onclick(function() {
 			slideIndex++;
 			if (slideIndex > length) {
-				slideIndex = 1;
+				showSlides(slidesID, delay, 1)
 			}
 		});
 		var leftArrow = document.getElementById("#sliderMoveLeft").onclick(function(){
 			slideIndex--;
 			if (slideIndex < 1) {
-				slideIndex = length;
+				showSlides(slidesID, delay, length)
 			}
 		});
 

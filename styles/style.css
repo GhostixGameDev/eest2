@@ -33,10 +33,13 @@ body{
 SLIDER
 =================================================*/
 .container .sliders{
-    width: 100vw;
-    height: 98vh;
+    width: 97%;
+    height: 100vh;
+    margin-left: 2%;
     padding: 0px;
     display:flex;
+    align-items: center;
+    justify-content: center;
     /*Color de la transición*/
     background-color: rgb(10, 10, 10); 
     
@@ -52,27 +55,19 @@ SLIDER
 /* El logazoooo */
 .container .sliders .logoContainer {
     position: absolute;
-    align-self: center;
-    justify-self: center;
-    justify-items: center;
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    right: 0.5vh;
-    left: 1vh;
-    /*background: rgba(0, 0, 0, 0.7);*/
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
 .container .sliders .logoContainer .logo{
-    width: 14vw;
-    height: 21vh;
-    /* position: relative;
-    bottom: 7vh;
-    right: 1vw */
+    width: 12%;
+    height: 21%;
 }
 .container .sliders .logoContainer .logo img{
-    width: 100;
+    width: 100%;
     height: 100%;
 }
 .container .sliders .logoContainer .text{
@@ -80,24 +75,14 @@ SLIDER
     font-weight: 700;
     color: #f2f2f2;
     text-align: left;
-    align-self: center;
     font-size: 6vh;
-    /* position: relative;
-    right: 4vw;
-    bottom: 7vh */
+    margin-left: 2%;
 }
 .container .sliders .arrow{
     width: 15%;
     height: 15%;
     transition: all 0.5s ease-in-out;
     position: absolute;
-    align-self: center;
-    justify-self: center;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    left: 42vw;
-    top: 80vh;
     animation: alternate-reverse arrow-up-down infinite 1.2s;
     animation-delay: 3s;
     -webkit-animation: alternate-reverse arrow-up-down infinite 1.2s;
@@ -116,8 +101,6 @@ SLIDER
     transition: all 0.5s ease-in-out;
     width: 17%;
     height: 17%;
-    left: 41vw;
-    top: 78vh;
 }
 
 /* Control de la animación */
@@ -331,7 +314,8 @@ Menu abierto
     opacity: 100;
     transition: all ease-in-out 0.5s;
     width: 100%;
-    height: 76%;
+    height: auto;
+    min-height: 76%;
 }
 
 .container .sidebar.active .options .modalidadesDesplegable .modalidadesButton{
@@ -427,7 +411,7 @@ CONTENIDO
     align-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(245, 237, 237, 0.897);
+    background-color: rgba(199, 199, 199, 0.897);
 }
 .texto{
     font-size: 7vh;
@@ -436,16 +420,6 @@ CONTENIDO
     font-size: 9vh
 }
 
-.modalidadesContainer{
-    background-color: rgb(99, 173, 173);
-    height: 4px;
-    margin-left: 26px;
-}
-
-
-
-
-/*
 .container .modalidadesContainer{
     width: 97%;
     height: 105vh;
@@ -453,12 +427,6 @@ CONTENIDO
     flex-direction: column;
     margin-left: 2%;
 }
-
-Así una imagen sola, igual para las tuercas vas a tener que hacerle una clase a cada una, hace la de la compu*/
-/*La de las tuercas la hago yo cuaalquier cosa,, porq tenes q tener un div que contenga ambas y despues posicionar ese div
-y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
-
-/* SCC QUE ESTABA:
 .container .modalidadesContainer .programacion{
     border: solid 5px;
     border-color: black;
@@ -503,17 +471,15 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     width: 100%;
     height: 100%;
 }
-.container .modalidadesContainer .programacion .bloque img{
-    position: relative;
-    left: 50%;
-}
+
 .container .modalidadesContainer .informatica{
     border: solid 5px;
     border-color: black;
     width: 100%;
     height: 50%;
+    padding-left: 0;
     display: flex;
-    background-color: rgb(255, 129, 129);
+    background-color: hwb(219 44% 0%);
 }
 
 .container .modalidadesContainer .informatica .bloque{
@@ -522,18 +488,16 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     width: 50%;
     height: 100%;
     display: flex;
-    background-color: rgb(249, 132, 123);
+    background-color: rgb(100, 114, 176); 
 }
 
-.tuerca1{
-    height: 220px;
-    width: 220px;
+/*Así una imagen sola, igual para las tuercas vas a tener que hacerle una clase a cada una, hace la de la compu*/
+/*La de las tuercas la hago yo cuaalquier cosa,, porq tenes q tener un div que contenga ambas y despues posicionar ese div
+y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
+.container .modalidadesContainer .programacion .bloque img{
+    position: relative;
+    left: 50%;
 }
-.tuerca2{
-    height: 180px;
-    width: 180px;
-}
-
 .container .textGaleria{
     width: 97%;
     height: 35vh;
@@ -545,7 +509,6 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     text-align: center;
     background-color: rgba(255, 255, 255, 0.897);
 }
-
 /*===================================================
 /*GALERIA MINI*/
 /*===================================================*/
