@@ -59,6 +59,7 @@
         <!----INFORMACION DE LA MODALIDAD---->
         <div class="tecnicatura" id="tecnicatura">
             <section class="summary">
+                
                 <div class="barraDeNavegacionTecnicatura">
                     <a href="#TecnicaturaEnProgramacion"><button class="barraDeNavegacionTecnicaturaBOTONES"> Tecnicatura en Programación</button></a>
                     <a href="#Horarios"><button class="barraDeNavegacionTecnicaturaBOTONES"> Horarios </button></a>
@@ -86,9 +87,9 @@
                     lanzarse al
                     mundo laboral, ademas de tener la experiencia laboral de las practicas profesionalizantes hechas
                     durante septimo año.
-
                 </div>
             </section>
+            
             <section class="horarios" id="Horarios">
                 
                 <div class="linea"></div>
@@ -108,12 +109,13 @@
                     </div>
                 </div>
             </section>
+
             <section class="materias" id="AniosyMaterias">
 
                 <div class="linea"></div>
                 <p class="title">Años y Materias </p>
                 <div class="lineaA"></div>
-                
+
                 <div class="text">
                     A partir de 4° año, inclusive, los alumnos deberan de elegir una tecnicatura para continuar sus
                     estudios,
@@ -133,23 +135,26 @@
                             <div class="infoAniosCSS" id="infoBox2">
                                 4°to Año INFO 4°to Año INFO 4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO
                             </div>
+                            <!--La info de esta parte esta en el apartado de script abajo de todo-->
                         </div>
                         <button class="buttonAnioTecnicatura" onclick="changeContent('next')">Adelante</button>
                         <!---El codigo de script de esto esta abajo-->
                     </div>
-                </div>
-                
-                <div class="proyectos" id="Proyectos">
+
                     <div class="linea"></div>
                     <p class="title">Proyectos </p>
-                    <div class="lineaA"></div>
+                    <div class="linea"></div>
+                    <div class="text">
+                        Aqui podran observar distintos proyectos creados por los distintos alumnos de este area, Programación.
+                    </div>
                 </div>
-
             </section>
         </div> 
     </div>
+
     <!--Scripts a ejecutar al cargar la pagina.-->
     <!--Esto es el scrip de la info de los años de las asignaturas-->
+
     <script>
         var contents1 = [
             '4°to Año',
@@ -174,6 +179,7 @@
             document.getElementById('infoBox1').innerHTML = contents1[currentIndex];
             document.getElementById('infoBox2').innerHTML = contents2[currentIndex];
             document.getElementById('infoBox1').style.fontSize = "30px"; 
+            document.getElementById('infoBox1').style.fontSize = "35px"; 
             document.getElementById('infoBox2').style.fontSize = "17px"; 
         }
     </script>
