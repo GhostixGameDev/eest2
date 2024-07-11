@@ -159,7 +159,6 @@ SIDEBAR
     margin-left: -3%;
     justify-content: flex-start;
     transition: all ease-in-out 0.5s;
-    
 }
 .container .sidebar .sidebarLogo:hover{
     width: 90%;
@@ -195,8 +194,6 @@ SIDEBAR
     margin-left: 3%;
     align-items: center;
     transition: ease-in-out 0.5s;
-
-    
 }
 
 .container .sidebar.active .sidebarMenu{
@@ -252,6 +249,7 @@ Menu cerrado
     font-weight: 500;
     color: rgba(255, 255, 255, 0.795);
     text-decoration: none;
+    background-color: aqua;
 }
 .container .sidebar .options .modalidadesDesplegable{
     width: 106%;

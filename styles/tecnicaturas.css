@@ -104,6 +104,28 @@ body{
     padding-left: 13%;
     padding-right: 14%;
 }
+.OpcionesTecnicaturasBARRA{
+}
+.butonOpcionesTecnicaturas{
+    height: 80%;
+    width: 100%;
+    color: white;
+    border: none;
+    background-color: #141414;
+    margin-top: 2px;
+    margin-left: 2px;
+    font-size: 100%;
+}
+.butonOpcionesTecnicaturas:hover{
+    height: 80%;
+    width: 100%;
+    color: white;
+    border: none;
+    background-color: #ff0000;
+    margin-top: 2px;
+    margin-left: 2px;
+    font-size: 100%;
+}
 /*================================================================================================
 */
 /* Contenido  */
