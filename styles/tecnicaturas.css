@@ -131,6 +131,10 @@
     height: auto;
     background-color: #333;
     box-sizing: border-box;
+    -webkit-animation-name: moveToLeft;
+    -webkit-animation-duration: 2.0s;
+    animation-name: moveToLeft;
+    animation-duration: 2.0s;
 }
 
 .container .tecnicatura .selectoresDeInformacion .anio .tituloAnio {
@@ -184,4 +188,22 @@
 }
 
 /*================================================================================================
-*/
+* ANIMACIONES
+/*================================================================================================*/
+/* Webkit para Safari y navegadores de celular */
+@-webkit-keyframes moveToLeft {
+    from {
+        right: 0;
+    }
+    to {
+        right: 100%;
+    }
+}
+@keyframes moveToLeft {
+    from {
+        right: 0;
+    }
+    to {
+        right: 100%;
+    }
+}
