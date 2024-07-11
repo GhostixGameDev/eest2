@@ -28,23 +28,22 @@ function showSlides(slidesID, delay, slideIndex) {
 		setTimeout(function(){
 			showSlides(slidesID, delay, slideIndex)
 		}, delay);
-	}else{
-		//Si el delay es de 0 se maneja manualmente mediante flechas.
-		var rightArrow = document.getElementById("#sliderMoveRight").onclick(function() {
-			slideIndex++;
-			if (slideIndex > length) {
-				showSlides(slidesID, delay, 1)
-			}
-		});
-		var leftArrow = document.getElementById("#sliderMoveLeft").onclick(function(){
-			slideIndex--;
-			if (slideIndex < 1) {
-				showSlides(slidesID, delay, length)
-			}
-		});
-
 	}
+	//Si el delay es de 0 se maneja manualmente mediante flechas.
+	var rightArrow = document.getElementById("sliderMoveRight");
+	var leftArrow = document.getElementById("sliderMoveLeft");
 	
+	rightArrow.onclick = (function() {
+		showSlides(slidesID, delay, slideIndex);
+	});
+	leftArrow.onclick = function(){
+		if(slideIndex != 1){
+			showSlides(slidesID, delay, slideIndex-2);
+		}else{
+			showSlides(slidesID, delay, length-1);
+		}
+	};
+
 }
 
 

@@ -62,11 +62,6 @@
                 <a href="#horarios">Años y Materias</a>
                 <a href="#horarios">Proyectos</a>
             </div>
-
-            <a href="#TecnicaturaEnProgramacion"><button > Tecnicatura en Programación</button></a>
-            <a href="#Horarios"><button > Horarios </button></a>
-            <a href="#AniosyMaterias"><button > Años y Materias </button></a>
-            <a href="#Proyectos"><button > Proyectos</button></a>
             
         </div>
 
@@ -134,62 +129,40 @@
                 <div class="lineaA"></div>
 
                 <div class="selectoresDeInformacion">
-                    <div class="anio">
-                        <button class="buttonAnioTecnicatura" onclick="changeContent('prev')">Atras</button>
-                        <div class="acomodaEnColubna">
-                            <div class="tituloAniosCSS" id="infoBox1">
-                                4°to Año
-                            </div>
-                            <div class="infoAniosCSS" id="infoBox2">
-                                4°to Año INFO 4°to Año INFO 4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO
-                            </div>
-                            <!--La info de esta parte esta en el apartado de script abajo de todo-->
+                    <button class="buttonAnioTecnicatura" id="sliderMoveLeft">Atras</button>
+                    <div class="selectorAnios">
+                        <div class="anio" id="4">
+                            <div class="tituloAnio">4to Anio</div>
+                            <div class="contenidoAnio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, ea quae atque aperiam molestiae dignissimos commodi vitae quas, quos quasi optio minus error soluta impedit! Iusto accusantium debitis cum deserunt!</div>
                         </div>
-                        <button class="buttonAnioTecnicatura" onclick="changeContent('next')">Adelante</button>
-                        <!---El codigo de script de esto esta abajo-->
+                        <div class="anio" id="5">
+                            <div class="tituloAnio">5to anio</div>
+                            <div class="contenidoAnio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit optio totam, aut aspernatur eligendi repellat perferendis ipsum quae recusandae! Quasi iure modi illo dignissimos, deleniti enim! Eum nisi modi laboriosam?</div>
+                        </div>
+                        <div class="anio" id="6">
+                            <div class="tituloAnio">6to anio</div>
+                            <div class="contenidoAnio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit optio totam, aut aspernatur eligendi repellat perferendis ipsum quae recusandae! Quasi iure modi illo dignissimos, deleniti enim! Eum nisi modi laboriosam?</div>
+                        </div>
+                        <div class="anio" id="7">
+                            <div class="tituloAnio">7mo anio</div>
+                            <div class="contenidoAnio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit optio totam, aut aspernatur eligendi repellat perferendis ipsum quae recusandae! Quasi iure modi illo dignissimos, deleniti enim! Eum nisi modi laboriosam?</div>
+                        </div>
                     </div>
+                    <button class="buttonAnioTecnicatura" id="sliderMoveRight">Adelante</button>
+                </div>
 
-                    <div class="linea"></div>
-                    <p class="title">Proyectos </p>
-                    <div class="linea"></div>
-                    <div class="text">
-                        Aqui podran observar distintos proyectos creados por los distintos alumnos de este area, Programación.
-                    </div>
+                <div class="linea"></div>
+                <p class="title">Proyectos </p>
+                <div class="linea"></div>
+                <div class="text">
+                    Aqui podran observar distintos proyectos creados por los distintos alumnos de este area, Programación.
                 </div>
             </section>
         </div> 
     </div>
-
     <!--Scripts a ejecutar al cargar la pagina.-->
-    <!--Esto es el scrip de la info de los años de las asignaturas-->
-
     <script>
-        var contents1 = [
-            '4°to Año',
-            '5°to Año',
-            '6°to Año',
-            '7°mo Año'
-        ];
-        var contents2 = [
-            '4°to Año INFO 4°to Año INFO 4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO',
-            '5°to Año INFO 5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO',
-            '6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO',
-            '7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO'
-        ];
-        var currentIndex = 0;
-
-        function changeContent(direction) {
-            if (direction === 'prev') {
-                currentIndex = (currentIndex - 1 + contents1.length) % contents1.length;
-            } else if (direction === 'next') {
-                currentIndex = (currentIndex + 1) % contents1.length;
-            }
-            document.getElementById('infoBox1').innerHTML = contents1[currentIndex];
-            document.getElementById('infoBox2').innerHTML = contents2[currentIndex];
-            document.getElementById('infoBox1').style.fontSize = "30px"; 
-            document.getElementById('infoBox1').style.fontSize = "35px"; 
-            document.getElementById('infoBox2').style.fontSize = "17px"; 
-        }
+        showSlides(["4","5","6","7"], 0, 0);
     </script>
 </body>
 
