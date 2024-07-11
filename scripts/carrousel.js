@@ -16,6 +16,7 @@ class Carrousel {
         if(arrows !== null){
             this.#hasArrows = true;
             let howManyArrows = arrows.length;
+            this.#arrows = new Array(howManyArrows);
             for(let i=0; i < howManyArrows; i++) {
                 this.#arrows[i] = document.getElementById(arrows[i]);
             }
@@ -74,27 +75,26 @@ class Carrousel {
     }
 
     loop = (delay, fade) => {
-        if(fade){
-            this.animate("fade")
-        }else{
-            this.animate("move")
-        }
+        this.animate(fade);
         if (this.getHasArrows()) {
             this.getArrow(0).onclick = () => {
-                this.setSlideIndex(this.getSlideIndex() + 1);
                 this.restartIfFinalIndex();
+                this.animate(fade);
             };
 
             this.getArrow(1).onclick = () => {
-                this.setSlideIndex(this.getSlideIndex() - 1);
+                this.setSlideIndex(this.getSlideIndex() - 2);
                 if (this.getSlideIndex() < 0) {
                     this.setSlideIndex(this.getLength() - 1);
                 }
+                this.animate(fade);
             };
         }
-        setTimeout(() => {
-            this.loop(delay, fade);
-        }, delay);
+        if(delay != 0){
+            setTimeout(() => {
+                this.loop(delay, fade);
+            }, delay);
+        }
     }
 
 }
