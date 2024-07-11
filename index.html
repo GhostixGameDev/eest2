@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EEST 2</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/scripts.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/carrousel.js"></script>
+    <script src="./scripts/util.js"></script>
     <link rel="shortcut icon" href="assets/logos/logo.png">
 </head>
 <body>
@@ -122,7 +123,10 @@
 
     <!--Scripts a ejecutar al cargar la pagina.-->
     <script>
-        showSlides(["slideimg1", "slideimg2", "slideimg3", "slideimg4"], 6000, 0);
+        document.addEventListener("DOMContentLoaded", () => {
+            const landingSlider = new Carrousel(["slideimg1", "slideimg2", "slideimg3", "slideimg4"], 0, null);
+            landingSlider.loop(6000, true);
+        })
     </script>
 </body>
 </html>
