@@ -436,6 +436,12 @@ CONTENIDO
     font-size: 9vh
 }
 
+.modalidadesContainer{
+    background-color: rgb(99, 173, 173);
+    height: 4px;
+    margin-left: 26px;
+}
+
 .container .modalidadesContainer{
     width: 97%;
     height: 105vh;
@@ -443,6 +449,11 @@ CONTENIDO
     flex-direction: column;
     margin-left: 2%;
 }
+
+Así una imagen sola, igual para las tuercas vas a tener que hacerle una clase a cada una, hace la de la compu*/
+/*La de las tuercas la hago yo cuaalquier cosa,, porq tenes q tener un div que contenga ambas y despues posicionar ese div
+y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
+
 .container .modalidadesContainer .programacion{
     border: solid 5px;
     border-color: black;
@@ -488,6 +499,10 @@ CONTENIDO
     height: 100%;
 }
 
+.container .modalidadesContainer .programacion .bloque img{
+    position: relative;
+    left: 50%;
+}
 .container .modalidadesContainer .informatica{
     border: solid 5px;
     border-color: black;
@@ -525,6 +540,20 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     text-align: center;
     background-color: rgba(255, 255, 255, 0.897);
 }
+/*HEAT*/
+
+.container .textGaleria{
+    width: 97%;
+    height: 35vh;
+    margin-left: 2%;
+    margin-top: 0;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
 /*===================================================
 /*GALERIA MINI*/
 /*===================================================*/
