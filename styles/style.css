@@ -427,7 +427,7 @@ CONTENIDO
     align-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(245, 237, 237, 0.897);
+    background-color: rgba(199, 199, 199, 0.897);
 }
 .texto{
     font-size: 7vh;
@@ -436,16 +436,6 @@ CONTENIDO
     font-size: 9vh
 }
 
-.modalidadesContainer{
-    background-color: rgb(99, 173, 173);
-    height: 4px;
-    margin-left: 26px;
-}
-
-
-
-
-/*
 .container .modalidadesContainer{
     width: 97%;
     height: 105vh;
@@ -453,12 +443,6 @@ CONTENIDO
     flex-direction: column;
     margin-left: 2%;
 }
-
-Así una imagen sola, igual para las tuercas vas a tener que hacerle una clase a cada una, hace la de la compu*/
-/*La de las tuercas la hago yo cuaalquier cosa,, porq tenes q tener un div que contenga ambas y despues posicionar ese div
-y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
-
-/* SCC QUE ESTABA:
 .container .modalidadesContainer .programacion{
     border: solid 5px;
     border-color: black;
@@ -503,17 +487,15 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     width: 100%;
     height: 100%;
 }
-.container .modalidadesContainer .programacion .bloque img{
-    position: relative;
-    left: 50%;
-}
+
 .container .modalidadesContainer .informatica{
     border: solid 5px;
     border-color: black;
     width: 100%;
     height: 50%;
+    padding-left: 0;
     display: flex;
-    background-color: rgb(255, 129, 129);
+    background-color: hwb(219 44% 0%);
 }
 
 .container .modalidadesContainer .informatica .bloque{
@@ -522,18 +504,16 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     width: 50%;
     height: 100%;
     display: flex;
-    background-color: rgb(249, 132, 123);
+    background-color: rgb(100, 114, 176); 
 }
 
-.tuerca1{
-    height: 220px;
-    width: 220px;
+/*Así una imagen sola, igual para las tuercas vas a tener que hacerle una clase a cada una, hace la de la compu*/
+/*La de las tuercas la hago yo cuaalquier cosa,, porq tenes q tener un div que contenga ambas y despues posicionar ese div
+y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
+.container .modalidadesContainer .programacion .bloque img{
+    position: relative;
+    left: 50%;
 }
-.tuerca2{
-    height: 180px;
-    width: 180px;
-}
-
 .container .textGaleria{
     width: 97%;
     height: 35vh;
@@ -545,7 +525,6 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     text-align: center;
     background-color: rgba(255, 255, 255, 0.897);
 }
-
 /*===================================================
 /*GALERIA MINI*/
 /*===================================================*/
