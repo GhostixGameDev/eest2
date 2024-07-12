@@ -28,7 +28,7 @@
 .container .background .text{
     font-family: "PlayFair";
     font-weight: 700;
-    color: #f2f2f2;
+    color: #000000;
     text-align: left;
     align-self: center;
     display: flex;
@@ -36,6 +36,9 @@
     font-size: 6vh;
     position: relative;
     right: 3vw;
+}
+.bigger{
+    color: white;
 }
 .container .background .text .bigger{
     font-size: 9vh;
@@ -78,9 +81,9 @@
     top: 78vh;
 }
 .fondo1tecnicaturas{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     height: 100%;
-    width: 100%;
+    width: 90%;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 8%;
@@ -88,14 +91,28 @@
     margin-top: 20px;
 }
 .fondo2tecnicaturas{
-    background-color: aqua;
-    height: 100%;
-    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 90%;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 8%;
     padding-right: 8%;
     margin-top: 5px;
+    justify-content:start;
+}
+.fondoTransparentetecnicaturas{
+    height: 100%;
+    width: 90%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 5px;
+    fill-opacity: 0%;
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .butonOpcionesTecnicaturas{
@@ -166,15 +183,27 @@
 /*Slider de años*/
 /*================================================================================================
 */
+.Materias{
+    display: flex;
+    flex-direction: row;
+}
+.MateriasAniosA{
+    height: auto;
+    width: 50%;
+}
+.textoAnios{
+    margin-top: 10px;
+    font-size: 17px;
+}
 .container .tecnicatura .selectoresDeInformacion {
-    width: 97%;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
     margin-left: 2%;
     display: flex;
     align-items: center;
     position: relative;
+    background-color: #ff0000;
 }
-
 
 .container .tecnicatura .selectoresDeInformacion .selectorAnios {
     display: flex;
@@ -204,16 +233,19 @@
     color: #ffffff;
     text-align: left;
     font-size: 2vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
 .container .tecnicatura .selectoresDeInformacion .buttonAnioTecnicatura {
-    width: 15%;
-    height: 15%;
+    width: 10px;
+    height: 10px;
     transition: all 0.5s ease-in-out;
-    position: absolute;
-    align-self: center;
+    align-self: flex-start;
+    
 }
+
 .container .tecnicatura .selectoresDeInformacion .buttonAnioTecnicatura#sliderMoveLeft{
     left: -20%;
 }
