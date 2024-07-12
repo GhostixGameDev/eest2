@@ -416,7 +416,7 @@ CONTENIDO
     align-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(199, 199, 199, 0.897);
+    background-color: rgba(206, 206, 206, 0.897);
 }
 .texto{
     font-size: 7vh;
@@ -502,6 +502,9 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     position: relative;
     left: 50%;
 }
+.container .galeria{
+    background-color: rgba(255, 255, 255, 0.747)
+}
 .container .textGaleria{
     width: 97%;
     height: 35vh;
@@ -512,7 +515,6 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     align-self: center;
     justify-self: center;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.897);
 }
 .container .textGaleria .texto{
     text-decoration: underline;
@@ -571,7 +573,7 @@ INFORMACION
     align-items: center;
     text-align: center;
     flex-direction: column;
-    background-color: rgba(199, 199, 199, 0.897);
+    background-color: rgba(206, 206, 206, 0.897);
 }
 .container .informacion .content{
     width: 97%;
@@ -580,7 +582,8 @@ INFORMACION
     align-content: center;
     align-items: center;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.897);
+    background-color: rgba(206, 206, 206, 0.897);
+    
 }
 .container .informacion .content .textContainer{
     width: 48%;
