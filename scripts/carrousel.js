@@ -69,6 +69,7 @@ class Carrousel {
                 break;
             //Animación de mover a la izquierda.
             case "move":
+                this.restartIfFinalIndex();
                 for (let i = 0; i < this.getLength(); i++) {
                     this.getSlide(i).style.transition = "transform 0.5s ease-in-out";
                     this.getSlide(i).style.transform = `translateX(${i - (this.getSlideIndex()) * 100}%)`;
