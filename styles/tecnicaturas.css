@@ -104,8 +104,7 @@ body{
     padding-left: 13%;
     padding-right: 14%;
 }
-.OpcionesTecnicaturasBARRA{
-}
+
 .butonOpcionesTecnicaturas{
     height: 80%;
     width: 100%;
@@ -182,7 +181,7 @@ body{
     width: 80%;
     height: auto;
     flex-grow: 1;
-    
+    transition: transform 0.5s ease-in-out;
 }
 
 .container .tecnicatura .selectoresDeInformacion .anio {
@@ -190,10 +189,7 @@ body{
     width: 100%; 
     height: auto;
     box-sizing: border-box;
-    -webkit-animation-name: moveToLeft;
-    -webkit-animation-duration: 2.0s;
-    animation-name: moveToLeft;
-    animation-duration: 2.0s;
+    position: relative;
 }
 
 .container .tecnicatura .selectoresDeInformacion .anio .tituloAnio {
