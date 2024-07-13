@@ -640,25 +640,38 @@ INFORMACION
     width: 100%;
     height: 100%;
 }
-.container .contents .cuadroEmail{
-    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+.container .contents .cuadroEmail {
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, border 0.5s ease-in-out;
     margin-top: 2%;
     width: 60%;
     height: 20vh;
-    text-align: left;
-    justify-content: start;
     overflow-y: scroll;
+    border-radius: 6px;
+    font-size: 2.5vh;
+    box-sizing: border-box; 
+    background: #fbfbfb;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+    padding: 2px 5px;
+    text-align: left;
+    line-height: 1.2;
+    display: flex;
+    align-items: flex-start; 
+    resize: none;
 }
-.container .contents .cuadroEmail:focus{
-    width: 100%;
-    height: 45.5vh;
-    
-}
-.container .contents .cuadroEmail::placeholder{
+
+.container .contents .cuadroEmail::placeholder {
     font-size: 2.5vh;
     font-family: "Open Sans", sans-serif;
-    position: absolute;
-    top: 0
+    text-align: left;
+}
+
+.container .contents .cuadroEmail:focus {
+    width: 100%;
+    height: 45.5vh;
+    border: 2px solid #000;
+    border-radius: 4px;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, border 0.5s ease-in-out;
 }
 
 .container .contents .imagen{
