@@ -413,14 +413,15 @@ Modalidades extendidas
 /*============================================
 CONTENIDO
 =================================================*/
-.container .textModalidades{
+.container .titles{
     width: 97%;
     height: 45vh;
     margin-top: 0;
-    flex-direction: column;
+    display: flex;
     align-content: center;
-    align-items: center;
+    justify-content: center;
     text-align: center;
+    flex-direction: column;
     background-color: rgba(206, 206, 206, 0.897);
 }
 .texto{
@@ -569,18 +570,8 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
 /* =================================================================	
 INFORMACION
 ================================================================*/
-.container .titleInformacion{
-    width: 97%;
-    height: 45vh;
-    margin-top: 0;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    background-color: rgba(206, 206, 206, 0.897);
-}
-.container .informacion .content{
+
+.container .contents{
     width: 97%;
     height: auto;
     margin-top: 0;
@@ -590,22 +581,91 @@ INFORMACION
     background-color: rgba(255, 255, 255, 0.747);
     padding-bottom: 10vh;
 }
-.container .informacion .content .textContainer{
+.container .contents .textContainer{
     width: 48%;
     margin-top: 2%;
     margin-left: 2%;
 }
-.container .informacion .content .textContainer .text{
+.container .contents .textContainer .text{
     text-align: left;
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 2.5vh;
 }
-.container .informacion .content .ubicacion{
+.container .contents .ubicacion{
     border: none;
     border-radius: 5%;
     width: 40vw;
     height: 60vh;
     margin-left: 2%;
+}
+.container .cooperadora .contents{
+    min-height: 80vh;
+    align-items: flex-start;
+}
+.container .contents form{
+    display: flex;
+    flex-direction: column;
+}
+.container .contents form label{
+    font-size: 2.5vh;
+    font-family: "Open Sans", sans-serif;
+}
+.container .contents .inputEmail{
+    display: flex;
+    flex-direction: row;
+}
+.container .contents .email{
+    width: 40%;
+}
+.container .envio{
+    width: 5%;
+    height: 2%;
+}
+.container .contents .envio button{
+    width:100%;
+    height: 100%;
+    border: none;
+    background: none;
+    transition: all 0.4s ease-in-out
+}
+.container .contents .envio button:hover{
+    width:110%;
+    height: 110%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out
+}
+.container .contents .envio button img{
+    width: 100%;
+    height: 100%;
+}
+.container .contents .cuadroEmail{
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    margin-top: 2%;
+    width: 60%;
+    height: 20vh;
+    text-align: left;
+    justify-content: start;
+    overflow-y: scroll;
+}
+.container .contents .cuadroEmail:focus{
+    width: 100%;
+    height: 45.5vh;
+    
+}
+.container .contents .cuadroEmail::placeholder{
+    font-size: 2.5vh;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 0
+}
+
+.container .contents .imagen{
+    width: 40vw;
+    height: 60vh;
+    margin-left: 2%;
+    margin-top: 3%;
 }
 
 /*=======================================================
@@ -633,7 +693,32 @@ INFORMACIÓN DE CONTACTO.
     position: absolute;
     margin-bottom: 1%;
 }
-
+.container .contact .clickableIcons{
+    width: 40vw;
+    height: 5vh;
+    display: flex;
+    align-self: center;
+    position: absolute;
+    right: -30%;
+    flex-direction: row;
+}
+.container .contact .clickableIcons a{
+    width: 6%;
+    margin-right: 2%;
+    height: 100%;
+}
+.container .contact .clickableIcons a:hover img{
+    width: 100%;
+    height: 105%;
+    filter: none;
+    transition: all 0.3s ease-in-out;
+}
+.container .contact .clickableIcons a img{
+    width: 100%;
+    height: 100%;
+    filter: invert();
+    transition: all 0.3s ease-in-out;
+}
 /*===================================================
 RESPONSIVE
 =====================================================*/
