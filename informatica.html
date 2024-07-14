@@ -9,147 +9,157 @@
     <link rel="stylesheet" href="styles/tecnicaturas.css">
     <script src="./scripts/carrousel.js"></script>
     <script src="./scripts/util.js"></script>
+    <script src="./scripts/parallax.js"></script>
     <link rel="shortcut icon" href="assets/logos/logo.png">
 </head>
 
 <body>
-    <div class="container">
-        <!----BACKGROUND-!--->
-        <div class="background">
-            <div class="image" style="background: url('../assets/images/informatica/fondoinformatica.jpg') no-repeat; background-attachment: scroll;
-    background-size: 110%;"></div>
-            <div class="text">
-                <span>Tecnicatura</span>
-                <div class="bigger" >
-                    <span>en</span><span class="animated"> Informatica</span>
+    <div class="container" id="tecnicaturas">
+        <!----SLIDER-!--->
+        <div class="sliders">
+            <div class="background" id="parallax"></div>
+            <div class="logoContainer">
+                <div class="text" style="background-color: black;">
+                    PLACEHOLDER
                 </div>
             </div>
             <div class="arrow">
-                <a href="#tecnicaturainformatica"><img src="./assets/images/icons/DoubleArrow.png"></a>
+                <a href="#pantallazo"><img src="./assets/images/icons/DoubleArrow.png"></a>
+                
             </div>
         </div>
         <!----BARRA DE NAVEGACIÓN!---->
         <div class="sidebar">
             <div class="sidebarLogo">
                 <a href="index.html">
-                    <img src="assets/logos/logo.png" alt="Logo institucional.">
+                    <img src="./assets/logos/logo.png" alt="Logo institucional.">
                 </a>
             </div>
             <div class="sidebarMenu">
                 <button onclick="extendDiv('.sidebar')">
-                    <img src="assets/images/icons/BotonMenu.png">
+                    <img src="./assets/images/icons/BotonMenu.png">
                     <p>MENU</p>
                 </button>
             </div>
             <div class="options">
                 <div class="modalidadesDesplegable">
                     <div class="modalidadesButton">
-                        <button onclick="extendDiv('.modalidadesDesplegable')">Tecnicaturas<img src="./assets/images/icons/Arrow.png"></button>
+                        <button onclick="extendDiv('.modalidadesDesplegable')">Tecnicaturas <img src="./assets/images/icons/arrow.png"></button>
                     </div>
                     <div class="modalidades">
                         <a href="programacion.html">Programación</a>
-                        <a href="">Informática</a>
+                        <a href="informatica.html">Informática</a>
                     </div>
                 </div>
-                <a class="ubicacion" href="index.html#ubicacionZone">Ubicación</a>
-                <a class="galeria" href="index.html#galeriaZone">Galería</a>
-                <a class="historia" href="index.html#historiaZone">Historia institucional</a>
+                <a href="#ubicacionZone">Ubicación</a>
+                <a href="#galeriaZone">Galería</a>
+                <a href="#historiaZone">Historia institucional</a>
             </div>
         </div>
-        <!----INFORMACION DE LA MODALIDAD---->
-        <div class="tecnicatura" id="tecnicatura">
-            <section class="summary">
-                <p>__________________________________________________________________________________________</p>
-                <p class="title">Tecnicatura en Informática</p>
-                <div class="text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus eum eveniet sit! Veniam, laudantium odit unde similique necessitatibus aperiam, ad soluta adipisci possimus quae nostrum deleniti, pariatur ipsa minima. Necessitatibus!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, officiis perferendis totam quae unde ad! Amet reprehenderit pariatur nostrum asperiores? Quod vitae eveniet iusto doloribus adipisci laboriosam porro aliquid quisquam.                
-                </div>
-                <p>__________________________________________________________________________________________</p>
-            </section>
-            <section class="horarios">
-                <p class="title">Horarios</p>
-                <div class="text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, iure numquam pariatur sequi at consectetur! Repudiandae est temporibus nihil omnis fugit reprehenderit at nam nesciunt, impedit aspernatur, ratione quidem quas!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat porro accusantium alias nisi, necessitatibus dignissimos sint ad. Assumenda deleniti tempore architecto illum suscipit laudantium iste magnam omnis doloremque. Quos, sapiente!
-                    <div class="arrow">
-                        <a href="#tecnicatura">
-                            Para más informacion de esto en especifico presione aqui.
-                        </a>
+        <!----CONTENIDO!---->
+        <!----MODALIDADES!---->
+        <section class="pantallazo">
+            <div class="titles">
+                <span id="pantallazo" style="font-family: Roboto; font-weight: 500;color: rgba(5, 5, 5, 0.9);" class="texto">
+                    TECNICATURA EN</br></span>
+                <span style="font-family: Roboto; font-weight: 800; color: rgba(114, 17, 17, 0.9)" class="textoMasGrande">
+                    PROGRAMACIÓN</span>
+            </div>
+            <div class="contents">
+                <div class="textContainer">
+                    <span style="font-family: Roboto; font-weight: 700;color: rgba(5, 5, 5, 0.9);" class="texto">
+                        Demos un pantallazo!
+                    </span>
+                    <div class="text">
+                        La Tecnicatura en Programación les permitirá aprender la lógica y el funcionamiento interno de los programas informáticos, brindándoles una base sólida para continuar su carrera en el desarrollo de software. Este programa les enseñará a trabajar en proyectos del rubro y a comprender la dinámica del mundo tecnológico. <br/>
+                        En la actualidad, vivimos en la era de la tecnología, la cual está en constante evolución. La programación es la carrera del futuro. En esta tecnicatura, aprenderán desde cero todas las bases necesarias para dedicarse al rubro. El perfil del alumno egresado contempla un programador con habilidades para trabajar en equipos de desarrollo, incluyendo habilidades blandas, una base sólida en lenguajes de programación, dominio de la lógica de la programación y capacidad para desarrollar aplicaciones web. Además, dominarán la programación orientada a objetos.<br/>
+                        Esta formación les proporcionará una base muy sólida para seguir avanzando en su carrera o lanzarse al mundo laboral. Asimismo, contarán con la experiencia laboral adquirida a través de las prácticas profesionalizantes realizadas durante el séptimo año.
                     </div>
                 </div>
-            </section>
-            <section class="materias">
-                <p>__________________________________________________________________________________________</p>
-                <p class="title">Años y Materias </p>
-                <div class="text">
-                    A partir de 4° año, inclusive, los alumnos deberan de elegir una tecnicatura para continuar sus estudios, 
-                    a continuación podran ver las materias que podran tener con sus respectivos años en esta tecnicatura.
+                <img src="./assets/images/programacion/art1.jpg" alt="" class="imagen">
+            </div>
+        </section>
+        
+        <section class="informacion">
+            <div class="titles">
+                <span style="font-family: Roboto; font-weight: 500;color: rgba(5, 5, 5, 0.9);" class="texto">
+                    SOBRE NUESTRA<br/>
+                </span>
+                <span style="font-family: Roboto; font-weight: 700;color: rgba(114, 17, 17, 0.9);" class="textoMasGrande">
+                    ESCUELA
+                </span>
+            </div>
+            <div class="contents">
+                <div class="textContainer">
+                    <span class="text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tenetur excepturi reprehenderit eum aut atque nisi officia rerum animi, odit, dolore a facere laborum est minus. Recusandae laboriosam eos hic.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod culpa reiciendis tempora a illo, dolores perspiciatis quaerat asperiores quia velit? Aspernatur obcaecati et assumenda eos ad possimus qui fugiat deleniti!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa nostrum aliquam, modi accusamus officia natus voluptate temporibus veritatis magnam repellendus expedita aut voluptatum laudantium quod autem dolores maxime deleniti.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, id sunt ipsam nostrum, amet dolorem iure dignissimos illum reiciendis earum fugiat inventore omnis incidunt? Distinctio quia neque perspiciatis ab harum!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, voluptate? Odit sunt saepe aperiam quae totam aliquam facilis beatae ducimus, minima eveniet deserunt architecto libero reprehenderit labore dolorum animi! Nam?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, incidunt laborum deleniti natus eos perspiciatis unde! Debitis reiciendis accusamus exercitationem obcaecati. Alias eveniet doloremque harum eum id nihil ex doloribus!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem quaerat mollitia officiis saepe harum ab dolores at dolor. Voluptas facilis porro autem dolorem facere aut minus distinctio incidunt accusamus!
+                    </span>
+                    
                 </div>
-                <p>__________________________________________________________________________________________</p>
-                <div class="selectoresDeInformacion">
-                   
-                        <section class="materias">
-                            
-                            <div class="selectoresDeInformacion">
-                                <div class="anio">
-                                    <button class="buttonAnioTecnicatura" onclick="changeContent('prev')">Atras</button>
-                                    <div class="acomodaEnColubna">
-                                        <div class="tituloAniosCSS" id="infoBox1">
-                                            4°to Año
-                                        </div>
-                                        <div class="infoAniosCSS" id="infoBox2">
-                                            4°to Año INFO 4°to Año INFO 4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO
-                                        </div>
-                                    </div>
-                                    <button class="buttonAnioTecnicatura" onclick="changeContent('next')">Adelante</button>
-            
-                                    <script>
-                                        var contents1 = [
-                                            '4°to Año',
-                                            '5°to Año',
-                                            '6°to Año',
-                                            '7°mo Año'
-                                        ];
-                                        var contents2 = [
-                                            '4°to Año INFO 4°to Año INFO 4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO4°to Año INFO',
-                                            '5°to Año INFO 5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO5°to Año INFO',
-                                            '6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO6°to Año INFO',
-                                            '7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO7°mo Año INFO'
-                                        ];
-                                        var currentIndex = 0;
-            
-                                        function changeContent(direction) {
-                                            if (direction === 'prev') {
-                                                currentIndex = (currentIndex - 1 + contents1.length) % contents1.length;
-                                            } else if (direction === 'next') {
-                                                currentIndex = (currentIndex + 1) % contents1.length;
-                                            }
-                                            document.getElementById('infoBox1').innerHTML = contents1[currentIndex];
-                                            document.getElementById('infoBox2').innerHTML = contents2[currentIndex];
-                                            document.getElementById('infoBox1').style.fontSize = "30px"; 
-                                            document.getElementById('infoBox2').style.fontSize = "17px"; 
-                                        }
-                                    </script>
-            
-                                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2815284261414!2d-60.93729282421472!3d-34.59704189735986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b8eb3cbc6a550f%3A0x37cf5f8c8dbc8a4b!2sEscuela%20de%20Educaci%C3%B3n%20T%C3%A9cnica%20N%C2%BA%202!5e0!3m2!1ses!2sar!4v1720748419802!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ubicacion"></iframe>
+            </div>
+        </section>
+        <footer class="cooperadora">
+            <div class="titles">
+                <span style="font-family: Roboto; font-weight: 700;color: rgba(5, 5, 5, 0.9);" class="textoMasGrande">
+                    CONTACTANOS
+                </span>
+            </div>
+            <div class="contents">
+                <div class="textContainer">
+                    <span style="font-family: Roboto; font-weight: 700;color: rgba(5, 5, 5, 0.9);" class="texto">
+                        Escribenos un
+                    </span>
+                    <span style="font-family: Roboto; font-weight: 700;color: rgba(5, 5, 5, 0.9);" class="texto">
+                        E-Mail! <br/>
+                    </span>
+                    <form action="https://formsubmit.co/6c1e3dd16b03b325523c946de0fafe5a" method="POST" id="sent">
+                        <label for="email">E-Mail</label>
+                        <div class="inputEmail">
+                            <input type="text" name="E-Mail del emisor:" id="" class="email">
+                            <div class="envio">
+                                <button type="submit" value="Enviar"><img src="./assets/images/icons/send.png" alt=""></button>
                             </div>
-                        </section>
-                    </div>
-                    <div class="parragraph-with-space ">
-                    </div>
-                    <div class="contenedor-imagenes">
-                      <img src="https://picsum.photos/id/684/600/400" alt="imagen1">
-                      <div class="contenedor-imagenes2">
-                            <img src="https://picsum.photos/id//600/400" alt="imagen2">
-                            <img src="https://picsum.photos/id/1025/600/400" alt="imagen3">
-                       </div>
-                    </div>
-            </section>
-        </div> 
+                        </div>
+                        <textarea name="Mensaje recibido:" id="" class="cuadroEmail" placeholder="Escribenos tus consultas aquí!"></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#sent">
+                    </form>
+                </div>
+                <img src="./assets/images/misc/cooperadora.jpg" alt="" class="imagen">
+            </div>
+        </footer>
+        <section class="contact">
+            <div class="texts">
+                <span>eet2junin@gmail.com</span>
+                <span>+54 9 236 427-8238</span>
+            </div>
+            <div class="credits">
+                <span>Web realizada por los alumnos de 6° P.</span>
+            </div>
+            <div class="clickableIcons">
+                <a href="https://www.facebook.com/tecnica2junin"><img src="./assets/images/icons/facebook.png" alt=""></a>
+                <a href="mailto:eet2junin@gmail.com"><img src="./assets/images/icons/gmail.png" alt=""></a>
+                <a href="https://wa.me/+5492364278238"><img src="./assets/images/icons/whatsapp.png" alt=""></a>
+            </div>
+        </section>
     </div>
+
     <!--Scripts a ejecutar al cargar la pagina.-->
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        })
+        window.addEventListener('scroll', () => {
+            doParallaxY("parallax");
+        });
+    </script>
     </script>
 </body>
+
 </html>

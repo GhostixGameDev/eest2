@@ -9,215 +9,156 @@
     <link rel="stylesheet" href="styles/tecnicaturas.css">
     <script src="./scripts/carrousel.js"></script>
     <script src="./scripts/util.js"></script>
+    <script src="./scripts/parallax.js"></script>
     <link rel="shortcut icon" href="assets/logos/logo.png">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="tecnicaturas">
+        <!----SLIDER-!--->
+        <div class="sliders">
+            <div class="background" id="parallax"></div>
+            <div class="logoContainer">
+                <div class="text" style="background-color: black;">
+                    PLACEHOLDER
+                </div>
+            </div>
+            <div class="arrow">
+                <a href="#pantallazo"><img src="./assets/images/icons/DoubleArrow.png"></a>
+                
+            </div>
+        </div>
         <!----BARRA DE NAVEGACIÓN!---->
-
         <div class="sidebar">
             <div class="sidebarLogo">
                 <a href="index.html">
-                    <img src="assets/logos/logo.png" alt="Logo institucional.">
+                    <img src="./assets/logos/logo.png" alt="Logo institucional.">
                 </a>
             </div>
             <div class="sidebarMenu">
                 <button onclick="extendDiv('.sidebar')">
-                    <img src="assets/images/icons/BotonMenu.png">
+                    <img src="./assets/images/icons/BotonMenu.png">
                     <p>MENU</p>
                 </button>
             </div>
-
-
             <div class="options">
                 <div class="modalidadesDesplegable">
                     <div class="modalidadesButton">
-                        <button onclick="extendDiv('.modalidadesDesplegable')">Tecnicaturas<img
-                                src="./assets/images/icons/Arrow.png"></button>
+                        <button onclick="extendDiv('.modalidadesDesplegable')">Tecnicaturas <img src="./assets/images/icons/arrow.png"></button>
                     </div>
                     <div class="modalidades">
-                        <a href="">Programación</a>
+                        <a href="programacion.html">Programación</a>
                         <a href="informatica.html">Informática</a>
                     </div>
                 </div>
-                <a class="ubicacion" href="index.html#ubicacionZone">Ubicación</a>
-                <a class="galeria" href="index.html#galeriaZone">Galería</a>
-                <a class="historia" href="index.html#historiaZone">Historia institucional</a>
+                <a href="#ubicacionZone">Ubicación</a>
+                <a href="#galeriaZone">Galería</a>
+                <a href="#historiaZone">Historia institucional</a>
             </div>
         </div>
-
-        <!----BACKGROUND-!--->
-
-        <div class="background">
-            <div class="image"></div>
-            <div class="aaa">
-
-                <div class="text" class="containerINICIO">
-                    <span class="bigger">Tecnicatura</span>
-                    <div class="bigger">
-                        <span>en</span><span class="animated"> Programación</span>
+        <!----CONTENIDO!---->
+        <!----MODALIDADES!---->
+        <section class="pantallazo">
+            <div class="titles">
+                <span id="pantallazo" style="font-family: Roboto; font-weight: 500;color: rgba(5, 5, 5, 0.9);" class="texto">
+                    TECNICATURA EN</br></span>
+                <span style="font-family: Roboto; font-weight: 800; color: rgba(114, 17, 17, 0.9)" class="textoMasGrande">
+                    PROGRAMACIÓN</span>
+            </div>
+            <div class="contents">
+                <div class="textContainer">
+                    <span style="font-family: Roboto; font-weight: 700;color: rgba(5, 5, 5, 0.9);" class="texto">
+                        Demos un pantallazo!
+                    </span>
+                    <div class="text">
+                        La Tecnicatura en Programación les permitirá aprender la lógica y el funcionamiento interno de los programas informáticos, brindándoles una base sólida para continuar su carrera en el desarrollo de software. Este programa les enseñará a trabajar en proyectos del rubro y a comprender la dinámica del mundo tecnológico. <br/>
+                        En la actualidad, vivimos en la era de la tecnología, la cual está en constante evolución. La programación es la carrera del futuro. En esta tecnicatura, aprenderán desde cero todas las bases necesarias para dedicarse al rubro. El perfil del alumno egresado contempla un programador con habilidades para trabajar en equipos de desarrollo, incluyendo habilidades blandas, una base sólida en lenguajes de programación, dominio de la lógica de la programación y capacidad para desarrollar aplicaciones web. Además, dominarán la programación orientada a objetos.<br/>
+                        Esta formación les proporcionará una base muy sólida para seguir avanzando en su carrera o lanzarse al mundo laboral. Asimismo, contarán con la experiencia laboral adquirida a través de las prácticas profesionalizantes realizadas durante el séptimo año.
                     </div>
                 </div>
-
-                <div class="tecnicatura" id="tecnicatura">
-                    <section class="fondo1tecnicaturas">
-
-                        <div class="linea"></div>
-                        <p class="title" id="TecnicaturaEnProgramacion">Tecnicatura en Programación</p>
-                        <div class="lineaA"></div>
-
-                        <div class="text">
-                            La tecnicatura en Programación les permitirá aprender la logica y funcionamiento interno
-                            de los programas informaticos. Dandoles una base solida para seguir su carrera en el
-                            desarrollo de
-                            Software,
-                            enseñandoles a trabajar en proyectos del rubro y como es este mundo.<br />
-                            Actualmente estamos viviendo en la era de la tegnología, y las carreras de programación son
-                            las
-                            constructoras del futuro.<br />
-                            En esta tecnicatura aprenderan desde cero todas las bases para dedicarse al rubro, el perfil
-                            de
-                            alumno egresado adquiere las habilidades para trabajar en equipos de desarrollo, incluyendo
-                            las
-                            blandas,
-                            base solida sobre lenguajes de programación, logica de la programación dominada, es capaz de
-                            desarrollar webs,
-                            y domina la programación orientada a objetos. Dando una base super solida para seguir la
-                            carrera, o
-                            lanzarse al
-                            mundo laboral, ademas de tener la experiencia laboral de las practicas profesionalizantes
-                            hechas
-                            durante septimo año.
-                        </div>
-                        <div class="linea"></div>
-                    </section>
-
-                    <section class="fondo2tecnicaturas" id="Horarios">
-
-                        <div class="linea"></div>
-                        <p class="title">Horarios</p>
-                        <div class="lineaA"></div>
-
-                        <div class="text">
-                            La tecnicatura en Programación actualmente se encuentra en horario de la tarde, con una
-                            jornada de
-                            8hs diarias, en un rango de 11am (Horario de entrada más temprano posible) a 19.55pm
-                            (Horario de
-                            salida más tarde posible). </br>
-                            Aclaracion: Estos horarios no cuentan la experiencia de 7° los cuales realizan practicas
-                            profesionalizantes.
-                        </div>
-
-                        <div class="lineaA"></div>
-                    </section>
-
-                    <section class="fondo2tecnicaturas" id="AniosyMaterias">
-
-                        <div class="linea"></div>
-                        <p class="title">Años y Materias </p>
-                        <div class="lineaA"></div>
-
-                        <div class="text">
-                            A partir de 4° año, inclusive, los alumnos deberan de elegir una tecnicatura para continuar
-                            sus
-                            estudios,
-                            a continuación podran ver las materias que podran tener con sus respectivos años en esta
-                            tecnicatura.
-                        </div>
-
-                        <div class="lineaA"></div>
-                        <br>
-
-                    </section>
-
-                    <section class="fondoTransparentetecnicaturas">
-                        <button class="buttonAnioTecnicatura" id="sliderMoveLeft">Atras</button>
-                        <div class="selectoresDeInformacion">
-                            <div class="selectorAnios">
-                                <div class="anio" id="4">
-                                    <div class="tituloAnio">4to Anio</div>
-                                    <div class="contenidoAnio">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Accusamus, ea quae atque aperiam molestiae dignissimos commodi vitae quas, quos
-                                        quasi optio minus error soluta impedit! Iusto accusantium debitis cum deserunt!
-                                    </div>
-                                </div>
-                                <div class="anio" id="5">
-                                    <div class="tituloAnio">5to anio</div>
-                                    <div class="LineaA"></div>
-                                    <div class="contenidoAnio">
-                                        <div class="textoAnios">
-                                            En 5°to año de la modalidad de programación los alumnos aprenderan(dentro
-                                            del area de la tecnicatura) a mejorar sus abilidades en el lenguaje de la
-                                            programacion(pseudocodigo) y aprenderan a utilizarlo en un nuvo lenguaje, en
-                                            este caso en Pyton. Tambien aprenderan lo basico para comenzar a crear
-                                            paginas webs(HTML, CSS, Java, y tambien base de datos).
-                                        </div>
-                                        <div class="Materias">
-                                            <div class="MateriasAniosA">
-                                                <h1>Materias básicas;</h1>
-                                                <h2>-Literatura;</h2>
-                                                <h2>-Politica y ciudadania;</h2>
-                                                <h2>-Historia;</h2>
-                                                <h2>-Análisis Matemático;</h2>
-                                                <h2>-Geografía;</h2>
-                                                <h2>-Inglés;</h2>
-                                                <h2>-Educ. Física;</h2>
-                                            </div>
-                                            <div class="MateriasAniosA">
-                                                <h1>Talleres;</h1>
-                                                <h2>-Laboratorio Diseño Base de Datos;</h2>
-                                                <h2>-Laboratorio de Programación II;</h2>
-                                                <h2>-Sistemas Digitales;</h2>
-                                                <h2>-Modelos y Sistemas;</h2>
-                                                <h2>-Laboratorio de Diseño Web;</h2>
-                                                <h2>-Lab. Redes Informáticas</h2>
-                                                <h2>-Base de Datos;</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="anio" id="6">
-                                    <div class="tituloAnio">6to anio</div>
-                                    <div class="contenidoAnio">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Reprehenderit optio totam, aut aspernatur eligendi repellat perferendis ipsum
-                                        quae recusandae! Quasi iure modi illo dignissimos, deleniti enim! Eum nisi modi
-                                        laboriosam?</div>
-                                </div>
-                                <div class="anio" id="7">
-                                    <div class="tituloAnio">7mo anio</div>
-                                    <div class="contenidoAnio">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Reprehenderit optio totam, aut aspernatur eligendi repellat perferendis ipsum
-                                        quae recusandae! Quasi iure modi illo dignissimos, deleniti enim! Eum nisi modi
-                                        laboriosam?</div>
-                                </div>
+                <img src="./assets/images/programacion/art1.jpg" alt="" class="imagen">
+            </div>
+        </section>
+        
+        <section class="informacion">
+            <div class="titles">
+                <span style="font-family: Roboto; font-weight: 500;color: rgba(5, 5, 5, 0.9);" class="texto">
+                    SOBRE NUESTRA<br/>
+                </span>
+                <span style="font-family: Roboto; font-weight: 700;color: rgba(114, 17, 17, 0.9);" class="textoMasGrande">
+                    ESCUELA
+                </span>
+            </div>
+            <div class="contents">
+                <div class="textContainer">
+                    <span class="text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tenetur excepturi reprehenderit eum aut atque nisi officia rerum animi, odit, dolore a facere laborum est minus. Recusandae laboriosam eos hic.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod culpa reiciendis tempora a illo, dolores perspiciatis quaerat asperiores quia velit? Aspernatur obcaecati et assumenda eos ad possimus qui fugiat deleniti!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa nostrum aliquam, modi accusamus officia natus voluptate temporibus veritatis magnam repellendus expedita aut voluptatum laudantium quod autem dolores maxime deleniti.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, id sunt ipsam nostrum, amet dolorem iure dignissimos illum reiciendis earum fugiat inventore omnis incidunt? Distinctio quia neque perspiciatis ab harum!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, voluptate? Odit sunt saepe aperiam quae totam aliquam facilis beatae ducimus, minima eveniet deserunt architecto libero reprehenderit labore dolorum animi! Nam?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, incidunt laborum deleniti natus eos perspiciatis unde! Debitis reiciendis accusamus exercitationem obcaecati. Alias eveniet doloremque harum eum id nihil ex doloribus!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem quaerat mollitia officiis saepe harum ab dolores at dolor. Voluptas facilis porro autem dolorem facere aut minus distinctio incidunt accusamus!
+                    </span>
+                    
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2815284261414!2d-60.93729282421472!3d-34.59704189735986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b8eb3cbc6a550f%3A0x37cf5f8c8dbc8a4b!2sEscuela%20de%20Educaci%C3%B3n%20T%C3%A9cnica%20N%C2%BA%202!5e0!3m2!1ses!2sar!4v1720748419802!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ubicacion"></iframe>
+            </div>
+        </section>
+        <footer class="cooperadora">
+            <div class="titles">
+                <span style="font-family: Roboto; font-weight: 700;color: rgba(5, 5, 5, 0.9);" class="textoMasGrande">
+                    CONTACTANOS
+                </span>
+            </div>
+            <div class="contents">
+                <div class="textContainer">
+                    <span style="font-family: Roboto; font-weight: 700;color: rgba(5, 5, 5, 0.9);" class="texto">
+                        Escribenos un
+                    </span>
+                    <span style="font-family: Roboto; font-weight: 700;color: rgba(5, 5, 5, 0.9);" class="texto">
+                        E-Mail! <br/>
+                    </span>
+                    <form action="https://formsubmit.co/6c1e3dd16b03b325523c946de0fafe5a" method="POST" id="sent">
+                        <label for="email">E-Mail</label>
+                        <div class="inputEmail">
+                            <input type="text" name="E-Mail del emisor:" id="" class="email">
+                            <div class="envio">
+                                <button type="submit" value="Enviar"><img src="./assets/images/icons/send.png" alt=""></button>
                             </div>
                         </div>
-                        <button class="buttonAnioTecnicatura" id="sliderMoveRight">Adelante</button>
-                    </section>
-
-                    <section class="fondo1tecnicaturas" id="Proyectos">
-                        <div class="linea"></div>
-                        <p class="title">Proyectos </p>
-                        <div class="linea"></div>
-                        <div class="text">
-                            Aqui podran observar distintos proyectos creados por los distintos alumnos de este area,
-                            Programación.
-                        </div>
-                    </section>
+                        <textarea name="Mensaje recibido:" id="" class="cuadroEmail" placeholder="Escribenos tus consultas aquí!"></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#sent">
+                    </form>
                 </div>
+                <img src="./assets/images/misc/cooperadora.jpg" alt="" class="imagen">
             </div>
-
-        </div>
+        </footer>
+        <section class="contact">
+            <div class="texts">
+                <span>eet2junin@gmail.com</span>
+                <span>+54 9 236 427-8238</span>
+            </div>
+            <div class="credits">
+                <span>Web realizada por los alumnos de 6° P.</span>
+            </div>
+            <div class="clickableIcons">
+                <a href="https://www.facebook.com/tecnica2junin"><img src="./assets/images/icons/facebook.png" alt=""></a>
+                <a href="mailto:eet2junin@gmail.com"><img src="./assets/images/icons/gmail.png" alt=""></a>
+                <a href="https://wa.me/+5492364278238"><img src="./assets/images/icons/whatsapp.png" alt=""></a>
+            </div>
+        </section>
     </div>
 
     <!--Scripts a ejecutar al cargar la pagina.-->
-
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            const aniosSlider = new Carrousel(["4", "5", "6", "7"], 0, ["sliderMoveLeft", "sliderMoveRight"]);
-            aniosSlider.loop(0, "move");
         })
+        window.addEventListener('scroll', () => {
+            doParallaxY("parallax");
+        });
+    </script>
     </script>
 </body>
 
