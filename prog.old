@@ -134,64 +134,7 @@
                     <section class="fondoTransparentetecnicaturas">
                         <button class="buttonAnioTecnicatura" id="sliderMoveLeft">Atras</button>
                         <div class="selectoresDeInformacion">
-                            <div class="selectorAnios">
-                                <div class="anio" id="4">
-                                    <div class="tituloAnio">4to Anio</div>
-                                    <div class="contenidoAnio">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Accusamus, ea quae atque aperiam molestiae dignissimos commodi vitae quas, quos
-                                        quasi optio minus error soluta impedit! Iusto accusantium debitis cum deserunt!
-                                    </div>
-                                </div>
-                                <div class="anio" id="5">
-                                    <div class="tituloAnio">5to anio</div>
-                                    <div class="LineaA"></div>
-                                    <div class="contenidoAnio">
-                                        <div class="textoAnios">
-                                            En 5°to año de la modalidad de programación los alumnos aprenderan(dentro
-                                            del area de la tecnicatura) a mejorar sus abilidades en el lenguaje de la
-                                            programacion(pseudocodigo) y aprenderan a utilizarlo en un nuvo lenguaje, en
-                                            este caso en Pyton. Tambien aprenderan lo basico para comenzar a crear
-                                            paginas webs(HTML, CSS, Java, y tambien base de datos).
-                                        </div>
-                                        <div class="Materias">
-                                            <div class="MateriasAniosA">
-                                                <h1>Materias básicas;</h1>
-                                                <h2>-Literatura;</h2>
-                                                <h2>-Politica y ciudadania;</h2>
-                                                <h2>-Historia;</h2>
-                                                <h2>-Análisis Matemático;</h2>
-                                                <h2>-Geografía;</h2>
-                                                <h2>-Inglés;</h2>
-                                                <h2>-Educ. Física;</h2>
-                                            </div>
-                                            <div class="MateriasAniosA">
-                                                <h1>Talleres;</h1>
-                                                <h2>-Laboratorio Diseño Base de Datos;</h2>
-                                                <h2>-Laboratorio de Programación II;</h2>
-                                                <h2>-Sistemas Digitales;</h2>
-                                                <h2>-Modelos y Sistemas;</h2>
-                                                <h2>-Laboratorio de Diseño Web;</h2>
-                                                <h2>-Lab. Redes Informáticas</h2>
-                                                <h2>-Base de Datos;</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="anio" id="6">
-                                    <div class="tituloAnio">6to anio</div>
-                                    <div class="contenidoAnio">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Reprehenderit optio totam, aut aspernatur eligendi repellat perferendis ipsum
-                                        quae recusandae! Quasi iure modi illo dignissimos, deleniti enim! Eum nisi modi
-                                        laboriosam?</div>
-                                </div>
-                                <div class="anio" id="7">
-                                    <div class="tituloAnio">7mo anio</div>
-                                    <div class="contenidoAnio">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Reprehenderit optio totam, aut aspernatur eligendi repellat perferendis ipsum
-                                        quae recusandae! Quasi iure modi illo dignissimos, deleniti enim! Eum nisi modi
-                                        laboriosam?</div>
-                                </div>
-                            </div>
+                            
                         </div>
                         <button class="buttonAnioTecnicatura" id="sliderMoveRight">Adelante</button>
                     </section>

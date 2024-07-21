@@ -38,7 +38,7 @@ body{
 /*============================================
 SLIDER
 =================================================*/
-.container .sliders{
+.sliders{
     width: 97%;
     height: 100vh;
     padding: 0px;
@@ -52,7 +52,7 @@ SLIDER
     
 
 }
-.container .sliders .sliderImage {
+.sliders .sliderImage {
     width: 110vw;
     height: 100vh;
     filter: blur(4px) brightness(30%);
@@ -60,7 +60,7 @@ SLIDER
 }
  
 /* El logazoooo */
-.container .sliders .logoContainer {
+.sliders .logoContainer {
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -69,15 +69,15 @@ SLIDER
     width: 100%;
     height: 100%;
 }
-.container .sliders .logoContainer .logo{
+.sliders .logoContainer .logo{
     width: 12%;
     height: 21%;
 }
-.container .sliders .logoContainer .logo img{
+.sliders .logoContainer .logo img{
     width: 100%;
     height: 100%;
 }
-.container .sliders .logoContainer .text{
+.sliders .logoContainer .text{
     font-family: "PlayFair";
     font-weight: 700;
     color: #f2f2f2;
@@ -85,7 +85,7 @@ SLIDER
     font-size: 6vh;
     margin-left: 2%;
 }
-.container .sliders .arrow{
+.sliders .arrow{
     width: 15%;
     height: 15%;
     transition: all 0.5s ease-in-out;
@@ -96,22 +96,22 @@ SLIDER
     animation-timing-function: ease-in-out;
     -webkit-animation-timing-function: ease-in-out;
 }
-.container .sliders .arrow a{
+.sliders .arrow a{
     width: 100%;
     height: 100%;
 }
-.container .sliders .arrow a img{
+.sliders .arrow a img{
     width: 100%;
     height: 100%;
 }
-.container .sliders .arrow:hover{
+.sliders .arrow:hover{
     transition: all 0.5s ease-in-out;
     width: 17%;
     height: 17%;
 }
 
 /* Control de la animación */
-.container .sliders .fade {
+.sliders .fade {
     -webkit-animation-name: fade-image;
     -webkit-animation-duration: 2.0s;
     animation-name: fade-image;
@@ -121,7 +121,7 @@ SLIDER
 /*============================================
 SIDEBAR
 =================================================*/
-.container .sidebar{
+.sidebar{
     height: 100%; 
     width: 7%; 
     position: fixed; 
@@ -139,13 +139,13 @@ SIDEBAR
     align-items: flex-start;
     transition: all 0.5s ease-in-out;
 }
-.container .sidebar.active{
+.sidebar.active{
     transition: all 0.5s ease-in-out;
     width: 25%;
     align-items: flex-start;
     padding-left: 20px;
 }
-.container .sidebar .sidebarLogo{
+.sidebar .sidebarLogo{
     width: 80%;
     height: 12%;
     justify-content: center;
@@ -154,32 +154,32 @@ SIDEBAR
     margin-bottom: 20px;
     transition: all 0.5s ease-in-out;
 }
-.container .sidebar .sidebarLogo a img{
+.sidebar .sidebarLogo a img{
     width: 100%;
     height: 100%;
     
 }
-.container .sidebar.active .sidebarLogo{
+.sidebar.active .sidebarLogo{
     width: 25%;
     margin-left: -3%;
     justify-content: flex-start;
     transition: all ease-in-out 0.5s;
 }
-.container .sidebar .sidebarLogo:hover{
+.sidebar .sidebarLogo:hover{
     width: 90%;
     height: 13%;
     margin-left: 5%; 
     cursor: pointer;
     transition: ease-in-out 0.5s;
 }
-.container .sidebar.active .sidebarLogo:hover{
+.sidebar.active .sidebarLogo:hover{
     width: 27%;
     height: 13%;
     margin-left: -4%;
     cursor: pointer;
     transition: ease-in-out 0.5s;
 }
-.container .sidebar .sidebarMenu{
+.sidebar .sidebarMenu{
     margin-top: 2%;
     width: 80%;
     height: 12%;
@@ -190,7 +190,7 @@ SIDEBAR
     font-size: 2.5vh;
 }
 
-.container .sidebar .sidebarMenu:hover{
+.sidebar .sidebarMenu:hover{
     margin-top: 2%;
     width: 90%;
     height: 13%;
@@ -201,12 +201,12 @@ SIDEBAR
     transition: ease-in-out 0.5s;
 }
 
-.container .sidebar.active .sidebarMenu{
+.sidebar.active .sidebarMenu{
     width: 25%;
     margin-left: -4%;
     justify-content: flex-start;
 }
-.container .sidebar.active .sidebarMenu:hover{
+.sidebar.active .sidebarMenu:hover{
     width: 27%;
     height: 13%;
     align-self: flex-start;
@@ -217,19 +217,19 @@ SIDEBAR
 }
 
 
-.container .sidebar .sidebarMenu button{
+.sidebar .sidebarMenu button{
     width: 100%;
     height: 100%;
     cursor: pointer;
     background: none;
     border:rgba(255, 255, 255, 0)
 }
-.container .sidebar .sidebarMenu img{
+.sidebar .sidebarMenu img{
     width: 100%;
     height: 80%;
 }
 
-.container .sidebar .sidebarMenu p{
+.sidebar .sidebarMenu p{
     margin-top: -20%;
     transition: ease-in-out 0.5s;
     font-family: "PlayFair";
@@ -243,7 +243,7 @@ SIDEBAR
 /*============================================
 Menu cerrado
 =================================================*/
-.container .sidebar .options{
+.sidebar .options{
     display: none;
     opacity: 0;
     display: flex;
@@ -256,7 +256,7 @@ Menu cerrado
     color: rgba(255, 255, 255, 0.795);
     text-decoration: none;
 }
-.container .sidebar .options .modalidadesDesplegable{
+.sidebar .options .modalidadesDesplegable{
     width: 106%;
     height: 7%;
     margin-left: -6%;
@@ -265,7 +265,7 @@ Menu cerrado
     overflow-y: hidden;
 }
 
-.container .sidebar .options .modalidadesDesplegable .modalidadesButton button{
+.sidebar .options .modalidadesDesplegable .modalidadesButton button{
     border: solid 1px;
     border-color: #161616;
     background-color: #141414;
@@ -281,7 +281,7 @@ Menu cerrado
     overflow-y: hidden;
     transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, border 0.5s ease-in-out;
 }
-.container .sidebar .options .modalidadesDesplegable .modalidadesButton button img{
+.sidebar .options .modalidadesDesplegable .modalidadesButton button img{
     width: 0.7vw;
     height: 1.5vh;
     transition: all 0.5s ease-in-out;
@@ -290,7 +290,7 @@ Menu cerrado
     top: 7%;
     margin-left: 0%;
 }
-.container .sidebar .options a{
+.sidebar .options a{
     display: none;
     width: 106%;
     height: 7%;
@@ -309,7 +309,7 @@ Menu cerrado
 /*============================================
 Menu abierto
 =================================================*/
-.container .sidebar.active .options .modalidadesDesplegable{
+.sidebar.active .options .modalidadesDesplegable{
     opacity: 1;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -317,7 +317,7 @@ Menu abierto
     flex-direction: column;
 }
 
-.container .sidebar.active .options{
+.sidebar.active .options{
     display: flex;
     opacity: 100;
     transition: all ease-in-out 0.5s;
@@ -326,14 +326,14 @@ Menu abierto
     min-height: 76%;
 }
 
-.container .sidebar.active .options .modalidadesDesplegable .modalidadesButton{
+.sidebar.active .options .modalidadesDesplegable .modalidadesButton{
     width: 100%;
     height: 100%;
     flex-wrap: nowrap;
     flex-shrink: 0;
     transition: all ease-in-out 0.5s;
 }
-.container .sidebar.active .options .modalidadesDesplegable .modalidadesButton button:hover{
+.sidebar.active .options .modalidadesDesplegable .modalidadesButton button:hover{
     transition: all ease-in-out 0.5s;
     border: solid 1px;
     border-color: rgba(114, 17, 17, 0.9);
@@ -341,19 +341,19 @@ Menu abierto
     width: 100%;
     cursor: pointer;
 }
-.container .sidebar.active .options a{
+.sidebar.active .options a{
     display:block;
     opacity: 1;
     text-indent: 11%;
 }
-.container .sidebar .options a:hover{
+.sidebar .options a:hover{
     border: solid 1px;
     border-color: rgba(114, 17, 17, 0.9);
     background-color: rgba(109, 15, 15, 0.9);
     cursor: pointer;
     transition: all ease-in-out 0.5s;
 }
-.container .sidebar.active .options .modalidadesDesplegable .modalidades{
+.sidebar.active .options .modalidadesDesplegable .modalidades{
     opacity: 0;
     width: 0;
     height: 0;
@@ -361,7 +361,7 @@ Menu abierto
     flex-direction: column;
     transition: opacity 0.5s, height 0.5s;
 }
-.container .sidebar.active .options .modalidadesDesplegable .modalidades a{
+.sidebar.active .options .modalidadesDesplegable .modalidades a{
     opacity: 0;
     width: 0;
     height: 0;
@@ -372,24 +372,24 @@ Menu abierto
 /*============================================
 Modalidades extendidas
 =================================================*/
-.container .sidebar.active .options .modalidadesDesplegable.active{
+.sidebar.active .options .modalidadesDesplegable.active{
     transition: all ease-in-out 0.5s;
     height: 20%;
 }
-.container .sidebar.active .options .modalidadesDesplegable.active .modalidadesButton{
+.sidebar.active .options .modalidadesDesplegable.active .modalidadesButton{
     height: 35%;
 }
-.container .sidebar.active .options .modalidadesDesplegable.active .modalidadesButton button img{
+.sidebar.active .options .modalidadesDesplegable.active .modalidadesButton button img{
     transition: all 0.5s ease-in-out;
     transform: rotateX(0deg);
     top: 0%;
 }
-.container .sidebar.active .options .modalidadesDesplegable.active .modalidades{
+.sidebar.active .options .modalidadesDesplegable.active .modalidades{
     opacity: 1;
     width: 100%;
     height: auto;
 }
-.container .sidebar.active .options .modalidadesDesplegable.active .modalidades a{
+.sidebar.active .options .modalidadesDesplegable.active .modalidades a{
     opacity: 1;
     width: 106%;
     height: auto;
@@ -403,7 +403,7 @@ Modalidades extendidas
     background-color: #141414;
     transition: height 0.5s ease-in-out;
 }
-.container .sidebar.active .options .modalidadesDesplegable.active .modalidades a:hover{
+.sidebar.active .options .modalidadesDesplegable.active .modalidades a:hover{
     border: solid 1px;
     border-color: rgba(114, 17, 17, 0.9);
     background-color: rgba(109, 15, 15, 0.9);
@@ -413,7 +413,7 @@ Modalidades extendidas
 /*============================================
 CONTENIDO
 =================================================*/
-.container .titles{
+.titles{
     width: 97%;
     height: 45vh;
     margin-top: 0;
@@ -424,20 +424,31 @@ CONTENIDO
     flex-direction: column;
     background-color: rgba(206, 206, 206, 0.897);
 }
-.texto{
+.roboto{
+    font-family: "Roboto";
     font-size: 7vh;
+    color: rgba(5, 5, 5, 0.9);
 }
-.textoMasGrande{
+.big{
     font-size: 9vh
 }
+.highlight{
+    color: rgba(114, 17, 17, 0.9);
+}
+.light{
+    font-weight: 500;
+}
+.heavy{
+    font-weight: 700;
+}
 
-.container .modalidadesContainer{
+.modalidadesContainer{
     width: 97%;
     height: 105vh;
     display: flex;
     flex-direction: column;
 }
-.container .modalidadesContainer .programacion{
+.modalidadesContainer .programacion{
     border: solid 5px;
     border-color: black;
     width: 100%;
@@ -446,7 +457,7 @@ CONTENIDO
     background-color: rgb(255, 129, 129);
 }
 
-.container .modalidadesContainer .programacion .imagen{
+.modalidadesContainer .programacion .imagen{
     border: solid 5px;
     border-color: black;
     width: 50%;
@@ -454,7 +465,7 @@ CONTENIDO
     display: flex;
     background-color: rgb(221, 174, 174);
 }
-.container .modalidadesContainer .programacion .bloque{
+.modalidadesContainer .programacion .bloque{
     border: solid 5px;
     border-color: black;
     width: 50%;
@@ -463,7 +474,7 @@ CONTENIDO
     background-color: rgb(249, 132, 123);
 }
 
-.container .modalidadesContainer .programacion .bloque .botonInfo{
+.modalidadesContainer .programacion .bloque .botonInfo{
     border: none;
     width: 20%;
     height: 10%;
@@ -474,7 +485,7 @@ CONTENIDO
     display: flex;
     background-color: rgb(255, 253, 253);
 }
-.container .modalidadesContainer .programacion .botonInfo button{
+.modalidadesContainer .programacion .botonInfo button{
     border: none;
     background: none;
     font-weight: 550;
@@ -482,7 +493,7 @@ CONTENIDO
     height: 100%;
 }
 
-.container .modalidadesContainer .informatica{
+.modalidadesContainer .informatica{
     border: solid 5px;
     border-color: black;
     width: 100%;
@@ -492,7 +503,7 @@ CONTENIDO
     display: flex;
 }
 
-.container .modalidadesContainer .informatica .bloque{
+.modalidadesContainer .informatica .bloque{
     border: solid 5px;
     border-color: black;
     width: 50%;
@@ -504,14 +515,14 @@ CONTENIDO
 /*Así una imagen sola, igual para las tuercas vas a tener que hacerle una clase a cada una, hace la de la compu*/
 /*La de las tuercas la hago yo cuaalquier cosa,, porq tenes q tener un div que contenga ambas y despues posicionar ese div
 y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
-.container .modalidadesContainer .programacion .bloque img{
+.modalidadesContainer .programacion .bloque img{
     position: relative;
     left: 50%;
 }
-.container .galeria{
+.galeria{
     background-color: rgba(255, 255, 255, 0.747)
 }
-.container .textGaleria{
+.textGaleria{
     width: 97%;
     height: 35vh;
     margin-top: 0;
@@ -522,12 +533,11 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     justify-self: center;
     text-align: center;
 }
-.container .textGaleria .texto{
+.textGaleria .roboto{
     text-decoration: underline;
-    color: rgba(5, 5, 5, 0.9);
     transition: all 0.5s ease-in-out;
 }
-.container .textGaleria .texto:hover{
+.textGaleria .roboto:hover{
     animation: hover-link ease-in-out 0.5s linear;
     -webkit-animation: hover-link ease-in-out 0.5s linear;
     color: rgba(114, 17, 17, 0.9);
@@ -536,7 +546,7 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
 /*===================================================
 /*GALERIA MINI*/
 /*===================================================*/
-.container .galeriaContainer{
+.galeriaContainer{
     width: 97%;
     height: 90vh;
     margin-top: -20vh;
@@ -544,7 +554,7 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     align-items: center;
     justify-content: center;
 }
-.container .galeriaContainer .galeria{
+.galeriaContainer .galeria{
     width: 56vw;
     height: 60vh;
     padding: 0px;
@@ -552,13 +562,13 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     overflow: hidden;
     transition: transform 0.5s ease-in-out;
 }
-.container .galeriaContainer .galeria .sliderImage {
+.galeriaContainer .galeria .sliderImage {
     width: 110%;
     height: 100%;
 }
 
 /* Control de la animación */
-.container .galeriaContainer .galeria .slide{
+.galeriaContainer .galeria .slide{
     flex: 0 0 auto;
     width: 60vw;
     height: 60vh;
@@ -571,7 +581,7 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
 INFORMACION
 ================================================================*/
 
-.container .contents{
+.contents{
     width: 97%;
     height: auto;
     margin-top: 0;
@@ -581,54 +591,55 @@ INFORMACION
     background-color: rgba(255, 255, 255, 0.747);
     padding-bottom: 10vh;
 }
-.container .contents .textContainer{
+.contents .textContainer{
     width: 48%;
     margin-top: 2%;
     margin-left: 2%;
 }
-.container .contents .textContainer .text{
+.contents .text{
     text-align: left;
     font-family: "Open Sans", sans-serif;
+    text-wrap: pretty;
     font-size: 2.5vh;
 }
-.container .contents .ubicacion{
+.contents .ubicacion{
     border: none;
     border-radius: 5%;
     width: 40vw;
     height: 60vh;
     margin-left: 2%;
 }
-.container .cooperadora .contents{
+.cooperadora .contents{
     min-height: 80vh;
     align-items: flex-start;
 }
-.container .contents form{
+.contents form{
     display: flex;
     flex-direction: column;
 }
-.container .contents form label{
+.contents form label{
     font-size: 2.5vh;
     font-family: "Open Sans", sans-serif;
 }
-.container .contents .inputEmail{
+.contents .inputEmail{
     display: flex;
     flex-direction: row;
 }
-.container .contents .email{
+.contents .email{
     width: 40%;
 }
-.container .envio{
+.envio{
     width: 5%;
     height: 2%;
 }
-.container .contents .envio button{
+.contents .envio button{
     width:100%;
     height: 100%;
     border: none;
     background: none;
     transition: all 0.4s ease-in-out
 }
-.container .contents .envio button:hover{
+.contents .envio button:hover{
     width:110%;
     height: 110%;
     border: none;
@@ -636,11 +647,11 @@ INFORMACION
     cursor: pointer;
     transition: all 0.4s ease-in-out
 }
-.container .contents .envio button img{
+.contents .envio button img{
     width: 100%;
     height: 100%;
 }
-.container .contents .cuadroEmail {
+.contents .cuadroEmail {
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out, border 0.5s ease-in-out;
     margin-top: 2%;
     width: 60%;
@@ -660,13 +671,13 @@ INFORMACION
     resize: none;
 }
 
-.container .contents .cuadroEmail::placeholder {
+.contents .cuadroEmail::placeholder {
     font-size: 2.5vh;
     font-family: "Open Sans", sans-serif;
     text-align: left;
 }
 
-.container .contents .cuadroEmail:focus {
+.contents .cuadroEmail:focus {
     width: 100%;
     height: 45.5vh;
     border: 2px solid #000;
@@ -674,7 +685,7 @@ INFORMACION
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out, border 0.5s ease-in-out;
 }
 
-.container .contents .imagen{
+.contents .imagen{
     width: 40vw;
     height: 60vh;
     margin-left: 2%;
@@ -684,7 +695,7 @@ INFORMACION
 /*=======================================================
 INFORMACIÓN DE CONTACTO.
 ==========================================================*/
-.container .contact{
+.contact{
     width: 97vw;
     height: 15vh;
     background-color: #111; 
@@ -694,19 +705,19 @@ INFORMACIÓN DE CONTACTO.
     display: flex;
     justify-content: center;
 }
-.container .contact .texts{
+.contact .texts{
     padding-top: 1%;
     left: 9%;
     display: flex;
     position: absolute;
     flex-direction: column;
 }
-.container .contact .credits{
+.contact .credits{
     align-self: flex-end;
     position: absolute;
     margin-bottom: 1%;
 }
-.container .contact .clickableIcons{
+.contact .clickableIcons{
     width: 40vw;
     height: 5vh;
     display: flex;
@@ -715,18 +726,18 @@ INFORMACIÓN DE CONTACTO.
     right: -30%;
     flex-direction: row;
 }
-.container .contact .clickableIcons a{
+.contact .clickableIcons a{
     width: 6%;
     margin-right: 2%;
     height: 100%;
 }
-.container .contact .clickableIcons a:hover img{
+.contact .clickableIcons a:hover img{
     width: 100%;
     height: 105%;
     filter: none;
     transition: all 0.3s ease-in-out;
 }
-.container .contact .clickableIcons a img{
+.contact .clickableIcons a img{
     width: 100%;
     height: 100%;
     filter: invert();
@@ -736,7 +747,7 @@ INFORMACIÓN DE CONTACTO.
 RESPONSIVE
 =====================================================*/
 @media (max-width: 1200px){
-    .container .sliders .logoContainer {
+    .sliders .logoContainer {
         position: absolute;
         align-self: center;
         justify-self: center;
@@ -757,27 +768,33 @@ RESPONSIVE
     body{
         padding-left: 0;
     }
-    .container .sidebar{
+    .container{
+        margin-left: 0;
+    }
+    .sidebar{
         display: none;
     }
-    .container .sliders .logoContainer {
+    .sliders{
+        width:100vw;
+    }
+    .sliders .logoContainer {
         right: 0vw;
         left: 1vh; 
     }
-    .container .sliders .logoContainer .logo{
+    .sliders .logoContainer .logo{
         width: 14vw;
         height: 21vh;
         position: relative;
         bottom: 7vh;
         right: 1vw;
     }
-    .container .sliders .arrow{ 
+    .sliders .arrow{ 
         left: 45vw;
     }
-    .container .sliders .logoContainer .text{
+    .sliders .logoContainer .text{
         font-size: 4vh;
     }
-    .container .sliders .logoContainer .logo{
+    .sliders .logoContainer .logo{
         width: 11vw;
         height: 18vh;
     }
@@ -794,23 +811,7 @@ RESPONSIVE
     }
 }
 @media (max-width:568px) {
-    .container .sliders{
-        width: 110vw;
-        height: 98vh;
-        padding: 0px;
-        margin: 0px;
-        margin-left: 0px;
-    }
-    .container .sliders .sliderImage {
-        width: 110vw;
-        height: 100vh;
-    }
-    .texto{
-        font-size: 3vh;
-    }
-    .textoMasGrande{
-        font-size: 5vh
-    }
+
 }
 /*===================================================
 ANIMACIONES

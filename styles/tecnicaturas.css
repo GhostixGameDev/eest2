@@ -8,10 +8,94 @@
     width: 100%;
     height: 130%;
 }
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 .container .pantallazo .contents .imagen{
     width: 30vw;
     height: 50vh;
     margin-left: 10%;
     margin-top: 0;
+}
+.selectorAnios{
+    width: 97vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: row;
+    row-gap: 0;
+}
+.selectorAnios .anios-wrapper{
+    display: flex;
+    width: 97vw;
+    overflow-x: hidden;
+}
+.anio{
+    display: flex;
+    flex-direction: column;
+    width: 97vw;
+    height: 100%;
+    margin-right: 0;
+}
+.anio .titles{
+    width: 95.9%;
+}
+.anio .contents{
+    width: 80%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 0;
+    justify-content: left;
+    text-align: left;
+}
+.anio .contents .text{
+    font-size: 3vh;
+}
+.materias-wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+    flex-direction: row;
+    align-items: center;
+}
+.materias-wrapper .materias{
+    width: 50%;
+    text-align: center;
+}
+.materias-wrapper .materias .subtitle{
+    font-size: 5vh;
+}
+.arrow-wrapper{
+    margin-left: -3%;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(206, 206, 206, 0.897);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-wrapper .arrow{
+    width: 40%;
+    height: 10%;
+    transform: translateX(20%);
+    transition: width 0.5s ease-in-out, height 0.3s ease-in-out;
+}
+.arrow-wrapper .arrow.right{
+    transform: translateX(-20%);
+}
+.arrow-wrapper .arrow:hover{
+    width: 45%;
+    height: 12%;
+    transition: width 0.5s ease-in-out, height 0.3s ease-in-out;
+}
+.arrow-wrapper .arrow img{
+    width: 100%;
+    height: 100%;
+}
+.arrow-wrapper .arrow.left img{
+    transform: rotate(270deg);
+}
+
+.arrow-wrapper .arrow.right img{
+    transform: rotate(90deg);
 }
