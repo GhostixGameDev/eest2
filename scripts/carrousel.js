@@ -72,7 +72,7 @@ class Carrousel {
                 this.restartIfFinalIndex();
                 for (let i = 0; i < this.getLength(); i++) {
                     this.getSlide(i).style.transition = "transform 0.5s ease-in-out";
-                    this.getSlide(i).style.transform = `translateX(${i - (this.getSlideIndex()) * 100}%)`;
+                    this.getSlide(i).style.transform = `translateX(${i - (this.getSlideIndex()) * 101}%)`;
                 }
                 this.setSlideIndex(this.getSlideIndex() + 1);
                 break;
