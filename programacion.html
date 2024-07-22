@@ -7,9 +7,10 @@
     <title>EEST 2</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/tecnicaturas.css">
-    <script src="./scripts/carrousel.js"></script>
-    <script src="./scripts/util.js"></script>
-    <script src="./scripts/parallax.js"></script>
+    <script src="./scripts/Carrousel.js"></script>
+    <script src="./scripts/Util.js"></script>
+    <script src="./scripts/Parallax.js"></script>
+    <script src="./scripts/ScrollEvents.js"></script>
     <link rel="shortcut icon" href="assets/logos/logo.png">
 </head>
 
@@ -103,7 +104,7 @@
                 <img src="./assets/images/programacion/art2.jpg" alt="" class="imagen">
             </div>
             <div class="selectorAnios">
-                <div class="arrow-wrapper">
+                <div class="arrow-wrapper hidden">
                     <div class="arrow left" id="anios-left">
                         <img src="./assets/images/icons/Next.png" alt="">
                     </div>
@@ -183,19 +184,19 @@
                             <div class="text">
                                 En el quinto año de nuestra Tecnicatura en Programación, los alumnos continuarán fortaleciendo y expandiendo los conocimientos adquiridos en el año anterior. A través de una serie de materias especializadas, se les preparará para enfrentarse a desafíos más avanzados en el campo de la programación y el desarrollo de software.<br/>
                                 <br/>
-                                Laboratorio de Programación II<br/>
+                                <span class="roboto heavy">Laboratorio de Programación II<br/></span>
                                 En esta materia, los estudiantes consolidarán las bases de la programación estructurada adquiridas en el cuarto año. Aprenderán en profundidad sobre vectores, incluyendo vectores bidimensionales, estáticos y dinámicos. Además, se les instruirá en buenas prácticas de codificación y en la reutilización de código, introduciendo conceptos esenciales como funciones, procedimientos y módulos. Una vez que dominen la lógica de la programación, comenzarán a aprender Python, un lenguaje de programación de alto nivel muy famoso y utilizado en la industria.<br/>
                                 <br/>
-                                Diseño Web<br/>
+                                <span class="roboto heavy">Diseño Web<br/></span>
                                 En la materia de Diseño Web, los alumnos aprenderán a crear páginas profesionales utilizando HTML y CSS. Comenzarán con conceptos básicos y progresarán hasta ser capaces de diseñar páginas web complejas y funcionales, similares a las que se encuentran en el mundo real.<br/>
                                 <br/>
-                                Diseño de Bases de Datos y Laboratorio de Bases de Datos
+                                <span class="roboto heavy">Diseño de Bases de Datos y Laboratorio de Bases de Datos<br/></span>
                                 Estas asignaturas se enfocan en el funcionamiento y utilización de bases de datos. Los estudiantes aprenderán a registrar y gestionar usuarios, así como a recorrer y manipular datos. Se les introducirá al lenguaje de programación PHP y al uso de SQL, herramientas fundamentales para el desarrollo de aplicaciones web dinámicas y robustas.<br/>
                                 <br/>
-                                Modelos y Sistemas<br/>
+                                <span class="roboto heavy">Modelos y Sistemas<br/></span>
                                 En esta materia, los alumnos aprenderán a planificar sus programas utilizando diversos modelos de diseño. Estudiarán distintos tipos de diagramas y aprenderán a planificar relaciones en una base de datos. Además, desarrollarán aplicaciones móviles básicas, adquiriendo una visión integral del proceso de desarrollo de software.<br/>
                                 <br/>
-                                Laboratorio de Redes Informáticas<br/>
+                                <span class="roboto heavy">Laboratorio de Redes Informáticas<br/></span>
                                 En el Laboratorio de Redes Informáticas, los estudiantes explorarán el funcionamiento del internet y las redes de comunicación. Aprenderán sobre servidores, protocolos de transferencia de datos, protocolos de redes, direcciones IP y tipos de redes. Este conocimiento es esencial para comprender cómo se conectan y comunican los dispositivos en la era digital.<br/>
                                 <br/>
                                 Cada una de estas materias está diseñada para proporcionar a los estudiantes una formación completa y sólida, preparándolos para enfrentar con éxito los retos del mundo profesional en el campo de la programación y el desarrollo de software.<br/>
@@ -235,7 +236,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="arrow-wrapper">
+                <div class="arrow-wrapper hidden">
                     <div class="arrow right" id="anios-right">
                         <img src="./assets/images/icons/Next.png" alt="">
                     </div>
@@ -293,10 +294,13 @@
         document.addEventListener("DOMContentLoaded", () => {
             const aniosSlider = new Carrousel(["4", "5"], 0, ["anios-left", "anios-right"]);
             aniosSlider.loop(0, "move");
+            showOnScroll(".hidden");
         })
         window.addEventListener('scroll', () => {
-            doParallaxY("parallax");
+            doParallaxY("parallax", 4.2);
         });
+        
+        
     </script>
     </script>
 </body>
