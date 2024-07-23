@@ -8,7 +8,26 @@
     width: 100%;
     height: 130%;
 }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+.container#tecnicaturas .sliders .logoContainer .text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    margin-left: 2%;
+}
+.typing-animated{
+    display: flex;
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation:
+        typing 2s steps(12) forwards 2s,
+        typing-cursor .5s step-end infinite alternate;
+}
+
+
 .container .pantallazo .contents .imagen{
     width: 30vw;
     height: 50vh;
@@ -144,4 +163,11 @@
 
 .arrow-wrapper .arrow.right img{
     transform: rotate(90deg);
+}
+
+@keyframes typing-cursor{
+    50%{border-color: transparent}
+}
+@keyframes typing{
+    from {width: 0%}to{width:100%}
 }
