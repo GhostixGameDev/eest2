@@ -471,6 +471,7 @@ CONTENIDO
     width: 50%;
     height: 100%;
     display: flex;
+    justify-content: start;
     background-color: rgb(249, 132, 123);
 }
 
@@ -479,8 +480,8 @@ CONTENIDO
     width: 20%;
     height: 10%;
     position: relative;
-    top: 50%;
-    left: 3%;
+    top: 60%;
+    left: 10%;
     border-radius: 12px;
     display: flex;
     background-color: rgb(255, 253, 253);
@@ -495,13 +496,13 @@ CONTENIDO
 }
 
 .modalidadesContainer .informatica{
+    display: flex;
     border: solid 5px;
     border-color: black;
     width: 100%;
     padding-left: 0;
     height: 50%;
     background-color: hwb(219 58% 15%);
-    display: flex;
 }
 
 .modalidadesContainer .informatica .bloque{
@@ -511,6 +512,27 @@ CONTENIDO
     height: 100%;
     display: flex;
     background-color: hwb(219 44% 0%); 
+    background-image: url(assets/images/icons/Tuercas.png);
+}
+
+.modalidadesContainer .informatica .bloque .botonInfo{
+    border: none;
+    width: 20%;
+    height: 10%;
+    position: relative;
+    top: 61%;
+    left: 70%;
+    border-radius: 12px;
+    display: flex;
+    background-color: rgb(255, 253, 253);
+}
+
+.modalidadesContainer .informatica .botonInfo button{
+    border: none;
+    background: none;
+    font-weight: 550;
+    width: 100%;
+    height: 100%;
 }
 
 /*Así una imagen sola, igual para las tuercas vas a tener que hacerle una clase a cada una, hace la de la compu*/
