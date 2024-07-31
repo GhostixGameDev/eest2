@@ -480,11 +480,12 @@ CONTENIDO
     height: 10%;
     position: relative;
     top: 50%;
-    left: 2%;
+    left: 3%;
     border-radius: 12px;
     display: flex;
     background-color: rgb(255, 253, 253);
 }
+
 .modalidadesContainer .programacion .botonInfo button{
     border: none;
     background: none;
@@ -499,7 +500,7 @@ CONTENIDO
     width: 100%;
     padding-left: 0;
     height: 50%;
-    background-color: hwb(219 44% 0%);
+    background-color: hwb(219 58% 15%);
     display: flex;
 }
 
@@ -509,7 +510,7 @@ CONTENIDO
     width: 50%;
     height: 100%;
     display: flex;
-    background-color: rgb(100, 114, 176); 
+    background-color: hwb(219 44% 0%); 
 }
 
 /*Así una imagen sola, igual para las tuercas vas a tener que hacerle una clase a cada una, hace la de la compu*/
