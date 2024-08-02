@@ -1,3 +1,7 @@
+.container#galeria .sliders .logo-container .text{
+  margin-left: 0;
+}
+
 .galeria-wrapper{
     width: 100%;
 }

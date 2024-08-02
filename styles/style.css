@@ -35,6 +35,34 @@ body{
     margin-left: 2%;
     overflow-x: hidden;
 }
+
+/* =================================================================
+Letters
+================================================================*/
+.roboto{
+    font-family: "Roboto";
+    font-size: 7vh;
+    color: rgba(5, 5, 5, 0.9);
+}
+.big{
+    font-size: 9vh
+}
+.highlight{
+    color: rgba(114, 17, 17, 0.9);
+}
+.light{
+    font-weight: 500;
+}
+.heavy{
+    font-weight: 700;
+}
+.white{
+    color: white;
+}
+
+
+
+
 /*============================================
 SLIDER
 =================================================*/
@@ -52,15 +80,14 @@ SLIDER
     
 
 }
-.sliders .sliderImage {
+.sliders .slider-image {
     width: 110vw;
     height: 100vh;
     filter: blur(4px) brightness(30%);
 
 }
  
-/* El logazoooo */
-.sliders .logoContainer {
+.logo-container {
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -69,15 +96,15 @@ SLIDER
     width: 100%;
     height: 100%;
 }
-.sliders .logoContainer .logo{
+.logo-container .logo{
     width: 12%;
     height: 21%;
 }
-.sliders .logoContainer .logo img{
+.logo-container .logo img{
     width: 100%;
     height: 100%;
 }
-.sliders .logoContainer .text{
+.logo-container .text{
     font-family: "PlayFair";
     font-weight: 700;
     color: #f2f2f2;
@@ -145,7 +172,7 @@ SIDEBAR
     align-items: flex-start;
     padding-left: 20px;
 }
-.sidebar .sidebarLogo{
+.sidebar .sidebar-logo{
     width: 80%;
     height: 12%;
     justify-content: center;
@@ -154,32 +181,32 @@ SIDEBAR
     margin-bottom: 20px;
     transition: all 0.5s ease-in-out;
 }
-.sidebar .sidebarLogo a img{
+.sidebar .sidebar-logo a img{
     width: 100%;
     height: 100%;
     
 }
-.sidebar.active .sidebarLogo{
+.sidebar.active .sidebar-logo{
     width: 25%;
     margin-left: -3%;
     justify-content: flex-start;
     transition: all ease-in-out 0.5s;
 }
-.sidebar .sidebarLogo:hover{
+.sidebar .sidebar-logo:hover{
     width: 90%;
     height: 13%;
     margin-left: 5%; 
     cursor: pointer;
     transition: ease-in-out 0.5s;
 }
-.sidebar.active .sidebarLogo:hover{
+.sidebar.active .sidebar-logo:hover{
     width: 27%;
     height: 13%;
     margin-left: -4%;
     cursor: pointer;
     transition: ease-in-out 0.5s;
 }
-.sidebar .sidebarMenu{
+.sidebar .sidebar-menu{
     margin-top: 2%;
     width: 80%;
     height: 12%;
@@ -190,7 +217,7 @@ SIDEBAR
     font-size: 2.5vh;
 }
 
-.sidebar .sidebarMenu:hover{
+.sidebar .sidebar-menu:hover{
     margin-top: 2%;
     width: 90%;
     height: 13%;
@@ -201,12 +228,12 @@ SIDEBAR
     transition: ease-in-out 0.5s;
 }
 
-.sidebar.active .sidebarMenu{
+.sidebar.active .sidebar-menu{
     width: 25%;
     margin-left: -4%;
     justify-content: flex-start;
 }
-.sidebar.active .sidebarMenu:hover{
+.sidebar.active .sidebar-menu:hover{
     width: 27%;
     height: 13%;
     align-self: flex-start;
@@ -217,19 +244,19 @@ SIDEBAR
 }
 
 
-.sidebar .sidebarMenu button{
+.sidebar .sidebar-menu button{
     width: 100%;
     height: 100%;
     cursor: pointer;
     background: none;
     border:rgba(255, 255, 255, 0)
 }
-.sidebar .sidebarMenu img{
+.sidebar .sidebar-menu img{
     width: 100%;
     height: 80%;
 }
 
-.sidebar .sidebarMenu p{
+.sidebar .sidebar-menu p{
     margin-top: -20%;
     transition: ease-in-out 0.5s;
     font-family: "PlayFair";
@@ -256,7 +283,7 @@ Menu cerrado
     color: rgba(255, 255, 255, 0.795);
     text-decoration: none;
 }
-.sidebar .options .modalidadesDesplegable{
+.sidebar .options .tecnicaturas-desplegable{
     width: 106%;
     height: 7%;
     margin-left: -6%;
@@ -265,7 +292,7 @@ Menu cerrado
     overflow-y: hidden;
 }
 
-.sidebar .options .modalidadesDesplegable .modalidadesButton button{
+.sidebar .options .tecnicaturas-desplegable .tecnicaturas-button button{
     border: solid 1px;
     border-color: #161616;
     background-color: #141414;
@@ -281,7 +308,7 @@ Menu cerrado
     overflow-y: hidden;
     transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, border 0.5s ease-in-out;
 }
-.sidebar .options .modalidadesDesplegable .modalidadesButton button img{
+.sidebar .options .tecnicaturas-desplegable .tecnicaturas-button button img{
     width: 0.7vw;
     height: 1.5vh;
     transition: all 0.5s ease-in-out;
@@ -309,7 +336,7 @@ Menu cerrado
 /*============================================
 Menu abierto
 =================================================*/
-.sidebar.active .options .modalidadesDesplegable{
+.sidebar.active .options .tecnicaturas-desplegable{
     opacity: 1;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -326,14 +353,14 @@ Menu abierto
     min-height: 76%;
 }
 
-.sidebar.active .options .modalidadesDesplegable .modalidadesButton{
+.sidebar.active .options .tecnicaturas-desplegable .tecnicaturas-button{
     width: 100%;
     height: 100%;
     flex-wrap: nowrap;
     flex-shrink: 0;
     transition: all ease-in-out 0.5s;
 }
-.sidebar.active .options .modalidadesDesplegable .modalidadesButton button:hover{
+.sidebar.active .options .tecnicaturas-desplegable .tecnicaturas-button button:hover{
     transition: all ease-in-out 0.5s;
     border: solid 1px;
     border-color: rgba(114, 17, 17, 0.9);
@@ -353,7 +380,7 @@ Menu abierto
     cursor: pointer;
     transition: all ease-in-out 0.5s;
 }
-.sidebar.active .options .modalidadesDesplegable .modalidades{
+.sidebar.active .options .tecnicaturas-desplegable .tecnicaturas{
     opacity: 0;
     width: 0;
     height: 0;
@@ -361,7 +388,7 @@ Menu abierto
     flex-direction: column;
     transition: opacity 0.5s, height 0.5s;
 }
-.sidebar.active .options .modalidadesDesplegable .modalidades a{
+.sidebar.active .options .tecnicaturas-desplegable .tecnicaturas a{
     opacity: 0;
     width: 0;
     height: 0;
@@ -370,26 +397,26 @@ Menu abierto
     transition: opacity 0.5s, height 0.5s;
 }
 /*============================================
-Modalidades extendidas
+Tecnicaturas extendidas
 =================================================*/
-.sidebar.active .options .modalidadesDesplegable.active{
+.sidebar.active .options .tecnicaturas-desplegable.active{
     transition: all ease-in-out 0.5s;
     height: 20%;
 }
-.sidebar.active .options .modalidadesDesplegable.active .modalidadesButton{
+.sidebar.active .options .tecnicaturas-desplegable.active .tecnicaturas-button{
     height: 35%;
 }
-.sidebar.active .options .modalidadesDesplegable.active .modalidadesButton button img{
+.sidebar.active .options .tecnicaturas-desplegable.active .tecnicaturas-button button img{
     transition: all 0.5s ease-in-out;
     transform: rotateX(0deg);
     top: 0%;
 }
-.sidebar.active .options .modalidadesDesplegable.active .modalidades{
+.sidebar.active .options .tecnicaturas-desplegable.active .tecnicaturas{
     opacity: 1;
     width: 100%;
     height: auto;
 }
-.sidebar.active .options .modalidadesDesplegable.active .modalidades a{
+.sidebar.active .options .tecnicaturas-desplegable.active .tecnicaturas a{
     opacity: 1;
     width: 106%;
     height: auto;
@@ -403,7 +430,7 @@ Modalidades extendidas
     background-color: #141414;
     transition: height 0.5s ease-in-out;
 }
-.sidebar.active .options .modalidadesDesplegable.active .modalidades a:hover{
+.sidebar.active .options .tecnicaturas-desplegable.active .tecnicaturas a:hover{
     border: solid 1px;
     border-color: rgba(114, 17, 17, 0.9);
     background-color: rgba(109, 15, 15, 0.9);
@@ -424,58 +451,40 @@ CONTENIDO
     flex-direction: column;
     background-color: rgba(206, 206, 206, 0.897);
 }
-.roboto{
-    font-family: "Roboto";
-    font-size: 7vh;
-    color: rgba(5, 5, 5, 0.9);
-}
-.big{
-    font-size: 9vh
-}
-.highlight{
-    color: rgba(114, 17, 17, 0.9);
-}
-.light{
-    font-weight: 500;
-}
-.heavy{
-    font-weight: 700;
-}
 
-.modalidadesContainer{
+
+.tecnicaturas-container{
     width: 97%;
     height: 105vh;
     display: flex;
     flex-direction: column;
 }
-.modalidadesContainer .programacion{
+.tecnicaturas-container .tecnicatura{
     border: solid 5px;
     border-color: black;
     width: 100%;
     height: 50%;
     display: flex;
-    background-color: rgb(255, 129, 129);
 }
 
-.modalidadesContainer .programacion .imagen{
+.tecnicaturas-container .tecnicatura .imagen{
     border: solid 5px;
     border-color: black;
     width: 50%;
     height: 100%;
     display: flex;
-    background-color: rgb(221, 174, 174);
 }
-.modalidadesContainer .programacion .bloque{
+.tecnicaturas-container .tecnicatura .bloque{
     border: solid 5px;
     border-color: black;
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: start;
-    background-color: rgb(249, 132, 123);
+    
 }
 
-.modalidadesContainer .programacion .bloque .botonInfo{
+.tecnicaturas-container .tecnicatura .bloque .boton-info{
     border: none;
     width: 20%;
     height: 10%;
@@ -487,7 +496,7 @@ CONTENIDO
     background-color: rgb(255, 253, 253);
 }
 
-.modalidadesContainer .programacion .botonInfo button{
+.tecnicaturas-container .tecnicatura .boton-info button{
     border: none;
     background: none;
     font-weight: 550;
@@ -495,57 +504,33 @@ CONTENIDO
     height: 100%;
 }
 
-.modalidadesContainer .informatica{
-    display: flex;
-    border: solid 5px;
-    border-color: black;
-    width: 100%;
-    padding-left: 0;
-    height: 50%;
+/*Diferencias entre tecnicaturas*/
+.tecnicaturas-container .tecnicatura.programacion{
+    background-color: rgb(255, 129, 129);
+}
+.tecnicaturas-container .tecnicatura.programacion .bloque{
+    background-color: rgb(249, 132, 123);
+}
+.tecnicaturas-container .tecnicatura.programacion .bloque .imagen{
+    background-color: rgb(249, 132, 123);
+}
+ 
+.tecnicaturas-container .tecnicatura.informatica{
     background-color: hwb(219 58% 15%);
 }
 
-.modalidadesContainer .informatica .bloque{
-    border: solid 5px;
-    border-color: black;
-    width: 50%;
-    height: 100%;
-    display: flex;
+.tecnicaturas-container .tecnicatura.informatica .bloque{
     background-color: hwb(219 44% 0%); 
     background-image: url(assets/images/icons/Tuercas.png);
 }
-
-.modalidadesContainer .informatica .bloque .botonInfo{
-    border: none;
-    width: 20%;
-    height: 10%;
-    position: relative;
-    top: 61%;
-    left: 70%;
-    border-radius: 12px;
-    display: flex;
-    background-color: rgb(255, 253, 253);
+.tecnicaturas-container .tecnicatura.informatica .bloque .imagen{
+    background-color: hwb(219 1% 43%); 
 }
 
-.modalidadesContainer .informatica .botonInfo button{
-    border: none;
-    background: none;
-    font-weight: 550;
-    width: 100%;
-    height: 100%;
-}
-
-/*Así una imagen sola, igual para las tuercas vas a tener que hacerle una clase a cada una, hace la de la compu*/
-/*La de las tuercas la hago yo cuaalquier cosa,, porq tenes q tener un div que contenga ambas y despues posicionar ese div
-y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
-.modalidadesContainer .programacion .bloque img{
-    position: relative;
-    left: 50%;
-}
 .galeria{
     background-color: rgba(255, 255, 255, 0.747)
 }
-.textGaleria{
+.text-galeria{
     width: 97%;
     height: 35vh;
     margin-top: 0;
@@ -556,11 +541,11 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     justify-self: center;
     text-align: center;
 }
-.textGaleria .roboto{
+.text-galeria .roboto{
     text-decoration: underline;
     transition: all 0.5s ease-in-out;
 }
-.textGaleria .roboto:hover{
+.text-galeria .roboto:hover{
     animation: hover-link ease-in-out 0.5s linear;
     -webkit-animation: hover-link ease-in-out 0.5s linear;
     color: rgba(114, 17, 17, 0.9);
@@ -569,7 +554,7 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
 /*===================================================
 /*GALERIA MINI*/
 /*===================================================*/
-.galeriaContainer{
+.galeria-container{
     width: 97%;
     height: 90vh;
     margin-top: -20vh;
@@ -577,7 +562,7 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     align-items: center;
     justify-content: center;
 }
-.galeriaContainer .galeria{
+.galeria-container .galeria{
     width: 56vw;
     height: 60vh;
     padding: 0px;
@@ -585,13 +570,13 @@ y dsp posicionar las tuercas dentro de ese div... Ya, gracias :]*/
     overflow: hidden;
     transition: transform 0.5s ease-in-out;
 }
-.galeriaContainer .galeria .sliderImage {
+.galeria-container .galeria .slider-image {
     width: 110%;
     height: 100%;
 }
 
 /* Control de la animación */
-.galeriaContainer .galeria .slide{
+.galeria-container .galeria .slide{
     flex: 0 0 auto;
     width: 60vw;
     height: 60vh;
@@ -614,7 +599,7 @@ INFORMACION
     background-color: rgba(255, 255, 255, 0.747);
     padding-bottom: 10vh;
 }
-.contents .textContainer{
+.contents .text-container{
     width: 48%;
     margin-top: 2%;
     margin-left: 2%;
@@ -644,7 +629,7 @@ INFORMACION
     font-size: 2.5vh;
     font-family: "Open Sans", sans-serif;
 }
-.contents .inputEmail{
+.contents .input-email{
     display: flex;
     flex-direction: row;
 }
@@ -674,7 +659,7 @@ INFORMACION
     width: 100%;
     height: 100%;
 }
-.contents .cuadroEmail {
+.contents .cuadro-email {
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out, border 0.5s ease-in-out;
     margin-top: 2%;
     width: 60%;
@@ -694,13 +679,13 @@ INFORMACION
     resize: none;
 }
 
-.contents .cuadroEmail::placeholder {
+.contents .cuadro-email::placeholder {
     font-size: 2.5vh;
     font-family: "Open Sans", sans-serif;
     text-align: left;
 }
 
-.contents .cuadroEmail:focus {
+.contents .cuadro-email:focus {
     width: 100%;
     height: 45.5vh;
     border: 2px solid #000;
@@ -740,7 +725,7 @@ INFORMACIÓN DE CONTACTO.
     position: absolute;
     margin-bottom: 1%;
 }
-.contact .clickableIcons{
+.contact .clickable-icons{
     width: 40vw;
     height: 5vh;
     display: flex;
@@ -749,18 +734,18 @@ INFORMACIÓN DE CONTACTO.
     right: -30%;
     flex-direction: row;
 }
-.contact .clickableIcons a{
+.contact .clickable-icons a{
     width: 6%;
     margin-right: 2%;
     height: 100%;
 }
-.contact .clickableIcons a:hover img{
+.contact .clickable-icons a:hover img{
     width: 100%;
     height: 105%;
     filter: none;
     transition: all 0.3s ease-in-out;
 }
-.contact .clickableIcons a img{
+.contact .clickable-icons a img{
     width: 100%;
     height: 100%;
     filter: invert();
@@ -785,7 +770,7 @@ UTILITY
 RESPONSIVE
 =====================================================*/
 @media (max-width: 1200px){
-    .sliders .logoContainer {
+    .sliders .logo-container {
         position: absolute;
         align-self: center;
         justify-self: center;
@@ -815,11 +800,11 @@ RESPONSIVE
     .sliders{
         width:100vw;
     }
-    .sliders .logoContainer {
+    .sliders .logo-container {
         right: 0vw;
         left: 1vh; 
     }
-    .sliders .logoContainer .logo{
+    .sliders .logo-container .logo{
         width: 14vw;
         height: 21vh;
         position: relative;
@@ -829,14 +814,14 @@ RESPONSIVE
     .sliders .arrow{ 
         left: 45vw;
     }
-    .sliders .logoContainer .text{
+    .sliders .logo-container .text{
         font-size: 4vh;
     }
-    .sliders .logoContainer .logo{
+    .sliders .logo-container .logo{
         width: 11vw;
         height: 18vh;
     }
-    .textModalidades{
+    .texttecnicaturas{
         width: 100%;
         height: 33vh;
         margin: 0;
