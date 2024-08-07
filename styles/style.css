@@ -31,7 +31,7 @@ body{
 .container{
     margin: 0px;
     padding: 0px;
-    width: 100%;
+    width: 95vw;
     margin-left: 2%;
     overflow-x: hidden;
 }
@@ -526,6 +526,10 @@ CONTENIDO
 .tecnicaturas-container .tecnicatura.informatica .bloque .imagen{
     background-color: hwb(219 1% 43%); 
 }
+.tecnicaturas-container .tecnicatura.informatica .bloque .boton-info{
+    left: 70%;
+}
+
 
 .galeria{
     background-color: rgba(255, 255, 255, 0.747)

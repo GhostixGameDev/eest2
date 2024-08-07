@@ -10,6 +10,35 @@
     <link rel="shortcut icon" href="assets/logos/logo.png">
 </head>
 <body>
+    <!----BARRA DE NAVEGACIÓN!---->
+    <nav class="sidebar">
+        <div class="sidebar-logo">
+            <a href="index.html">
+                <img src="./assets/logos/logo.png" alt="Logo institucional.">
+            </a>
+        </div>
+        <div class="sidebar-menu">
+            <button onclick="extendDiv('.sidebar')">
+                <img src="./assets/images/icons/BotonMenu.png">
+                <p>MENU</p>
+            </button>
+        </div>
+        <div class="options">
+            <div class="tecnicaturas-desplegable">
+                <div class="tecnicaturas-button">
+                    <button onclick="extendDiv('.tecnicaturas-desplegable')">Tecnicaturas <img src="./assets/images/icons/arrow.png"></button>
+                </div>
+                <div class="tecnicaturas">
+                    <a href="programacion.html">Programación</a>
+                    <a href="informatica.html">Informática</a>
+                </div>
+            </div>
+            <a href="#ubicacion-zone">Ubicación</a>
+            <a href="galeria.html">Galería</a>
+            <a href="#historiaZone">Historia institucional</a>
+            <a href="personal.html">Personal institucional</a>
+        </div>
+    </nav>
     <div class="container">
         <!----SLIDER-!--->
         <div class="sliders">
@@ -42,35 +71,7 @@
                 
             </div>
         </div>
-        <!----BARRA DE NAVEGACIÓN!---->
-        <nav class="sidebar">
-            <div class="sidebar-logo">
-                <a href="index.html">
-                    <img src="./assets/logos/logo.png" alt="Logo institucional.">
-                </a>
-            </div>
-            <div class="sidebar-menu">
-                <button onclick="extendDiv('.sidebar')">
-                    <img src="./assets/images/icons/BotonMenu.png">
-                    <p>MENU</p>
-                </button>
-            </div>
-            <div class="options">
-                <div class="tecnicaturas-desplegable">
-                    <div class="tecnicaturas-button">
-                        <button onclick="extendDiv('.tecnicaturas-desplegable')">Tecnicaturas <img src="./assets/images/icons/arrow.png"></button>
-                    </div>
-                    <div class="tecnicaturas">
-                        <a href="programacion.html">Programación</a>
-                        <a href="informatica.html">Informática</a>
-                    </div>
-                </div>
-                <a href="#ubicacion-zone">Ubicación</a>
-                <a href="galeria.html">Galería</a>
-                <a href="#historiaZone">Historia institucional</a>
-                <a href="personal.html">Personal institucional</a>
-            </div>
-        </nav>
+        
         <!----CONTENIDO!---->
         <!----TECNICATURAS!---->
         <section class="tecnicaturas">
