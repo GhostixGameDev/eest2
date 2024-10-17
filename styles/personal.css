@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column; /* Alinea las líneas en una columna */
+}
+
+.linea {
+    display: flex; /* Usa flexbox para alinear número y texto */
+    margin-bottom: 10px; /* Espacio entre las líneas */
+}
+
+.numero {
+    min-width: 30px; /* Ancho mínimo para los números */
+    text-align: right; /* Alinea los números a la derecha */
+    margin-right: 10px; /* Espacio entre el número y el texto */
+    color: black; /* Color del número */
+}
+
+.texto {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+}
