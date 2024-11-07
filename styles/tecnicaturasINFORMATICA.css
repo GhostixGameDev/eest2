@@ -206,13 +206,11 @@
 
 
 
-.contentsiNFORMATICA{
-    width: 100%;
-    height: 100%;
-}
+
+
 .aInfo{
-    width: 60%;
-    height: 50%;
+    width: 100px;
+    height: 400px;
     background-color: blue;
 }
 
