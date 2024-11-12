@@ -18,7 +18,9 @@
     font-weight: 200;
     color: rgba(31, 30, 30, 0.9);
 }
-
+.code-font{
+    font-family: "SourceCode" monospace;
+}
 .code-text {
     font-family: "SourceCode" monospace;
     text-wrap: nowrap;
@@ -52,4 +54,28 @@
   counter-increment: item;
   margin-left: -20px;
   padding-right: 20px;
+}
+
+.pestaniaINFO{
+    display: flex;
+    height: 30vw;
+    width: 55vw;
+    background-color: rgb(230, 227, 227);
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    margin-top: 15px;
+
+    border-color: rgba(0, 0, 0, 0.404);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+.pestania{
+    background-color: rgb(89, 83, 94);
+    height: 2.2vw;
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }

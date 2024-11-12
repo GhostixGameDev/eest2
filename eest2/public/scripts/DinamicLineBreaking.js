@@ -31,7 +31,6 @@ function dinamicLineBreak(containerClass, defaultWidth = 300) {  // defaultWidth
     words.forEach((word, index) => {
         // Test adding the word to the current line
         let testLine = line + word + " ";
-        
         // Check if testLine exceeds character limit
         if (testLine.length > maxCharsPerLine && line !== "") {
             // Add current line to the list as <li>
