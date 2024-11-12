@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEST 2</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/Carrousel.js"></script>
+    <script src="./scripts/Util.js"></script>
+    <link rel="shortcut icon" href="assets/logos/logo.png">
+</head>
+<body>
+    <!----BARRA DE NAVEGACIÓN!---->
+    <nav class="sidebar">
+        <div class="sidebar-logo">
+            <a href="index.html">
+                <img src="./assets/logos/logo.png" alt="Logo institucional.">
+            </a>
+        </div>
+        <div class="sidebar-menu">
+            <button onclick="extendDiv('.sidebar')">
+                <img src="./assets/images/icons/BotonMenu.png">
+                <p>MENU</p>
+            </button>
+        </div>
+        <div class="options">
+            <div class="tecnicaturas-desplegable">
+                <div class="tecnicaturas-button">
+                    <button onclick="extendDiv('.tecnicaturas-desplegable')">Tecnicaturas <img src="./assets/images/icons/arrow.png"></button>
+                </div>
+                <div class="tecnicaturas">
+                    <a href="programacion.html">Programación</a>
+                    <a href="informatica.html">Informática</a>
+                </div>
+            </div>
+            <a href="#ubicacion-zone">Ubicación</a>
+            <a href="galeria.html">Galería</a>
+            <a href="#historiaZone">Historia institucional</a>
+            <a href="personal.html">Personal institucional</a>
+        </div>
+    </nav>
+    <div class="container">
+        <!----SLIDER-!--->
+        <div class="sliders">
+            <div id="slideimg1" class="fade">
+                <img src="./assets/slider/1.jpg" class="slider-image"/>
+            </div>
+
+            <div id="slideimg2" class="fade">
+                <img src="./assets/slider/2.jpeg" class="slider-image"/>
+            </div>
+
+            <div id="slideimg3" class="fade">
+                <img src="./assets/slider/3.jpeg" class="slider-image"/>
+            </div>
+
+            <div id="slideimg4" class="fade">
+                <img src="./assets/slider/4.jpg" class="slider-image"/>
+            </div>
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="./assets/logos/white.png" alt="Logo">
+                </div>
+                <div class="text">
+                    Escuela educación</br>
+                    Secundaria Técnica N°2</br>
+                </div>
+            </div>
+            <div class="arrow">
+                <a href="#tecnicaturas-zone"><img src="./assets/images/icons/DoubleArrow.png"></a>
+                
+            </div>
+        </div>
+        
+        <!----CONTENIDO!---->
+        <!----TECNICATURAS!---->
+        <section class="tecnicaturas">
+            <div class="titles">
+                <span id="tecnicaturas-zone" class="roboto light">
+                    CICLO SUPERIOR</br></span>
+                <span class="roboto big heavy highlight">
+                    TECNICATURAS</span>
+            </div>
+            <div class="tecnicaturas-container">
+                <div class="tecnicatura programacion">
+                    <div class="imagen"></div>
+                    <div class="bloque">
+                       <!--  <img src="./assets/images/icons/Computer.png">-->
+                        <div class="boton-info">
+                            <button>Más información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tecnicatura informatica">
+                    <div class="bloque">
+                       <!-- <img src="./assets/images/icons/Tuerca.png">
+                        <img src="./assets/images/icons/Tuerca.png"> -->
+                        <div class="boton-info">
+                            <button>Más información</button>
+                        </div>
+                    </div>
+                    <div class="imagen">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--Galeria-->
+        <section class="galeria">
+            <div class="text-galeria">
+                <a id="galeria-zone" href="./galeria.html" class="roboto light">
+                    GALERIA
+                </a>
+            </div>
+            <!----SLIDER-!--->
+            <div class="galeria-container">
+                <input type="radio" name="position" />
+                <input type="radio" name="position" />
+                <input type="radio" name="position" checked/>
+                <input type="radio" name="position" />
+                <input type="radio" name="position" />
+                <div class="Carrousel">
+                    <div class="item first">
+                        <img src="https://picsum.photos/id/684/600/400" alt="">
+                    </div>
+                    <div class="item second">
+                        <img src="https://picsum.photos/id/684/600/400" alt="">
+                    </div>
+                    <div class="item third">
+                        <img src="https://picsum.photos/id/684/600/400" alt="">
+                    </div>
+                    <div class="item fourth">
+                        <img src="https://picsum.photos/id/684/600/400" alt="">
+                    </div>
+                    <div class="item fifth">
+                        <img src="https://picsum.photos/id/684/600/400" alt="">
+                    </div>
+               </div>
+        </section>
+        <section class="informacion">
+            <div class="titles">
+                <span class="roboto light">
+                    SOBRE NUESTRA<br/>
+                </span>
+                <span class="roboto heavy highlight big">
+                    ESCUELA
+                </span>
+            </div>
+            <div class="contents">
+                <div class="text-container">
+                    <span class="text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tenetur excepturi reprehenderit eum aut atque nisi officia rerum animi, odit, dolore a facere laborum est minus. Recusandae laboriosam eos hic.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod culpa reiciendis tempora a illo, dolores perspiciatis quaerat asperiores quia velit? Aspernatur obcaecati et assumenda eos ad possimus qui fugiat deleniti!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa nostrum aliquam, modi accusamus officia natus voluptate temporibus veritatis magnam repellendus expedita aut voluptatum laudantium quod autem dolores maxime deleniti.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, id sunt ipsam nostrum, amet dolorem iure dignissimos illum reiciendis earum fugiat inventore omnis incidunt? Distinctio quia neque perspiciatis ab harum!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, voluptate? Odit sunt saepe aperiam quae totam aliquam facilis beatae ducimus, minima eveniet deserunt architecto libero reprehenderit labore dolorum animi! Nam?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, incidunt laborum deleniti natus eos perspiciatis unde! Debitis reiciendis accusamus exercitationem obcaecati. Alias eveniet doloremque harum eum id nihil ex doloribus!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem quaerat mollitia officiis saepe harum ab dolores at dolor. Voluptas facilis porro autem dolorem facere aut minus distinctio incidunt accusamus!
+                    </span>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2815284261414!2d-60.93729282421472!3d-34.59704189735986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b8eb3cbc6a550f%3A0x37cf5f8c8dbc8a4b!2sEscuela%20de%20Educaci%C3%B3n%20T%C3%A9cnica%20N%C2%BA%202!5e0!3m2!1ses!2sar!4v1720748419802!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ubicacion"></iframe>
+            </div>
+        </section>
+        <footer class="cooperadora">
+            <div class="titles">
+                <span class="roboto heavy big">
+                    CONTACTANOS
+                </span>
+            </div>
+            <div class="contents">
+                <div class="text-container">
+                    <span class="roboto heavy">
+                        Escribenos un
+                    </span>
+                    <span class="roboto heavy">
+                        E-Mail! <br/>
+                    </span>
+                    <form action="https://formsubmit.co/6c1e3dd16b03b325523c946de0fafe5a" method="POST" id="sent">
+                        <label for="email">E-Mail</label>
+                        <div class="input-email">
+                            <input type="text" name="E-Mail del emisor:" id="" class="email">
+                            <div class="envio">
+                                <button type="submit" value="Enviar"><img src="./assets/images/icons/send.png" alt=""></button>
+                            </div>
+                        </div>
+                        <textarea name="Mensaje recibido:" id="" class="cuadro-email" placeholder="Escribenos tus consultas aquí!"></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#sent">
+                    </form>
+                </div>
+                <img src="./assets/images/misc/cooperadora.jpg" alt="" class="imagen">
+            </div>
+        </footer>
+        <section class="contact">
+            <div class="texts">
+                <span>eet2junin@gmail.com</span>
+                <span>+54 9 236 427-8238</span>
+            </div>
+            <div class="credits">
+                <span>Web realizada por los alumnos de 6° P 2024.</span>
+            </div>
+            <div class="clickable-icons">
+                <a href="https://www.facebook.com/tecnica2junin"><img src="./assets/images/icons/facebook.png" alt=""></a>
+                <a href="mailto:eet2junin@gmail.com"><img src="./assets/images/icons/gmail.png" alt=""></a>
+                <a href="https://wa.me/+5492364278238"><img src="./assets/images/icons/whatsapp.png" alt=""></a>
+            </div>
+        </section>
+    </div>
+
+    <!--Scripts a ejecutar al cargar la pagina.-->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const landingSlider = new Carrousel(["slideimg1", "slideimg2", "slideimg3", "slideimg4"], 0, null);
+            landingSlider.loop(6000, "fade");
+            const galeriaSlider = new Carrousel(["galeria1", "galeria2", "galeria3"], 0, null);
+            galeriaSlider.loop(6000, "move");
+        })
+    </script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyCHZV7z2kTy93LhvAOUadyPmkAcUdkEe8Q",
+          authDomain: "eest2web.firebaseapp.com",
+          projectId: "eest2web",
+          storageBucket: "eest2web.firebasestorage.app",
+          messagingSenderId: "8953743235",
+          appId: "1:8953743235:web:2b13d832876963355a58b6",
+          measurementId: "G-F9LF2V7CCH"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEST 2</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="styles/tecnicaturas.css">
+    <link rel="stylesheet" href="styles/tecnicaturas-variants.css">
+    <script src="./scripts/Carrousel.js"></script>
+    <script src="./scripts/Util.js"></script>
+    <script src="./scripts/ScrollEvents.js"></script>
+    <link rel="shortcut icon" href="assets/logos/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!----BARRA DE NAVEGACIÓN!---->
+    <nav class="sidebar">
+        <div class="sidebar-logo">
+            <a href="index.html">
+                <img src="./assets/logos/logo.png" alt="Logo institucional.">
+            </a>
+        </div>
+        <div class="sidebar-menu">
+            <button onclick="extendDiv('.sidebar')">
+                <img src="./assets/images/icons/BotonMenu.png">
+                <p>MENU</p>
+            </button>
+        </div>
+        <div class="options">
+            <div class="tecnicaturas-desplegable">
+                <div class="tecnicaturas-button">
+                    <button onclick="extendDiv('.tecnicaturas-desplegable')">Tecnicaturas <img src="./assets/images/icons/arrow.png"></button>
+                </div>
+                <div class="tecnicaturas">
+                    <a href="programacion.html">Programación</a>
+                    <a href="informatica.html">Informática</a>
+                </div>
+            </div>
+            <a href="#ubicacionZone">Ubicación</a>
+            <a href="galeria.html">Galería</a>
+            <a href="#historiaZone">Historia institucional</a>
+            <a href="personal.html">Personal institucional</a>
+        </div>
+    </nav>
+    <div class="container" id="tecnicaturas">
+        <!----SLIDER-!--->
+        <div class="sliders">
+            <div class="background informatica-bg-variant" ></div>
+            <div class="logo-container">
+                <div class="text">
+                    <span class="normal">TECNICATURA EN</span> 
+                    <span class="roboto big typing-animated" style="color: rgb(135, 184, 229);">INFORMÁTICA</span>
+                    <!--Me canse de renegar con esta vendita imagen, que la ponga alguien mas. att: mel-->
+                </div>
+            </div>
+            <div class="arrow">
+                <a href="#pantallazo"><img src="./assets/images/icons/DoubleArrow.png"></a>
+                
+            </div>
+        </div>
+        
+        <!----CONTENIDO!---->
+        <!----Tecnicaturas!---->
+        <section class="pantallazo">
+            <div class="titles">
+                <span id="pantallazo" class="roboto light">
+                    TECNICATURA EN</br></span>
+                <span class="roboto heavy highlight big">
+                    INFORMÁTICA</span>
+            </div>
+            <div class="contentsiNFORMATICA">
+                <div class="aInfo"></div>
+                <div class="bInfo"></div>
+            </div>
+        </section>
+        
+        <section class="informacion">
+            <div class="titles">
+                <span class="roboto light">
+                    HORARIOS Y<br/>
+                </span>
+                <span class="roboto big highlight heavy">
+                    MATERIAS
+                </span>
+            </div>
+            <div class="contents">
+                <div class="text-container">
+                    <span class="roboto heavy">
+                        Horarios de esta Tecnicatura
+                    </span>
+                    <div class="text">
+                        La Tecnicatura en Programación se ofrece actualmente en el horario de la tarde, con una jornada completa de 8 horas diarias. Los horarios de clases están comprendidos entre las 11:00 a.m., siendo el horario de entrada más temprano posible, y las 7:55 p.m., siendo el horario de salida más tardío posible.<br/>
+                        Es importante destacar que estos horarios no incluyen la experiencia de las prácticas profesionalizantes que los estudiantes realizan en el séptimo año. Durante este período, los alumnos tienen la oportunidad de aplicar los conocimientos adquiridos en un entorno laboral real, lo que les brinda una valiosa experiencia práctica y les prepara de manera integral para su futura inserción en el mundo profesional del desarrollo de software.<br/>
+                        A continuación, podrán encontrar un selector de años que les permitirá visualizar las distintas materias que componen el plan de estudios de la Tecnicatura en Programación, abarcando desde el cuarto hasta el séptimo año. Esta herramienta les proporcionará una visión detallada del contenido académico, facilitando una comprensión clara del recorrido formativo y las competencias adquiridas en cada etapa del programa educativo.
+                    </div>
+                </div>
+                <img src="./assets/images/programacion/art2.jpg" alt="" class="imagen">
+            </div>
+            <div class="selector-anios">
+                <div class="arrow-wrapper hidden">
+                    <div class="arrow left" id="anios-left">
+                        <img src="./assets/images/icons/Next.png" alt="">
+                    </div>
+                </div>
+                <div class="anios-wrapper">
+                   <div class="anio" id="4">
+                        <div class="titles">                    
+                            <span class="roboto light">
+                                CUARTO<br/>
+                            </span>
+                            <span class="roboto big highlight heavy">
+                                AÑO
+                            </span>
+                        </div> 
+                        <div class="contents">
+                            <div class="text">
+                                En el cuarto año de nuestra Tecnicatura en Programación, los estudiantes se adentrarán en diversas materias fundamentales que sentarán las bases para su formación profesional. Las asignaturas que se introducirán son: Laboratorio de Hardware, Laboratorio de Programación I, Laboratorio de Sistemas Operativos y Laboratorio de Aplicaciones.<br/>
+                                <br/>
+                                <span class="roboto heavy">Laboratorio de Programación I<br/></span>
+                                En esta materia, considerada la principal del año, los estudiantes comenzarán desde cero con la lógica de la programación utilizando el seudocódigo como herramienta principal. Aprenderán conceptos fundamentales como las variables y los vectores, pasando por todas las estructuras de control y flujo de datos. Este enfoque les permitirá desarrollar el pensamiento lógico y la capacidad de abstracción necesarios para convertirse en programadores competentes, preparándolos para profundizar sus habilidades en el quinto año.<br/>
+                                <br/>
+                                <span class="roboto heavy">Laboratorio de Hardware<br/></span>
+                                Aunque nuestra tecnicatura está orientada hacia la informática, en el Laboratorio de Hardware, los estudiantes aprenderán sobre cada componente físico de las computadoras. Adquirirán conocimientos sobre la identificación y denominación correcta de cada pieza, comprendiendo su función específica y su importancia en el funcionamiento de los sistemas informáticos.<br/>
+                                <br/>
+                                <span class="roboto heavy">Laboratorio de Aplicaciones<br/></span>
+                                En esta asignatura, los estudiantes se familiarizarán con las aplicaciones de ofimática más utilizadas, tales como Word, Excel y PowerPoint, así como con software de edición de imágenes. Aprenderán a manejar estas herramientas de manera eficiente, lo que es fundamental para el entorno laboral y académico.<br/>
+                                <br/>
+                                <span class="roboto heavy">Laboratorio de Sistemas Operativos<br/></span>
+                                Aquí, los estudiantes descubrirán qué son los sistemas operativos y cómo instalarlos. Verán ejemplos prácticos de diferentes sistemas operativos, aprenderán para qué sirven y cómo utilizar máquinas virtuales. Esta materia les brindará una comprensión integral del software que gestiona los recursos de hardware y software de un computador.<br/>
+                            </div>
+                            <div class="materias-wrapper">
+                                <div class="materias">
+                                    <div class="subtitle roboto heavy">
+                                        Materias basicas
+                                    </div>
+                                    <div class="roboto list">
+                                        <ul>
+                                            <li>Historia</li>
+                                            <li>Geografía</li>
+                                            <li>Literatura</li>
+                                            <li>Matemáticas</li>
+                                            <li>Fisica</li>
+                                            <li>Quimica</li>
+                                            <li>Educación Fisica</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="materias">
+                                    <div class="subtitle roboto heavy">
+                                        Materias especiales
+                                    </div>
+                                    <div class="roboto list right">
+                                        <ul>
+                                            <li>Laboratorio de Programación I</li>
+                                            <li>Laboratorio de Hardware</li>
+                                            <li>Laboratorio de Sistemas Operativos</li>
+                                            <li>Laboratorio de Aplicaciones</li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anio" id="5">
+                        <div class="titles">                    
+                            <span class="roboto light">
+                                QUINTO<br/>
+                            </span>
+                            <span class="roboto big highlight heavy">
+                                AÑO
+                            </span>
+                        </div> 
+                        <div class="contents">
+                            <div class="text">
+                                En el quinto año de nuestra Tecnicatura en Programación, los alumnos continuarán fortaleciendo y expandiendo los conocimientos adquiridos en el año anterior. A través de una serie de materias especializadas, se les preparará para enfrentarse a desafíos más avanzados en el campo de la programación y el desarrollo de software.<br/>
+                                <br/>
+                                <span class="roboto heavy">Laboratorio de Programación II<br/></span>
+                                En esta materia, los estudiantes consolidarán las bases de la programación estructurada adquiridas en el cuarto año. Aprenderán en profundidad sobre vectores, incluyendo vectores bidimensionales, estáticos y dinámicos. Además, se les instruirá en buenas prácticas de codificación y en la reutilización de código, introduciendo conceptos esenciales como funciones, procedimientos y módulos. Una vez que dominen la lógica de la programación, comenzarán a aprender Python, un lenguaje de programación de alto nivel muy famoso y utilizado en la industria.<br/>
+                                <br/>
+                                <span class="roboto heavy">Diseño Web<br/></span>
+                                En la materia de Diseño Web, los alumnos aprenderán a crear páginas profesionales utilizando HTML y CSS. Comenzarán con conceptos básicos y progresarán hasta ser capaces de diseñar páginas web complejas y funcionales, similares a las que se encuentran en el mundo real.<br/>
+                                <br/>
+                                <span class="roboto heavy">Diseño de Bases de Datos y Laboratorio de Bases de Datos<br/></span>
+                                Estas asignaturas se enfocan en el funcionamiento y utilización de bases de datos. Los estudiantes aprenderán a registrar y gestionar usuarios, así como a recorrer y manipular datos. Se les introducirá al lenguaje de programación PHP y al uso de SQL, herramientas fundamentales para el desarrollo de aplicaciones web dinámicas y robustas.<br/>
+                                <br/>
+                                <span class="roboto heavy">Modelos y Sistemas<br/></span>
+                                En esta materia, los alumnos aprenderán a planificar sus programas utilizando diversos modelos de diseño. Estudiarán distintos tipos de diagramas y aprenderán a planificar relaciones en una base de datos. Además, desarrollarán aplicaciones móviles básicas, adquiriendo una visión integral del proceso de desarrollo de software.<br/>
+                                <br/>
+                                <span class="roboto heavy">Laboratorio de Redes Informáticas<br/></span>
+                                En el Laboratorio de Redes Informáticas, los estudiantes explorarán el funcionamiento del internet y las redes de comunicación. Aprenderán sobre servidores, protocolos de transferencia de datos, protocolos de redes, direcciones IP y tipos de redes. Este conocimiento es esencial para comprender cómo se conectan y comunican los dispositivos en la era digital.<br/>
+                                <br/>
+                                Cada una de estas materias está diseñada para proporcionar a los estudiantes una formación completa y sólida, preparándolos para enfrentar con éxito los retos del mundo profesional en el campo de la programación y el desarrollo de software.<br/>
+                            </div>
+                            <div class="materias-wrapper">
+                                <div class="materias">
+                                    <div class="subtitle roboto heavy">
+                                        Materias basicas
+                                    </div>
+                                    <div class="list">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="materias">
+                                    <div class="subtitle roboto heavy">
+                                        Materias especiales
+                                    </div>
+                                    <div class="list">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-wrapper hidden">
+                    <div class="arrow right" id="anios-right">
+                        <img src="./assets/images/icons/Next.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="cooperadora">
+            <div class="titles">
+                <span class="roboto big heavy">
+                    CONTACTANOS
+                </span>
+            </div>
+            <div class="contents">
+                <div class="text-container">
+                    <span class="roboto light">
+                        Escribenos un
+                    </span>
+                    <span class="roboto light">
+                        E-Mail! <br/>
+                    </span>
+                    <form action="https://formsubmit.co/6c1e3dd16b03b325523c946de0fafe5a" method="POST" id="sent">
+                        <label for="email">E-Mail</label>
+                        <div class="input-email">
+                            <input type="text" name="E-Mail del emisor:" id="" class="email">
+                            <div class="envio">
+                                <button type="submit" value="Enviar"><img src="./assets/images/icons/send.png" alt=""></button>
+                            </div>
+                        </div>
+                        <textarea name="Mensaje recibido:" id="" class="cuadro-email" placeholder="Escribenos tus consultas aquí!"></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#sent">
+                    </form>
+                </div>
+                <img src="./assets/images/misc/cooperadora.jpg" alt="" class="imagen">
+            </div>
+        </footer>
+        <section class="contact">
+            <div class="texts">
+                <span>eet2junin@gmail.com</span>
+                <span>+54 9 236 427-8238</span>
+            </div>
+            <div class="credits">
+                <span>Web realizada por los alumnos de 6° P 2024.</span>
+            </div>
+            <div class="clickable-icons">
+                <a href="https://www.facebook.com/tecnica2junin"><img src="./assets/images/icons/facebook.png" alt=""></a>
+                <a href="mailto:eet2junin@gmail.com"><img src="./assets/images/icons/gmail.png" alt=""></a>
+                <a href="https://wa.me/+5492364278238"><img src="./assets/images/icons/whatsapp.png" alt=""></a>
+            </div>
+        </section>
+    </div>
+
+    <!--Scripts a ejecutar al cargar la pagina.-->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const aniosSlider = new Carrousel(["4", "5"], 0, ["anios-left", "anios-right"]);
+            aniosSlider.loop(0, "move");
+            showOnScroll(".hidden");
+        })
+        window.addEventListener('scroll', () => {
+            doParallaxY("parallax", 4.2);
+        });
+        
+        
+    </script>
+</body>
+
+</html>

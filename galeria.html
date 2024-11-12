@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEST 2</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/galeria.css">
+    <script src="./scripts/PhotoGallery.js"></script>
+    <script src="./scripts/Carrousel.js"></script>
+    <script src="./scripts/Util.js"></script>
+    <link rel="shortcut icon" href="assets/logos/logo.png">
+</head>
+<body>
+    <!----BARRA DE NAVEGACIÓN!---->
+    <nav class="sidebar">
+        <div class="sidebar-logo">
+            <a href="index.html">
+                <img src="./assets/logos/logo.png" alt="Logo institucional.">
+            </a>
+        </div>
+        <div class="sidebar-menu">
+            <button onclick="extendDiv('.sidebar')">
+                <img src="./assets/images/icons/BotonMenu.png">
+                <p>MENU</p>
+            </button>
+        </div>
+        <div class="options">
+            <div class="tecnicaturas-desplegable">
+                <div class="tecnicaturas-button">
+                    <button onclick="extendDiv('.tecnicaturas-desplegable')">Tecnicaturas <img src="./assets/images/icons/arrow.png"></button>
+                </div>
+                <div class="tecnicaturas">
+                    <a href="programacion.html">Programación</a>
+                    <a href="informatica.html">Informática</a>
+                </div>
+            </div>
+            <a href="#ubicacion-zone">Ubicación</a>
+            <a href="galeria.html">Galería</a>
+            <a href="#historiaZone">Historia institucional</a>
+            <a href="personal.html">Personal institucional</a>
+        </div>
+    </nav>
+    <div class="container" id="galeria">
+        <!----SLIDER-!--->
+        <div class="sliders">
+            <div id="slideimg1" class="fade">
+                <img src="./assets/slider/1.jpg" class="slider-image"/>
+            </div>
+
+            <div id="slideimg2" class="fade">
+                <img src="./assets/slider/2.jpeg" class="slider-image"/>
+            </div>
+
+            <div id="slideimg3" class="fade">
+                <img src="./assets/slider/3.jpeg" class="slider-image"/>
+            </div>
+
+            <div id="slideimg4" class="fade">
+                <img src="./assets/slider/4.jpg" class="slider-image"/>
+            </div>
+            <div class="logo-container">
+                <div class="text">
+                    <span class="roboto big white">GALERIA</span>
+                </div>
+            </div>
+            <div class="arrow">
+                <a href="#tecnicaturas-zone"><img src="./assets/images/icons/DoubleArrow.png"></a>
+                
+            </div>
+        </div>
+        
+        <!----CONTENIDO!---->
+        <section class="album" id="image-album">
+            <div class="preview-box">
+                <div class="expanded-image" id="preview-image">
+
+                </div>
+                <button class="close">
+
+                </button>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="texts">
+                <span>eet2junin@gmail.com</span>
+                <span>+54 9 236 427-8238</span>
+            </div>
+            <div class="credits">
+                <span>Web realizada por los alumnos de 6° P 2024.</span>
+            </div>
+            <div class="clickable-icons">
+                <a href="https://www.facebook.com/tecnica2junin"><img src="./assets/images/icons/facebook.png" alt=""></a>
+                <a href="mailto:eet2junin@gmail.com"><img src="./assets/images/icons/gmail.png" alt=""></a>
+                <a href="https://wa.me/+5492364278238"><img src="./assets/images/icons/whatsapp.png" alt=""></a>
+            </div>
+        </section>
+    </div>
+
+    <!--Scripts a ejecutar al cargar la pagina.-->
+    <script>
+        const gallery = new PhotoGallery("./assets/images/album/", 1, "image-album");
+        gallery.appendImagesToAlbum();
+        document.addEventListener("DOMContentLoaded", () => {
+            const landingSlider = new Carrousel(["slideimg1", "slideimg2", "slideimg3", "slideimg4"], 0, null);
+            landingSlider.loop(6000, "fade");
+        })
+    </script>
+</body>
+</html>

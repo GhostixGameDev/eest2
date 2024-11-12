@@ -1,0 +1,168 @@
+.container#tecnicaturas .sliders{
+    overflow: hidden;
+}
+.container#tecnicaturas .sliders .background{
+    background-image: url("../assets/images/programacion/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 130%;
+}
+
+
+.container#tecnicaturas .sliders .logo-container .text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    margin-left: 2%;
+}
+.typing-animated{
+    display: flex;
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation:
+        typing 2s steps(12) forwards 2s,
+        typing-cursor .5s step-end infinite alternate;
+}
+
+
+.container .pantallazo .contents .imagen{
+    width: 30vw;
+    height: 50vh;
+    margin-left: 10%;
+    margin-top: 0;
+}
+.selector-anios{
+    width: 97vw;
+    height: 200vh;
+    display: flex;
+    flex-direction: row;
+    row-gap: 0;
+    background-color: rgba(206, 206, 206, 0.897);
+}
+.selector-anios .anios-wrapper{
+    display: flex; 
+    flex-direction: row;
+    width: 58.2vw;
+    height: 100%;
+    row-gap: 0;
+    overflow-x: hidden;
+}
+.anio{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 58.2vw;
+    height: 100%;
+    margin: 0;
+    flex-shrink: 0;
+    overflow-x: hidden;
+}
+.anio .titles{
+    background-color: rgba(206, 206, 206, 0);;
+}
+.anio .contents{
+    height: 100%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 0;
+    justify-content: left;
+    text-align: left;
+}
+.materias-wrapper{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin-top: 2%;
+    flex-direction: row;
+    align-items: center;
+}
+.materias-wrapper .materias{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.materias-wrapper .materias .subtitle{
+    font-size: 5vh;
+}
+.materias-wrapper .materias .list{
+    text-align: left;
+    font-size: 2.5vh;
+}
+.materias-wrapper .materias .list ul{
+    list-style: none;
+}
+.materias-wrapper .materias .list.right{
+    text-align: right;
+    margin-right: 5.5%;
+}
+.arrow-wrapper{
+    position: relative;
+    margin-left: 0%;
+    width: 17.4vw;
+    height: 30%;
+    align-self: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-wrapper.hidden{
+    opacity: 1;
+}
+.arrow-wrapper .arrow{
+    width: 7vw;
+    height: 14vh;
+    top: 50%;
+    position: fixed;
+}
+.arrow-wrapper.hidden .arrow{
+    opacity: 0;
+    filter: blur(100);
+    transform: translateX(-200%);
+    transition: blur 0.6s ease-in-out, 0.4s ease-in-out;
+}
+.arrow-wrapper.show .arrow{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(10%);
+    transition: blur 0.6s ease-in-out,  transform 0.4s ease-in-out, opacity 0.5s ease-in-out, width 0.5s ease-in-out, height 0.3s ease-in-out;
+}
+.arrow-wrapper.hidden .arrow.right{
+    transform: translateX(200%);
+}
+.arrow-wrapper.show .arrow.right{
+    transform: translateX(-20%);
+}
+.arrow-wrapper.show .arrow:hover{
+    width: 8vw;
+    height: 15vh;
+    transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out, height 0.3s ease-in-out;
+}
+
+.arrow-wrapper .arrow img{
+    width: 100%;
+    height: 100%;
+}
+.arrow-wrapper .arrow.left img{
+    transform: rotate(270deg);
+}
+
+.arrow-wrapper .arrow.right img{
+    transform: rotate(90deg);
+}
+
+@keyframes typing-cursor{
+    50%{border-color: transparent}
+}
+@keyframes typing{
+    from {width: 0%}to{width:100%}
+}
+

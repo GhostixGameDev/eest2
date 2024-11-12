@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "FiraCode";
+    src: url("../assets/fonts/FiraCode/FiraCode-Regular.ttf") format(truetype); 
+}
+
+@font-face{
+    font-family: "SourceCode";
+    src: url("../assets/fonts/SourceCodePro/SourceCodePro-Regular.ttf") format(truetype);
+}
+
+.container#tecnicaturas .sliders .background.informatica-bg-variant{
+    background-image: url("../assets/images/informatica/background.webp");
+}
+
+.code-subtitle{
+    font-family: "FiraCode";
+    font-size: 7vh;
+    font-weight: 200;
+    color: rgba(31, 30, 30, 0.9);
+}
+
+.code-text {
+    font-family: "SourceCode" monospace;
+    text-wrap: nowrap;
+    font-size: 7vh;
+    font-weight: 400;
+    color: rgba(252, 94, 2, 0.89);
+}
+
+.code-background{
+    background-color: #111;/* rgb(27, 27, 27);  */
+    display: inline-block;
+    text-align: left;
+    justify-items: left;
+    border-radius: 8px; 
+    margin-left: -2%;
+    width: 51vw;
+    min-height: fit-content;
+    height: 50%;
+}
+.code-background ol{
+    font-family: "SourceCode", monospace;
+    counter-reset: item;
+    list-style-type: none;
+    text-align: left;
+    justify-items: left;
+}
+
+.code-background li:before { 
+  color: rgba(49, 199, 129, 0.521); 
+  content: counter(item, decimal-leading-zero) "  "; 
+  counter-increment: item;
+  margin-left: -20px;
+  padding-right: 20px;
+}
