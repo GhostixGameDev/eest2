@@ -1,0 +1,15 @@
+{
+  "name": "eest2-grupo-haziel",
+  "version": "1.0.0",
+  "description": "Pagina web institucional de la escuela técnica 2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eest2-grupo-haziel": "file:",
+    "firebase": "^11.0.1"
+  }
+}
