@@ -18,6 +18,9 @@ class PhotoGallery{
             const button = document.createElement("button");
             button.setAttribute("id", `image-${i}`);
             button.setAttribute("class", "images");
+            button.addEventListener("click", () => {
+                this.openExpandedImage(i);
+            })
 
             // Create an image element
             const img = document.createElement("img");
@@ -35,6 +38,8 @@ class PhotoGallery{
     openExpandedImage = (wich) => {
         if(!this.#album) return;
         var imageID = parseNumberUntilDot(wich);
+        
+
     }
 }
 

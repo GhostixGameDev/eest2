@@ -18,7 +18,9 @@
     font-weight: 200;
     color: rgba(31, 30, 30, 0.9);
 }
-
+.code-font{
+    font-family: "SourceCode" monospace;
+}
 .code-text {
     font-family: "SourceCode" monospace;
     text-wrap: nowrap;
