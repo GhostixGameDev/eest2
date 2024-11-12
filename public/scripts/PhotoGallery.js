@@ -24,7 +24,7 @@ class PhotoGallery{
 
             // Create an image element
             const img = document.createElement("img");
-            img.setAttribute("id", `image-${i}`)
+            img.setAttribute("id", `image-${i}`);
             img.src = `${this.#folder}${i}.jpg`;
             img.alt = `Image ${i}`;
 
@@ -33,7 +33,6 @@ class PhotoGallery{
             this.#album.appendChild(button);
         }
     }
-
     //Open the preview box
     openExpandedImage = (wich) => {
         if(!this.#album) return;
