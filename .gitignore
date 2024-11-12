@@ -1,0 +1,10 @@
+.idea/eest2.iml
+.idea/misc.xml
+.idea/modules.xml
+/.idea
+.node_modules
+node_modules
+/.firebase
+/node_modules
+node_modules/*
+.firebase
