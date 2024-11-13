@@ -9,7 +9,7 @@ class PhotoGallery{
     }
 
     // Load photo gallery images into DOM
-    appendImagesToAlbum = () => {
+     appendImagesToAlbum = () => {
         if (!this.#album) return;
 
         // Iterate through the folder and create images.
@@ -20,7 +20,7 @@ class PhotoGallery{
             button.setAttribute("class", "images");
             button.addEventListener("click", () => {
                 this.openExpandedImage(i);
-            })
+             })
 
             // Create an image element
             const img = document.createElement("img");

@@ -97,7 +97,7 @@
 
     <!--Scripts a ejecutar al cargar la pagina.-->
     <script>
-        const gallery = new PhotoGallery("./assets/images/album/", 1, "image-album");
+        const gallery = new PhotoGallery("./assets/images/album/", 90, "image-album");
         gallery.appendImagesToAlbum();
         document.addEventListener("DOMContentLoaded", () => {
             const landingSlider = new Carrousel(["slideimg1", "slideimg2", "slideimg3", "slideimg4"], 0, null);
