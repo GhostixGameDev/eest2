@@ -72,10 +72,29 @@
     border-radius: 10px;
 }
 
-.pestania{
+.navegador{
     background-color: rgb(89, 83, 94);
-    height: 2.2vw;
+    height: 3vw;
     width: 100%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.circulitosNavegador{
+    height: 1.3vw;
+    width: 1.3vw;
+    border-radius: 100%;
+    margin-left: 0.6vw;
+    justify-self: center;
+}
+
+.contenedorX{
+    height: 2.2vw;
+    width: 48vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
