@@ -36,12 +36,31 @@
     margin-left: 10%;
     margin-top: 0;
 }
+
+.textHorariosTecn{
+    font-family: "Roboto";
+    font-size: 3vh;
+    margin-top: 2vw;
+    border: 0px;
+    border-right: 2px;
+    border-style:solid;
+    border-color: rgba(0, 0, 0, 0.822);
+    padding-right: 1.2vw;
+    padding: 1.4;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: row;
+}
+
+
 .selector-anios{
     width: 97vw;
     height: 300vh;
     display: flex;
     flex-direction: row;
-    background-color: rgba(206, 206, 206, 0.897);
+    background-color: rgba(155, 24, 24, 0.897);
 }
 .selector-anios .anios-wrapper{
     margin-top: 15px;
@@ -67,22 +86,39 @@
     background-color: rgba(206, 206, 206, 0);;
 }
 
-
-.pestania{
+.tab-button{
     display: flex;
     flex-direction: row;
-    height: 100%;
-    width: 50%;
-    background-color: rgba(230, 227, 227, 0.884); ;
+    height: 90%;
+    width: 15%;
+    background-color: rgba(255, 255, 255, 0.911); ;
     border-top-left-radius: 15PX;
     border-top-right-radius: 15px;
-    margin-top: 8px;
+    margin-top: 5px;
+    margin-left: 10px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.tab-button:hover {
+    background-color: #b6b6b6;
+}
+
+.tab-button.active {
+    height: 90%;
+    width: 30%;
+    background-color: #8a8a8a;
+}
+
+.textPestaña{
+    font-family: "Roboto";
+    font-size: 24px;
     margin-left: 10px;
 }
 
-.contenedorXanios{
-    height: 2.2vw;
-    width: 3vw;
+.contenedorXanioPestañe{
+    height: 100%;
+    width: 40%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -97,7 +133,7 @@
 .contenidoANIOS{
     height: 100%;
     width: 100%;
-    background-color: rgb(230, 227, 227);
+    background-color: rgb(241, 241, 241);
     border-radius: 10px;
 
     border-color: rgba(0, 0, 0, 0.404);

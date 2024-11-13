@@ -12,7 +12,7 @@
 
     <script src="https://kit.fontawesome.com/18f60bb972.js" crossorigin="anonymous"></script>
     <!--iconos importados de melmel-->
-
+    <script src="./scripts/TecnicaturasAnios.js"></script>
     <script src="./scripts/Carrousel.js"></script>
     <script src="./scripts/Util.js"></script>
     <script src="./scripts/ScrollEvents.js"></script>
@@ -98,20 +98,17 @@
 
             <div class="titles">
                 <span class="roboto light">
-                    HORARIOS Y<br />
+                    HORARIOS DE LA<br />
                 </span>
                 <span class="roboto big highlight heavy">
-                    MATERIAS
+                    TECNICATURA
                 </span>
             </div>
 
             <div class="contents">
                 <div class="text-container">
-                    <span class="roboto heavy">
-                        Horarios de esta Tecnicatura
-                    </span>
-                    <div class="text">
-                        La Tecnicatura en Informatica actualmente se encuentra en horario doble jornada, juntando la jornada del horario mañana con la del horario de la tarde, aunque la cantidad de horas por dia puede variar. 
+                    <div class="textHorariosTecn">
+                        La Tecnicatura en <B>Informatica</B> actualmente se encuentra en horario doble jornada, juntando la jornada del horario mañana con la del horario de la tarde, aunque la cantidad de horas por dia puede variar. 
                         El horario de entrada no cambia, 07:30 am, luego los horarios de salida varian más, siendo las 16:35 el horario más tarde hasta el momento.<br />
                         Es importante destacar que estos horarios no incluyen la experiencia de las prácticas
                         profesionalizantes que los estudiantes realizan en el séptimo año. Durante este período, los
@@ -128,6 +125,15 @@
                 <img src="./assets/images/programacion/art2.jpg" alt="" class="imagen">
             </div>
 
+            <div class="titles">
+                <span class="roboto light">
+                    AÑOS, MATERIAS Y <br />
+                </span>
+                <span class="roboto big highlight heavy">
+                    MAS INFORMACION
+                </span>
+            </div>
+
             <div class="selector-anios">
                 <div class="arrow-wrapper hidden">
                     <div class="arrow left" id="anios-left">
@@ -142,16 +148,70 @@
                                 <div class="circulitosNavegador" style="background-color: #ffd53b;"></div>
                                 <div class="circulitosNavegador" style="background-color: #52c952;"></div>
 
-                                <div class="pestania"> 
-                                    <span class="roboto heavy">
+                                <button class="tab-button active" onclick="openTab(event, 'tab4I')">
+                                    <i class="fa-solid fa-gears" style="color: #000000;"></i>
+                                    4to AÑO
+                                    <div class="contenedorXanioPestañe">
+                                        <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
+                                    </div>
+                                </button>
+                                <button class="tab-button" onclick="openTab(event, 'tab5I')">
+                                    <i class="fa-solid fa-gears" style="color: #000000;"></i>
+                                    5to AÑO
+                                    <div class="contenedorXanioPestañe">
+                                        <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
+                                    </div>
+                                </button>
+                                <button class="tab-button" onclick="openTab(event, 'tab6I')">
+                                    <i class="fa-solid fa-gears" style="color: #000000;"></i>
+                                    6to AÑO
+                                    <div class="contenedorXanioPestañe">
+                                        <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
+                                    </div>
+                                </button>
+                                <button class="tab-button" onclick="openTab(event, 'tab7I')">
+                                    <i class="fa-solid fa-gears" style="color: #000000;"></i>
+                                    7to AÑO
+                                    <div class="contenedorXanioPestañe">
+                                        <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
+                                    </div>
+                                </button>
+                            
+                                <!--<div class="pestania"> 
+                                    
+                                    <div class="textPestaña">
                                         4to AÑO
-                                    </span>
-                                </div>
-
-                                <div class="contenedorXanios">
-                                    <i class="fa-solid fa-x" style="color: rgb(230, 227, 227);"></i>
-                                </div>
+                                    </div>
+                                    <div class="contenedorXanioPestañe">
+                                        <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
+                                    </div>
+                                </div>-->
                             </div>
+
+                            <!--Info 4 informatica-->
+                            <div id="tab4I" class="tab-content" style="display: block;">
+                                <h2>Contenido de Pestaña 1</h2>
+                                <p>Esta es la información de la pestaña 1.</p>
+                            </div>
+
+                            <!--Info 5 informatica-->
+                            <div id="tab5I" class="tab-content">
+                                <h2>Contenido de Pestaña 2</h2>
+                                <p>Esta es la información de la pestaña 2.</p>
+                            </div>
+                            
+                            <!--Info 6 informatica-->
+                            <div id="tab6I" class="tab-content">
+                                <h2>Contenido de Pestaña 3</h2>
+                                <p>Esta es la información de la pestaña 3.</p>
+                            </div>
+
+                            <!--Info 7 informatica-->
+                            <div id="tab7I" class="tab-content">
+                                <h2>Contenido de Pestaña 4</h2>
+                                <p>Esta es la información de la pestaña 4.</p>
+                            </div>
+
                             <div class="texto">
 
                                 En el cuarto año de nuestra Tecnicatura en Programación, los estudiantes se adentrarán
