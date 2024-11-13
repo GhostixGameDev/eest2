@@ -34,20 +34,20 @@ class PhotoGallery{
         }
     }
     //Open the preview box
-    openExpandedImage = (wich) => {
+    openExpandedImage = (imageID) => {
         if(!this.#album) return;
-        var imageID = parseNumberUntilDot(wich);
-        
-
+        const previewBox = document.getElementById("preview-box");
+        const previewImage = document.getElementById(`image-${imageID}`);
+        if(!previewBox || !previewImage) return;
+        // Make the preview box visible
+        previewBox.style.display = "block";
+        // Put the image inside
+        const img = document.getElementById("preview-image");
+        img.src = `${this.#folder}${imageID}.jpg`;
     }
-}
-
-// Helper function
-function parseNumberUntilDot(input) {
-    const dotIndex = input.indexOf('.');
-    // If there is a dot, take the substring before it; otherwise, take the entire input
-    const numberString = dotIndex !== -1 ? input.substring(0, dotIndex) : input;
-    const parsedNumber = parseInt(numberString, 10);
-
-    return isNaN(parsedNumber) ? null : parsedNumber;
+    closePreviewBox = () => {
+        const previewBox = document.getElementById("preview-box");
+        if(!previewBox) return;
+        previewBox.style.display = "none";
+    }
 }

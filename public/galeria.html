@@ -41,7 +41,7 @@
             <a href="personal.html">Personal institucional</a>
         </div>
     </nav>
-    <div class="container" id="galeria">
+    <div class="container">
         <!----SLIDER-!--->
         <div class="sliders">
             <div id="slideimg1" class="fade">
@@ -72,10 +72,10 @@
         
         <!----CONTENIDO!---->
         <section class="album" id="image-album">
-            <div class="preview-box">
+            <div class="preview-box" id="preview-box" style="display: none;">
                 <img class="expanded-image" id="preview-image" src="" alt="Preview image box"> 
-                <button class="close">
-        
+                <button class="close" onclick="gallery.closePreviewBox()">
+                    <img src="./assets/images/icons/close.svg" alt="Close button">
                 </button>
             </div>
         </section>
