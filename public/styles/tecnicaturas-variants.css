@@ -80,6 +80,7 @@
     border-top-right-radius: 7px;
     display: flex;
     flex-direction: row;
+    
     align-items: center;
 }
 

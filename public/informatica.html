@@ -13,7 +13,6 @@
     <script src="https://kit.fontawesome.com/18f60bb972.js" crossorigin="anonymous"></script>
     <!--iconos importados de melmel-->
     <script src="./scripts/TecnicaturasAnios.js"></script>
-    <script src="./scripts/Carrousel.js"></script>
     <script src="./scripts/Util.js"></script>
     <script src="./scripts/ScrollEvents.js"></script>
     <link rel="shortcut icon" href="assets/logos/logo.png">
@@ -148,30 +147,37 @@
                                 <div class="circulitosNavegador" style="background-color: #ffd53b;"></div>
                                 <div class="circulitosNavegador" style="background-color: #52c952;"></div>
 
-                                <button class="tab-button" id="tab-4" onclick="openTab('tab-4', 'tab4I')">
+                                <!--Boton 4 informatica-->
+                                <button class="tab-button" id="tab-4" onclick="openTab('tab-4', 'tab4I')" style="margin-left: 8px;">
                                     <i class="fa-solid fa-gears" style="color: #000000;"></i>
-                                    4to AÑO
+                                    <p style="margin-left: 8px;">4°to AÑO</p>
+                                    <div class="contenedorXanioPestañe">
+                                        <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);" style="margin-left: 8px;"></i>
+                                    </div>
+                                </button>
+
+                                <!--Boton 5 informatica-->
+                                <button class="tab-button" id="tab-5" onclick="openTab('tab-5', 'tab5I')" >
+                                    <i class="fa-solid fa-gears" style="color: #000000;"></i>
+                                    <p style="margin-left: 8px;">5°to AÑO</p>
                                     <div class="contenedorXanioPestañe">
                                         <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
                                     </div>
                                 </button>
-                                <button class="tab-button" id="tab-5" onclick="openTab('tab-5', 'tab5I')">
-                                    <i class="fa-solid fa-gears" style="color: #000000;"></i>
-                                    5to AÑO
-                                    <div class="contenedorXanioPestañe">
-                                        <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
-                                    </div>
-                                </button>
+
+                                <!--Boton 6 informatica-->
                                 <button class="tab-button" id="tab-6" onclick="openTab('tab-6', 'tab6I')">
                                     <i class="fa-solid fa-gears" style="color: #000000;"></i>
-                                    6to AÑO
+                                    <p style="margin-left: 8px;">6°to AÑO</p>
                                     <div class="contenedorXanioPestañe">
                                         <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
                                     </div>
                                 </button>
+
+                                <!--Boton 7 informatica-->
                                 <button class="tab-button" id="tab-7" onclick="openTab('tab-7', 'tab7I')">
                                     <i class="fa-solid fa-gears" style="color: #000000;"></i>
-                                    7to AÑO
+                                    <p style="margin-left: 8px;">7°mo AÑO</p>
                                     <div class="contenedorXanioPestañe">
                                         <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
                                     </div>
@@ -455,14 +461,7 @@
 
     <!--Scripts a ejecutar al cargar la pagina.-->
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const aniosSlider = new Carrousel(["4", "5"], 0, ["anios-left", "anios-right"]);
-            aniosSlider.loop(0, "move");
-            showOnScroll(".hidden");
-        });
         openTab("tab-4", "tab4I");
-
-
     </script>
 </body>
 
