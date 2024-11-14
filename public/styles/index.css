@@ -524,7 +524,7 @@ CONTENIDO
 
 /*Diferencias entre tecnicaturas*/
 .tecnicaturas-container .tecnicatura.programacion{
-    background-color: rgb(255, 129, 129);
+    background-color: rgb(255, 104, 104);
 }
 .tecnicaturas-container .tecnicatura.programacion .bloque{
     background-color: rgb(249, 132, 123);
