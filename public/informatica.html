@@ -148,44 +148,34 @@
                                 <div class="circulitosNavegador" style="background-color: #ffd53b;"></div>
                                 <div class="circulitosNavegador" style="background-color: #52c952;"></div>
 
-                                <button class="tab-button active" onclick="openTab(event, 'tab4I')">
+                                <button class="tab-button" id="tab-4" onclick="openTab('tab-4', 'tab4I')">
                                     <i class="fa-solid fa-gears" style="color: #000000;"></i>
                                     4to AÑO
                                     <div class="contenedorXanioPestañe">
                                         <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
                                     </div>
                                 </button>
-                                <button class="tab-button" onclick="openTab(event, 'tab5I')">
+                                <button class="tab-button" id="tab-5" onclick="openTab('tab-5', 'tab5I')">
                                     <i class="fa-solid fa-gears" style="color: #000000;"></i>
                                     5to AÑO
                                     <div class="contenedorXanioPestañe">
                                         <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
                                     </div>
                                 </button>
-                                <button class="tab-button" onclick="openTab(event, 'tab6I')">
+                                <button class="tab-button" id="tab-6" onclick="openTab('tab-6', 'tab6I')">
                                     <i class="fa-solid fa-gears" style="color: #000000;"></i>
                                     6to AÑO
                                     <div class="contenedorXanioPestañe">
                                         <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
                                     </div>
                                 </button>
-                                <button class="tab-button" onclick="openTab(event, 'tab7I')">
+                                <button class="tab-button" id="tab-7" onclick="openTab('tab-7', 'tab7I')">
                                     <i class="fa-solid fa-gears" style="color: #000000;"></i>
                                     7to AÑO
                                     <div class="contenedorXanioPestañe">
                                         <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
                                     </div>
                                 </button>
-                            
-                                <!--<div class="pestania"> 
-                                    
-                                    <div class="textPestaña">
-                                        4to AÑO
-                                    </div>
-                                    <div class="contenedorXanioPestañe">
-                                        <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
-                                    </div>
-                                </div>-->
                             </div>
 
                             <!--Info 4 informatica-->
@@ -469,10 +459,8 @@
             const aniosSlider = new Carrousel(["4", "5"], 0, ["anios-left", "anios-right"]);
             aniosSlider.loop(0, "move");
             showOnScroll(".hidden");
-        })
-        window.addEventListener('scroll', () => {
-            doParallaxY("parallax", 4.2);
         });
+        openTab("tab-4", "tab4I");
 
 
     </script>
