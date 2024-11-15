@@ -15,3 +15,12 @@ function openTab(stylingTarget, tabId) {
     document.getElementById(tabId).style.display = 'block';
     tab.classList.add('active');
 }
+
+/* para las materias*/ 
+
+function toggleContent(id) {
+    const item = document.getElementById(id).parentNode;
+    item.classList.toggle("open");
+}
+
+

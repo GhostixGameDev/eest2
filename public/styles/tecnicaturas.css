@@ -140,44 +140,6 @@
     margin-right: 10vw;
 }
 
-.materiasBasicas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(0, 255, 255);
-    margin-left: 4%;
-}
-
-.botonesMaterias{
-    height: 50px;
-    width: 90%;
-    font-size: 100%;
-    font: weight 4px;
-    text-align: left;
-}
-
-.botonesMaterias .materia-desplegable{
-    height: 100px;
-    width: 100px;
-    background-color: rgb(59, 59, 146);
-}
-
-.content{
-    height: 0px;
-    width: 0px;
-    opacity: 0%;
-}
-
-.botonesMaterias.active .content{
-    height: 100px;
-    width: 100px;
-    background-color: blue;
-
-    height: 100px;
-    width: 500px;
-    opacity: 100%;
-}
-
 .anio .contents{
     height: 100%;
     padding-top: 5%;
@@ -191,10 +153,10 @@
 .materias-wrapper{
     display: flex;
     width: 90%;
-    height: 100%;
+    height: 25%;
     margin-top: 2%;
     flex-direction: row;
-    align-items: center;
+    justify-self: center;
 }
 .materias-wrapper .materias{
     width: 50%;
@@ -216,6 +178,65 @@
     text-align: right;
     margin-right: 5.5%;
 }
+
+.materiasBasicas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(0, 255, 255);
+    margin-left: 4%;
+}
+
+.botonesMaterias{
+    height: 4vw;
+    width: 90%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    display: block;
+    align-content: center;
+    background-color: #cc000000;
+    border-bottom: 1px solid black; /* Borde negro de 1px en la parte inferior */
+}
+
+.materiasTalleres details {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.content {
+    height: 10vw;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-left: 3px solid #cc0000;
+    display: none;
+    transition: all 0.3s ease;
+    padding: 10px 0;
+}
+
+.flecha {
+    margin-right: 10px; /* Espacio entre la flecha y el texto */
+    font-size: 1.2rem;  /* Tamaño de la flecha */
+}
+
+/* Muestra el contenido cuando se expande */
+.item.open .content {
+    display: block;
+}
+
+.item.open .botonesMaterias {
+    background-color: #f0f0f0; /* Puedes cambiar el color de fondo al estar expandido */
+}
+
 .arrow-wrapper{
     position: relative;
     margin-left: 0%;
