@@ -38,14 +38,14 @@
 }
 
 .textHorariosTecn{
+    width: 80%;
     font-family: "Roboto";
     font-size: 3vh;
-    margin-top: 2vw;
     border: 0px;
     border-right: 2px;
     border-style:solid;
     border-color: rgba(0, 0, 0, 0.822);
-    padding-right: 1.2vw;
+    padding-right: 3vw;
     padding: 1.4;
 }
 
@@ -57,6 +57,9 @@
 .text-containerinf{
     display: flex;
     flex-direction: row;
+    margin-top: 4vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 
@@ -70,26 +73,32 @@
 }
 .selector-anios .anios-wrapper{
     margin-top: 15px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
     display: flex; 
-    flex-direction: row;
+    flex-direction: column;
+    flex-shrink: 0;
     width: 58.2vw;
     height: 100%;
     row-gap: 0;
-    overflow-x: hidden;
 }
-.anio{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    width: 58.2vw;
+
+.contenidoANIOS{
     height: 100%;
-    margin: 0;
-    flex-shrink: 0;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+
+    border-color: rgba(0, 0, 0, 0.404);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+
+    margin-bottom: 0px;
 }
+
 .anio .titles{
-    background-color: rgba(206, 206, 206, 0);;
+    background-color: rgb(206, 206, 206);
 }
 
 .tab-button{
@@ -109,6 +118,7 @@
 
 .tab-button:hover {
     background-color: #cf9d9d;
+    justify-items: center;
 }
 
 .tab-button.active {
@@ -127,23 +137,16 @@
     align-items: center;
 }
 
-.contenidoANIOS{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(241, 241, 241);
-    border-radius: 10px;
-
-    border-color: rgba(0, 0, 0, 0.404);
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.contenidoANIOS .texto{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.contenidoANIOS .textoanios{
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
     margin-left: 10vw;
     margin-right: 10vw;
+    font-family: 'Roboto';
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .anio .contents{
@@ -230,15 +233,18 @@
 }
 
 .content {
-    height: 10vw;
+    height: 100%;
     width: 100%;
     background-color: #ffffff6c;
     border-left: 6px solid #cc0000;
     border-right: 2px solid #d3cdcd;
     border-bottom: 3px solid #d3cdcd;
+    text-align: left;
     display: none;
     transition: all 0.3s ease;
-    padding: 10px 0;
+    padding: 2vw ;
+    font-family: 'Roboto';
+    line-height: 1.5;
 }
 
 .flecha {
