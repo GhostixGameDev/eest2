@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EEST 2</title>
+    
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/tecnicaturas.css">
     <link rel="stylesheet" href="./styles/tecnicaturas-variants.css">
-    <script src="./scripts/Carrousel.js"></script>
+
+    <script src="https://kit.fontawesome.com/18f60bb972.js" crossorigin="anonymous"></script>
+    <!--iconos importados de melmel-->
+    <script src="./scripts/TecnicaturasAnios.js"></script>
     <script src="./scripts/Util.js"></script>
     <script src="./scripts/ScrollEvents.js"></script>
     <script src="./scripts/DinamicLineBreaking.js"></script>
@@ -18,7 +22,7 @@
 
 <body>
     <!----BARRA DE NAVEGACIÓN!---->
-    <nav class="sidebar">
+    <nav class="sidebar" style="z-index: 2;">
         <div class="sidebar-logo">
             <a href="index.html">
                 <img src="./assets/logos/logo.png" alt="Logo institucional.">
@@ -50,10 +54,10 @@
         <!----SLIDER-!--->
         <div class="sliders">
             <div class="background"></div>
-            <div class="logo-container">
+            <div class="logo-container" style="z-index: 1;">
                 <div class="text">
                     <span class="code-font"><span style="color: #fa8f15">TECNICATURA</span> EN</span>
-                    <span class="roboto big typing-animated" style="color: rgba(80, 219, 80, 0.767);">Programación</span>
+                    <span class="roboto big typing-animated" style="color: rgba(54, 248, 54, 0.767);">Programación</span>
                 </div>
             </div>
             <div class="arrow">
@@ -100,14 +104,16 @@
         </section>
         
         <section class="informacion">
+
             <div class="titles">
                 <span class="roboto light">
-                    HORARIOS Y<br/>
+                    HORARIOS DE LA<br />
                 </span>
                 <span class="roboto big highlight heavy">
-                    MATERIAS
+                    TECNICATURA
                 </span>
             </div>
+
             <div class="contents">
                 <div class="text-container">
                     <span class="roboto heavy">
@@ -121,146 +127,569 @@
                 </div>
                 <img src="./assets/images/programacion/art2.jpg" alt="" class="imagen">
             </div>
+
+            <div class="titles">
+                <span class="roboto light">
+                    AÑOS, MATERIAS Y <br />
+                </span>
+                <span class="roboto big highlight heavy">
+                    MAS INFORMACION
+                </span>
+            </div>
+
             <div class="selector-anios">
                 <div class="arrow-wrapper hidden">
                     <div class="arrow left" id="anios-left">
-                        <img src="./assets/images/icons/Next.png" alt="">
                     </div>
                 </div>
+
                 <div class="anios-wrapper">
-                   <div class="anio" id="4">
-                        <div class="titles">                    
-                            <span class="roboto light">
-                                CUARTO<br/>
-                            </span>
-                            <span class="roboto big highlight heavy">
-                                AÑO
-                            </span>
-                        </div> 
-                        <div class="contents">
-                            <div class="text">
-                                En el cuarto año de nuestra Tecnicatura en Programación, los estudiantes se adentrarán en diversas materias fundamentales que sentarán las bases para su formación profesional. Las asignaturas que se introducirán son: Laboratorio de Hardware, Laboratorio de Programación I, Laboratorio de Sistemas Operativos y Laboratorio de Aplicaciones.<br/>
-                                <br/>
-                                <span class="roboto heavy">Laboratorio de Programación I<br/></span>
-                                En esta materia, considerada la principal del año, los estudiantes comenzarán desde cero con la lógica de la programación utilizando el seudocódigo como herramienta principal. Aprenderán conceptos fundamentales como las variables y los vectores, pasando por todas las estructuras de control y flujo de datos. Este enfoque les permitirá desarrollar el pensamiento lógico y la capacidad de abstracción necesarios para convertirse en programadores competentes, preparándolos para profundizar sus habilidades en el quinto año.<br/>
-                                <br/>
-                                <span class="roboto heavy">Laboratorio de Hardware<br/></span>
-                                Aunque nuestra tecnicatura está orientada hacia la informática, en el Laboratorio de Hardware, los estudiantes aprenderán sobre cada componente físico de las computadoras. Adquirirán conocimientos sobre la identificación y denominación correcta de cada pieza, comprendiendo su función específica y su importancia en el funcionamiento de los sistemas informáticos.<br/>
-                                <br/>
-                                <span class="roboto heavy">Laboratorio de Aplicaciones<br/></span>
-                                En esta asignatura, los estudiantes se familiarizarán con las aplicaciones de ofimática más utilizadas, tales como Word, Excel y PowerPoint, así como con software de edición de imágenes. Aprenderán a manejar estas herramientas de manera eficiente, lo que es fundamental para el entorno laboral y académico.<br/>
-                                <br/>
-                                <span class="roboto heavy">Laboratorio de Sistemas Operativos<br/></span>
-                                Aquí, los estudiantes descubrirán qué son los sistemas operativos y cómo instalarlos. Verán ejemplos prácticos de diferentes sistemas operativos, aprenderán para qué sirven y cómo utilizar máquinas virtuales. Esta materia les brindará una comprensión integral del software que gestiona los recursos de hardware y software de un computador.<br/>
-                            </div>
-                            <div class="materias-wrapper">
-                                <div class="materias">
-                                    <div class="subtitle roboto heavy">
-                                        Materias basicas
+                        <div class="contenidoANIOS">
+                            <div class="navegador">
+                                <div class="circulitosNavegador" style="background-color: #ff3a3a;"></div>
+                                <div class="circulitosNavegador" style="background-color: #ffd53b;"></div>
+                                <div class="circulitosNavegador" style="background-color: #52c952;"></div>
+
+                                <!--Boton 4 PROGRAMING-->
+                                <button class="tab-button" id="tab-4p" onclick="openTab('tab-4p', 'tab4P')" style="margin-left: 8px;">
+                                    <i class="fa-solid fa-code" style="font-size: 120%; margin-right: 5px;" style="color: #000000;"></i>
+
+                                    <p style="width: 50%;" style="margin-left: 8px;">4°to AÑO</p>
+
+                                    <div class="contenedorXanioPestañe">
+                                        <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"
+                                            style="margin-left: 8px;"></i>
                                     </div>
-                                    <div class="roboto list">
-                                        <ul>
-                                            <li>Historia</li>
-                                            <li>Geografía</li>
-                                            <li>Literatura</li>
-                                            <li>Matemáticas</li>
-                                            <li>Fisica</li>
-                                            <li>Quimica</li>
-                                            <li>Educación Fisica</li>
-                                        </ul>
+                                </button>
+
+                                <!--Boton 5 PROGRAMING-->
+                                <button class="tab-button" id="tab-5p" onclick="openTab('tab-5p', 'tab5P')">
+                                    <i class="fa-solid fa-code" style="font-size: 120%; margin-right: 5px;" style="color: #000000;"></i>
+
+                                    <p style="width: 50%;" style="margin-left: 8px;">5°to AÑO</p>
+
+                                    <div class="contenedorXanioPestañe">
+                                        <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
+                                    </div>
+                                </button>
+
+                                <!--Boton 6 PROGRAMING-->
+                                <button class="tab-button" id="tab-6p" onclick="openTab('tab-6p', 'tab6P')">
+                                    <i class="fa-solid fa-code" style="font-size: 120%; margin-right: 5px;" style="color: #000000;"></i>
+
+                                    <p style="width: 50%;" style="margin-left: 8px;">6°to AÑO</p>
+
+                                    <div class="contenedorXanioPestañe">
+                                        <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
+                                    </div>
+                                </button>
+
+                                <!--Boton 7 PROGRAMING-->
+                                <button class="tab-button" id="tab-7p" onclick="openTab('tab-7p', 'tab7P')">
+                                    <i class="fa-solid fa-code" style="font-size: 120%; margin-right: 5px;" style="color: #000000;"></i>
+
+                                    <p style="width: 70%;" style="margin-left: 8px;">7°mo AÑO</p>
+
+                                    <div class="contenedorXanioPestañe">
+                                        <i class="fa-solid fa-x" style="color: rgb(107, 107, 107);"></i>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <!--Info 4 PROGRAMING-->
+                            <div id="tab4P" class="tab-content" style="display: block;">
+                                
+                                <div class="textoanios">
+
+                                    <h3 style="margin-bottom: 0px;" >Modalidad Programación:</h3>
+                                    <p class="roboto highlight heavy" style="margin: 0px; margin-bottom: 2vw;">4°to Año</p>
+
+                                    En el cuarto año de nuestra Tecnicatura en Programación, los estudiantes se adentrarán
+                                    en diversas materias fundamentales que sentarán las bases para su formación profesional.
+                                    Las asignaturas que se introducirán son: Laboratorio de Hardware, Laboratorio de
+                                    Programación I, Laboratorio de Sistemas Operativos y Laboratorio de Aplicaciones.<br />
+    
+                                </div>
+                                <div class="titles" style="height: 13vw; margin-bottom: 6vw;">
+                                    <span class="roboto big highlight heavy">
+                                        MATERIAS
+                                    </span>
+                                </div>
+                                <div class="materias-wrapper">
+                                    <div class="materias">
+                                        <div class="subtitle roboto heavy">
+                                            Materias basicas
+                                        </div>
+    
+                                        <div class="materiasBasicas">
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias" style=" border-top: 1px solid black;">★
+                                                    Historia</button>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Geografía</button>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Literatura</button>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Matemáticas</button>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Fisica</button>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Quimica</button>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Educación Fisica</button>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="materias">
+                                        <div class="subtitle roboto heavy">Talleres</div>
+    
+                                        <div class="materiasTalleres">
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('pro')"
+                                                    style=" border-top: 1px solid black;">
+                                                    <span class="flecha">★</span> Laboratorio de Programación
+                                                </button>
+                                                <div class="content" id="pro">
+                                                    En esta materia, considerada la principal del año, los estudiantes
+                                                    comenzarán desde cero
+                                                    con la lógica de la programación utilizando el seudocódigo como
+                                                    herramienta principal.
+                                                    Aprenderán conceptos fundamentales como las variables y los vectores,
+                                                    pasando por todas
+                                                    las estructuras de control y flujo de datos. Este enfoque les permitirá
+                                                    desarrollar el
+                                                    pensamiento lógico y la capacidad de abstracción necesarios para
+                                                    convertirse en
+                                                    programadores competentes, preparándolos para profundizar sus
+                                                    habilidades en el quinto
+                                                    año.
+                                                </div>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('hard')">
+                                                    <span class="flecha">★</span> Laboratorio de Hardware
+                                                </button>
+                                                <div class="content" id="hard">
+                                                    Aunque nuestra tecnicatura está orientada hacia la informática, en el
+                                                    Laboratorio de
+                                                    Hardware, los estudiantes aprenderán sobre cada componente físico de las
+                                                    computadoras.
+                                                    Adquirirán conocimientos sobre la identificación y denominación correcta
+                                                    de cada pieza,
+                                                    comprendiendo su función específica y su importancia en el
+                                                    funcionamiento de los
+                                                    sistemas informáticos.
+    
+                                                </div>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('sisOP')">
+                                                    <span class="flecha">★</span> Laboratorio de Sistemas Operativos
+                                                </button>
+                                                <div class="content" id="sisOP">
+                                                    Aquí, los estudiantes descubrirán qué son los sistemas operativos y cómo
+                                                    instalarlos. Verán ejemplos prácticos de diferentes sistemas operativos,
+                                                    aprenderán para qué sirven y cómo utilizar máquinas virtuales. Esta
+                                                    materia les brindará una comprensión integral del software que gestiona
+                                                    los recursos de hardware y software de un computador.
+                                                </div>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('tegnElectro')">
+                                                    <span class="flecha">★</span> Tecnologías Electrónicas
+                                                </button>
+                                                <div class="content" id="tegnElectro">
+                                                    Tecnologías Electrónicas y sus aplicaciones.
+                                                </div>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('labapp')">
+                                                    <span class="flecha">★</span> Laboratorio de Aplicacion
+                                                </button>
+                                                <div class="content" id="labapp">
+                                                    En esta asignatura, los estudiantes se familiarizarán con las
+                                                    aplicaciones de ofimática más utilizadas, tales como Word, Excel y
+                                                    PowerPoint, así como con software de edición de imágenes. Aprenderán a
+                                                    manejar estas herramientas de manera eficiente, lo que es fundamental
+                                                    para el entorno laboral y académico.
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="materias">
-                                    <div class="subtitle roboto heavy">
-                                        Materias especiales
+                            </div>
+
+                            <!--Info 5 PROGRAMING-->
+                            <div id="tab5P" class="tab-content">
+                                <div class="textoanios">
+
+                                    <h3 style="margin-bottom: 0px;" >Modalidad Programación:</h3>
+                                    <p class="roboto highlight heavy" style="margin: 0px; margin-bottom: 2vw;">5°to Año</p>
+                                    En el quinto año de nuestra Tecnicatura en Programación, los alumnos continuarán
+                                    fortaleciendo y expandiendo los conocimientos adquiridos en el año anterior. A través de
+                                    una serie de materias especializadas, se les preparará para enfrentarse a desafíos más
+                                    avanzados en el campo de la programación y el desarrollo de software.<br />
+    
+                                </div>
+                                <div class="titles" style="height: 13vw; margin-bottom: 6vw;">
+                                    <span class="roboto big highlight heavy">
+                                        MATERIAS
+                                    </span>
+                                </div>
+
+                                <!-- 
+                                <div>
+                                    Cada una de estas materias está diseñada para proporcionar a los estudiantes una
+                                    formación completa y sólida, preparándolos para enfrentar con éxito los retos del mundo
+                                    profesional en el campo de la programación y el desarrollo de software
+                                </div>
+                                -->
+                                
+                                <div class="materias-wrapper">
+                                    <div class="materias">
+                                        <div class="subtitle roboto heavy">
+                                            Materias basicas
+                                        </div>
+                                        <div class="materiasBasicas">
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias" style=" border-top: 1px solid black;">★
+                                                    Historia</button>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Politica y Ciudadania</button>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Literatura</button>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Matemáticas</button>
+                                            </div>
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('SD')">
+                                                    <span class="flecha">★</span> Sistemas Digitales
+                                                </button>
+                                                <div class="content" id="SD">
+                                                    En esta materia, los estudiantes consolidarán las bases de la programación estructurada
+                                                    adquiridas en el cuarto año. Aprenderán en profundidad sobre vectores, incluyendo
+                                                    vectores bidimensionales, estáticos y dinámicos. Además, se les instruirá en buenas
+                                                    prácticas de codificación y en la reutilización de código, introduciendo conceptos
+                                                    esenciales como funciones, procedimientos y módulos. Una vez que dominen la lógica de la
+                                                    programación, comenzarán a aprender Python, un lenguaje de programación de alto nivel
+                                                    muy famoso y utilizado en la industria.
+                                                </div>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Educación Fisica</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="roboto list right">
-                                        <ul>
-                                            <li>Laboratorio de Programación I</li>
-                                            <li>Laboratorio de Hardware</li>
-                                            <li>Laboratorio de Sistemas Operativos</li>
-                                            <li>Laboratorio de Aplicaciones</li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                        </ul>
+    
+                                    <div class="materias">
+                                        <div class="subtitle roboto heavy">Talleres</div>
+    
+                                        <div class="materiasTalleres">
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('proII')"
+                                                    style=" border-top: 1px solid black;">
+                                                    <span class="flecha">★</span> Laboratorio de ProgramaciónII
+                                                </button>
+                                                <div class="content" id="proII">
+                                                    En esta materia, los estudiantes consolidarán las bases de la programación estructurada
+                                                    adquiridas en el cuarto año. Aprenderán en profundidad sobre vectores, incluyendo
+                                                    vectores bidimensionales, estáticos y dinámicos. Además, se les instruirá en buenas
+                                                    prácticas de codificación y en la reutilización de código, introduciendo conceptos
+                                                    esenciales como funciones, procedimientos y módulos. Una vez que dominen la lógica de la
+                                                    programación, comenzarán a aprender Python, un lenguaje de programación de alto nivel
+                                                    muy famoso y utilizado en la industria.
+                                                </div>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('WEB')">
+                                                    <span class="flecha">★</span> Diseño Web
+                                                </button>
+                                                <div class="content" id="WEB">
+                                                    En la materia de Diseño Web, los alumnos aprenderán a crear páginas profesionales
+                                                    utilizando HTML y CSS. Comenzarán con conceptos básicos y progresarán hasta ser capaces
+                                                    de diseñar páginas web complejas y funcionales, similares a las que se encuentran en el
+                                                    mundo real.
+    
+                                                </div>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('BDatos')" style="height: 6vw;">
+                                                    <span class="flecha">★</span> Diseño de Bases de Datos Y
+                                                    <br> <span class="flecha">★</span> Laboratorio de Bases de Datos
+                                                </button>
+                                                <div class="content" id="BDatos">
+                                                    Estas asignaturas se enfocan en el funcionamiento y utilización de bases de datos. Los
+                                                    estudiantes aprenderán a registrar y gestionar usuarios, así como a recorrer y manipular
+                                                    datos. Se les introducirá al lenguaje de programación PHP y al uso de SQL, herramientas
+                                                    fundamentales para el desarrollo de aplicaciones web dinámicas y robustas.
+                                                </div>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('MYS')">
+                                                    <span class="flecha">★</span> Modelos y Sistemas
+                                                </button>
+                                                <div class="content" id="MYS">
+                                                    En esta materia, los alumnos aprenderán a planificar sus programas utilizando diversos
+                                                    modelos de diseño. Estudiarán distintos tipos de diagramas y aprenderán a planificar
+                                                    relaciones en una base de datos. Además, desarrollarán aplicaciones móviles básicas,
+                                                    adquiriendo una visión integral del proceso de desarrollo de software.
+                                                </div>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('laREDES')">
+                                                    <span class="flecha">★</span> Laboratorio de Redes Informáticas
+                                                </button>
+                                                <div class="content" id="laREDES"> 
+                                                    En el Laboratorio de Redes Informáticas, los estudiantes explorarán el funcionamiento
+                                                    del internet y las redes de comunicación. Aprenderán sobre servidores, protocolos de
+                                                    transferencia de datos, protocolos de redes, direcciones IP y tipos de redes. Este
+                                                    conocimiento es esencial para comprender cómo se conectan y comunican los dispositivos
+                                                    en la era digital.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Info 6 PROGRAMING-->
+                            <div id="tab6P" class="tab-content">
+                                <div class="textoanios">
+
+                                    <h3 style="margin-bottom: 0px;" >Modalidad Informatica:</h3>
+                                    <p class="roboto highlight heavy" style="margin: 0px; margin-bottom: 2vw;">6°to Año</p>
+                                    Sin informacion de momento. ¡Lo sentimos muchisimo!:"c<br />
+    
+                                </div>
+                                <div class="titles" style="height: 13vw; margin-bottom: 6vw;">
+                                    <span class="roboto big highlight heavy">
+                                        MATERIAS
+                                    </span>
+                                </div>
+
+                                <!-- 
+                                <div>
+                                    Cada una de estas materias está diseñada para proporcionar a los estudiantes una
+                                    formación completa y sólida, preparándolos para enfrentar con éxito los retos del mundo
+                                    profesional en el campo de la programación y el desarrollo de software
+                                </div>
+                                -->
+                                
+                                <div class="materias-wrapper">
+                                    <div class="materias">
+                                        <div class="subtitle roboto heavy">
+                                            Materias basicas
+                                        </div>
+                                        <div class="materiasBasicas">
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias" style=" border-top: 1px solid black;">
+                                                    ★ Filosofia
+                                                </button>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Ingles</button>
+                                            </div>
+
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Matemática Discreta</button>
+                                            </div>
+
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Derecho del Trabajo</button>
+                                            </div>
+
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Literatura</button>
+                                            </div>
+
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Arte</button>
+                                            </div>
+
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Educación Fisica</button>
+                                            </div>
+
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('GYA')">
+                                                    <span class="flecha">★</span> Gestión y Autogestión
+                                                </button>
+                                                <div class="content" id="GYA"> 
+                                                    Sin informacion por el momento
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="materias">
+                                        <div class="subtitle roboto heavy">Talleres</div>
+    
+                                        <div class="materiasTalleres">
+
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('labDprograming')" style=" border-top: 1px solid black;">
+                                                    <span class="flecha">★</span> Laboratorio de Programación
+                                                </button>
+                                                <div class="content" id="labDprograming"> 
+                                                    Sin informacion por el momento
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('AppWepDinamica')">
+                                                    <span class="flecha">★</span> desarrollo App Web Dinámicas
+                                                </button>
+                                                <div class="content" id="AppWepDinamica"> 
+                                                    Sin informacion por el momento
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('ProsIndustrial')">
+                                                    <span class="flecha">★</span> Laboratorio de Procesos Industriales
+                                                </button>
+                                                <div class="content" id="ProsIndustrial"> 
+                                                    Sin informacion por el momento
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('SegInf')">
+                                                    <span class="flecha">★</span> Seguridad Informatica
+                                                </button>
+                                                <div class="content" id="SegInf"> 
+                                                    Sin informacion por el momento
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('SDharcor')">
+                                                    <span class="flecha">★</span> Sistemas Digitales
+                                                </button>
+                                                <div class="content" id="SDharcor"> 
+                                                    Sin informacion por el momento
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('AppWepDinamica')">
+                                                    <span class="flecha">★</span> desarrollo App Web Estáticas
+                                                </button>
+                                                <div class="content" id="AppWepDinamica"> 
+                                                    Sin informacion por el momento
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Info 7 PROGRAMING-->
+                            <div id="tab7P" class="tab-content">
+                                <div class="textoanios">
+
+                                    <h3 style="margin-bottom: 0px;" >Modalidad Informatica:</h3>
+                                    <p class="roboto highlight heavy" style="margin: 0px; margin-bottom: 2vw;">7°mo Año</p>
+                                    Sin informacion de momento. ¡Lo sentimos muchisimo!:"c<br />
+    
+                                </div>
+                                <div class="titles" style="height: 13vw; margin-bottom: 6vw;">
+                                    <span class="roboto big highlight heavy">
+                                        MATERIAS
+                                    </span>
+                                </div>
+
+                                <!-- 
+                                <div>
+                                    Cada una de estas materias está diseñada para proporcionar a los estudiantes una
+                                    formación completa y sólida, preparándolos para enfrentar con éxito los retos del mundo
+                                    profesional en el campo de la programación y el desarrollo de software
+                                </div>
+                                -->
+                                
+                                <div class="materias-wrapper">
+                                    <div class="materias">
+                                        <div class="subtitle roboto heavy">
+                                            Materias basicas
+                                        </div>
+                                        <div class="materiasBasicas">
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias" style=" border-top: 1px solid black;">
+                                                    ★ Null
+                                                </button>
+                                            </div>
+    
+                                            <div class="item">
+                                                <button class="botonesMaterias">★ Null</button>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="materias">
+                                        <div class="subtitle roboto heavy">Talleres</div>
+    
+                                        <div class="materiasTalleres">
+
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('nulo')" style=" border-top: 1px solid black;">
+                                                    <span class="flecha">★</span> Null
+                                                </button>
+                                                <div class="content" id="nulo"> 
+                                                    Sin informacion por el momento
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <button class="botonesMaterias" onclick="toggleContent('nulo2')">
+                                                    <span class="flecha">★</span> Null
+                                                </button>
+                                                <div class="content" id="nulo2"> 
+                                                    Sin informacion por el momento
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="anio" id="5">
-                        <div class="titles">                    
-                            <span class="roboto light">
-                                QUINTO<br/>
-                            </span>
-                            <span class="roboto big highlight heavy">
-                                AÑO
-                            </span>
-                        </div> 
-                        <div class="contents">
-                            <div class="text">
-                                En el quinto año de nuestra Tecnicatura en Programación, los estudiantes continuarán fortaleciendo y expandiendo los conocimientos adquiridos en el año anterior. A través de una serie de materias especializadas, se les preparará para enfrentarse a desafíos más avanzados en el campo de la programación y el desarrollo de software.<br/>
-                                <br/>
-                                <span class="roboto heavy">Laboratorio de Programación II<br/></span>
-                                En esta materia, los estudiantes consolidarán las bases de la programación estructurada adquiridas en el cuarto año. Aprenderán en profundidad sobre vectores, incluyendo vectores bidimensionales, estáticos y dinámicos. Además, se les instruirá en buenas prácticas de codificación y en la reutilización de código, introduciendo conceptos esenciales como funciones, procedimientos y módulos. Una vez que dominen la lógica de la programación, comenzarán a aprender Python, un lenguaje de programación de alto nivel muy famoso y utilizado en la industria.<br/>
-                                <br/>
-                                <span class="roboto heavy">Diseño Web<br/></span>
-                                En la materia de Diseño Web, los estudiantes aprenderán a crear páginas profesionales utilizando HTML y CSS. Comenzarán con conceptos básicos y progresarán hasta ser capaces de diseñar páginas web complejas y funcionales, similares a las que se encuentran en el mundo real.<br/>
-                                <br/>
-                                <span class="roboto heavy">Diseño de Bases de Datos y Laboratorio de Bases de Datos<br/></span>
-                                Estas asignaturas se enfocan en el funcionamiento y utilización de bases de datos. Los estudiantes aprenderán a registrar y gestionar usuarios, así como a recorrer y manipular datos. Se les introducirá al lenguaje de programación PHP y al uso de SQL, herramientas fundamentales para el desarrollo de aplicaciones web dinámicas y robustas.<br/>
-                                <br/>
-                                <span class="roboto heavy">Modelos y Sistemas<br/></span>
-                                En esta materia, los estudiantes aprenderán a planificar sus programas utilizando diversos modelos de diseño. Estudiarán distintos tipos de diagramas y aprenderán a planificar relaciones en una base de datos. Además, desarrollarán aplicaciones móviles básicas, adquiriendo una visión integral del proceso de desarrollo de software.<br/>
-                                <br/>
-                                <span class="roboto heavy">Laboratorio de Redes Informáticas<br/></span>
-                                En el Laboratorio de Redes Informáticas, los estudiantes explorarán el funcionamiento del internet y las redes de comunicación. Aprenderán sobre servidores, protocolos de transferencia de datos, protocolos de redes, direcciones IP y tipos de redes. Este conocimiento es esencial para comprender cómo se conectan y comunican los dispositivos en la era digital.<br/>
-                                <br/>
-                                Cada una de estas materias está diseñada para proporcionar a los estudiantes una formación completa y sólida, preparándolos para enfrentar con éxito los retos del mundo profesional en el campo de la programación y el desarrollo de software.<br/>
-                            </div>
-                            <div class="materias-wrapper">
-                                <div class="materias">
-                                    <div class="subtitle roboto heavy">
-                                        Materias basicas
-                                    </div>
-                                    <div class="list">
-                                        <ul>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="materias">
-                                    <div class="subtitle roboto heavy">
-                                        Materias especiales
-                                    </div>
-                                    <div class="list">
-                                        <ul>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="arrow-wrapper hidden">
-                    <div class="arrow right" id="anios-right">
-                        <img src="./assets/images/icons/Next.png" alt="">
-                    </div>
                 </div>
             </div>
         </section>
+
+
         <footer class="cooperadora">
             <div class="titles">
                 <span class="roboto big heavy">
@@ -315,6 +744,11 @@
             showOnScroll(".hidden");
         })
         dinamicLineBreak(".code-background");
+    </script>
+
+    
+    <script>
+        openTab("tab-4p", "tab4P");
     </script>
 </body>
 
