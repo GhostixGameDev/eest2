@@ -2,26 +2,27 @@
 /*GALERIA MINI*/
 /*===================================================*/
 .carousel3d-container{
-    width: 80%;
-    max-width: 50vw;
+    width: 100%;
     height: 60vh;
     perspective: 1000px;
     justify-self: center;
     align-self: center;
+    justify-content: center;
     align-content: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     overflow: hidden;
     margin-bottom: 8vh;
+    margin-left: 3%;
 }
 
 .carousel3d-container .carousel-3d {
-    position: relative;
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .carousel3d-container .carousel-3d div {
@@ -32,6 +33,9 @@
     justify-content: center;
     align-items: center;
     transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.carousel3d-container .carousel-3d div:hover{
+    cursor: grabbing;
 }
 .carousel3d-container .carousel-3d div img{
     width: 100%;
@@ -72,17 +76,19 @@
 
 /* Estilos de los botones */
 
-.carousel3d-container .buttons button {
-    background: #ffffff55;
+.carousel3d-container .buttons{
+    background: #00000055;
     border: none;
     color: rgb(0, 0, 0);
     font-size: 18px;
     padding: 10px;
-    cursor: pointer;
-    transition: background 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
-.carousel3d-container .buttons button:hover {
-    background: #ffffffaa;
+.carousel3d-container .buttons:hover{
+    background: #000000;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    cursor: pointer;
 }
 
