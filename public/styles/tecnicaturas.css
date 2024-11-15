@@ -54,6 +54,12 @@
     flex-direction: column;
 }
 
+.text-containerinf{
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 .selector-anios{
     width: 97vw;
