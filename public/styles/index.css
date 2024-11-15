@@ -472,16 +472,15 @@ CONTENIDO
 
 
 .tecnicaturas-container{
-    width: 97%;
+    width: 100%;
     height: 90vh;
     display: flex;
     flex-direction: column;
 }
+
 .tecnicaturas-container .tecnicatura{
-    border: solid 5px;
-    border-color: black;
     width: 100%;
-    height: 50%;
+    height: 100%;
     display: flex;
 }
 
@@ -491,6 +490,7 @@ CONTENIDO
     width: 50%;
     height: 100%;
     display: flex;
+    border-bottom: 0;
 }
 .tecnicaturas-container .tecnicatura .bloque{
     border: solid 5px;
@@ -499,7 +499,17 @@ CONTENIDO
     height: 100%;
     display: flex;
     justify-content: start;
-    
+    margin-bottom: 0;
+    background-image: url('../assets/images/programacion/indexPROGRAMACION.png'); /* Ruta de la imagen */
+}
+.tecnicaturas-container .tecnicatura .bloque2{
+    border: solid 5px;
+    border-color: black;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    margin-top: 0;
 }
 
 .tecnicaturas-container .tecnicatura .bloque .boton-info{
@@ -534,7 +544,7 @@ CONTENIDO
     margin-right: 200px;
 }
 
-/*Diferencias entre tecnicaturas*/
+/*Diferencias entre tecnicaturas
 .tecnicaturas-container .tecnicatura.programacion{
     background-color: rgb(255, 104, 104);
 }
@@ -556,6 +566,8 @@ CONTENIDO
 .tecnicaturas-container .tecnicatura.informatica .bloque .imagen{
     background-color: hwb(219 1% 43%); 
 }
+
+*/
 .tecnicaturas-container .tecnicatura.informatica .bloque .boton-info{
     left: 70%;
 }
@@ -590,25 +602,30 @@ CONTENIDO
 DIRECTIVOS
 ================================================================*/
 
-.DirectivosContainer .images-row{
+.DirectivosContainer{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 40px ;
-  }
+    align-content: center;
+}
 
-  /* Estilo individual para cada div de imagen */
-  .image-box {
+/* Estilo individual para cada div de imagen */
+.image-box {
     display: flex;
     flex-direction: column;
     align-items: center; 
-  }
+    height: 100%;
+    width: 100%;
+    margin-top: 5vw;
+}
 
-  .imagen-redonda{
-    width: 300px; /* Ajusta el tamaño de la imagen */
-    height: 300px; /* Ajusta el tamaño de la imagen */
+.imagen-redonda{
+    width: 16vw; /* Ajusta el tamaño de la imagen */
+    height: 16vw; /* Ajusta el tamaño de la imagen */
     border-radius: 50%; /* Hace que la imagen sea redonda */
-  }
+    border: 6px solid #cfc4c4;
+}
 
 
 /* =================================================================	
