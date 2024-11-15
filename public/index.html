@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EEST 2</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/carousel3d.css">
     <script src="./scripts/Carrousel.js"></script>
     <script src="./scripts/Util.js"></script>
+    <script defer src="./scripts/Carrousel3d.js"></script>
     <link rel="shortcut icon" href="assets/logos/logo.png">
 </head>
 <body>
@@ -115,7 +117,18 @@
             </div>
             <!----SLIDER-!--->
             <div class="galeria-container">
-
+                <button class="buttons" onclick="rotateCarousel(-1)">&#9664;</button>
+                <div class="carousel3d-container">
+                    <div class="carousel-3d">
+                        <div><img src="./assets/images/album/11.jpg"></div>
+                        <div><img src="./assets/images/album/1.jpg"></div>
+                        <div><img src="./assets/images/album/15.jpg"></div>
+                        <div><img src="./assets/images/album/13.jpg"></div>
+                        <div><img src="./assets/images/album/25.jpg"></div>
+                    </div>
+                </div>
+                <button class="buttons" onclick="rotateCarousel(1)">&#9654;</button>
+            
             </div>
         </section>
         <section class="informacion">
